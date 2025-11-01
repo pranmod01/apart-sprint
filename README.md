@@ -1,12 +1,17 @@
 # AI Capability Terrain Map
 
-An interactive 3D visualization that maps the landscape of AI capabilities as literal terrain - where mountain peaks represent mastered abilities, rising hills show emerging skills, and mysterious red sinkholes reveal tasks that should be trivial but AI inexplicably fails at.
+An interactive 3D early warning system that maps AI capabilities as literal terrain - where mountain peaks represent mastered abilities, rising hills show emerging skills, and red sinkholes reveal tasks that should be trivial but AI inexplicably fails at.
 
-Building on benchmark data from Epoch AI and Papers With Code, users can scroll through time (2020-2025) to observe the terrain evolve, hover over regions to view benchmark details, and click on sinkholes to discover surprising failures, such as "counting letters in 'strawberry'".
+Building on real-time benchmark data from Epoch AI and Papers With Code, the system monitors capability progression and detects anomalous jumps (e.g., coding ability suddenly jumping 40%). Users can track early warning signals - benchmark acceleration, multi-model convergence, and leading indicators - to anticipate breakthroughs 3-6 months before they materialize.
 
-**The ML component:** Machine learning models forecast which capabilities will emerge next, predict future terrain evolution with uncertainty bands, and classify whether new tasks will become sinkholes—turning raw benchmark data into actionable AI progress predictions.
+**The ML component:** Anomaly detection models flag capability jumps using statistical methods on historical trends, sigmoid-based forecasting predicts future terrain evolution with uncertainty bands, and a Random Forest classifier predicts whether new tasks will become persistent sinkholes - providing actionable early warnings for researchers and policymakers.
 
-**The SWE component:** Node.js API layer connecting PostgreSQL database (historical benchmarks, test results) to React + Three.js frontend. Automated ETL pipeline for Epoch/Papers With Code data, live model testing via OpenAI/Anthropic APIs, and integration endpoints serving ML predictions. Deployed on Vercel (frontend) + Railway (backend).
+**The SWE component:** Node.js + Express API connecting PostgreSQL database to React + Three.js frontend. Automated ETL pipeline ingesting Epoch/Papers With Code data, real-time alert generation system, notification infrastructure for capability jumps, and integration endpoints serving ML predictions. Deployed on Vercel (frontend) + Railway (backend + database).
 
-**The Data Eng component:** an ETL pipeline that aggregates benchmarks into semantic capabilities, an automated testing infrastructure for sinkhole discovery, and real-time data validation to ensure terrain accuracy across 30+ AI capability domains.
-Impact: Provides researchers, policymakers, and developers an intuitive way to understand AI's current limitations, track capability acceleration, and forecast transformative milestones - with a novel focus on persistent failure modes that traditional benchmarks miss.
+**Novel Contributions:**
+- **Sinkhole Discovery** - First systematic tracking of tasks AI should handle but can't (e.g., counting letters, basic spatial reasoning)
+- **Anomaly Detection** - Automated alerts when capabilities jump unexpectedly, enabling rapid institutional response
+- **Early Warning Signals** - Multi-signal system predicting breakthroughs before they occur
+- **Spatial Visualization** - 3D terrain reveals capability clusters and gaps invisible in traditional benchmark charts
+
+**Impact:** Enables researchers, policymakers, and developers to monitor AI progress in real-time, receive alerts on capability acceleration, and anticipate transformative breakthroughs - directly addressing Track 3's focus on early warning systems for rapid response to AI advancement.
