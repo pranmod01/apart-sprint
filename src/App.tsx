@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Canvas } from '@react-three/fiber'
-import Cube from './components/Cube'
+// import { Canvas } from '@react-three/fiber'
+// import Cube from './components/Cube'
 
 
 function App() {

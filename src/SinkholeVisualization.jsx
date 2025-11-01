@@ -2,10 +2,10 @@ import { useMemo } from 'react';
 import { Canvas } from '@react-three/fiber';
 import * as THREE from 'three';
 
-type PointsData = { x: number, y: number, z: number };
+// type PointsData = { x: number, y: number, z: number };
 
 // Component to draw the spline
-function Spline({ pointsData }: { pointsData: PointsData[] }) {
+function Spline({ pointsData }) {
   // Convert your raw data points into THREE.Vector3 objects
   const curvePoints = useMemo(() =>
     pointsData.map(p => new THREE.Vector3(p.x, p.y, p.z)),
