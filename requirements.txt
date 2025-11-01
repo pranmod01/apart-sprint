@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+scipy
+matplotlib
+seaborn
+sentence-transformers
+jupyter
+requests
+beautifulsoup4
+ipykernel
+requests
+json
