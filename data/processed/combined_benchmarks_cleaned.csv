@@ -37,7 +37,6 @@ gemini-2.5-flash-preview-05-20,aider_polyglot,2025-05-20,Google DeepMind,"United
 Qwen3-32B,aider_polyglot,2025-04-29,Alibaba,China,7.0848e+24,40.0,code_generation,2025
 gemini-exp-1206,aider_polyglot,2024-12-06,"Google DeepMind,Google","United States of America,United Kingdom of Great Britain and Northern Ireland",,38.2,code_generation,2024
 gemini-2.0-pro-exp-02-05,aider_polyglot,2025-02-05,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,35.6,code_generation,2025
-gemini-2.0-pro-exp-02-05,aider_polyglot,2025-02-05,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,35.6,code_generation,2025
 grok-3-mini-beta_low,aider_polyglot,2025-04-09,xAI,United States of America,,34.7,code_generation,2025
 gpt-4.1-mini-2025-04-14,aider_polyglot,2025-04-14,OpenAI,United States of America,,32.4,code_generation,2025
 claude-3-5-haiku-20241022,aider_polyglot,2024-10-22,Anthropic,United States of America,,28.0,code_generation,2024
@@ -74,8 +73,6 @@ LLaMA-7B,piqa,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.798,p
 LLaMA-13B,piqa,2023-02-27,Meta AI,United States of America,7.8e+22,0.801,physical_intuition,2023
 LLaMA-33B,piqa,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.823,physical_intuition,2023
 LLaMA-65B,piqa,2023-02-24,Meta AI,United States of America,5.5e+23,0.828,physical_intuition,2023
-Llama-2-7b,piqa,2023-07-18,Meta AI,United States of America,8.4e+22,0.788,physical_intuition,2023
-Llama-2-13b,piqa,2023-07-18,Meta AI,United States of America,1.6e+23,0.805,physical_intuition,2023
 Llama-2-70b-hf ,piqa,2023-07-18,Meta AI,United States of America,8.1e+23,0.828,physical_intuition,2023
 StableBeluga2,piqa,2023-07-20,Stability AI,United Kingdom of Great Britain and Northern Ireland,,0.833,physical_intuition,2023
 Qwen-1_8B,piqa,2023-11-30,,,,0.733,physical_intuition,2023
@@ -92,8 +89,6 @@ Llama-3.1-8B-Instruct,piqa,2024-07-23,Meta AI,United States of America,1.224e+24
 gemini-1.5-flash-002,piqa,2024-09-24,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.875,physical_intuition,2024
 gpt-4o-mini-2024-07-18,piqa,2024-07-18,OpenAI,United States of America,,0.887,physical_intuition,2024
 text-davinci-001,piqa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.81,physical_intuition,2022
-text-davinci-001,piqa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.805,physical_intuition,2022
-text-davinci-001,piqa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.823,physical_intuition,2022
 Gopher (280B),piqa,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.818,physical_intuition,2021
 Megatron-Turing NLG 530B,piqa,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.8199,physical_intuition,2022
 Megatron-Turing NLG 530B,piqa,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.8096,physical_intuition,2022
@@ -102,28 +97,12 @@ DeepSeek-V2,piqa,2024-05-07,DeepSeek,China,1.02e+24,0.839,physical_intuition,202
 Qwen2.5-72B,piqa,2024-09-19,Alibaba,China,7.8e+24,0.826,physical_intuition,2024
 Llama-3.1-405B,piqa,2024-07-23,Meta AI,United States of America,3.8e+25,0.859,physical_intuition,2024
 DeepSeek-V3-Base,piqa,2024-12-26,DeepSeek,China,3.4078e+24,0.847,physical_intuition,2024
-Gopher (280B),piqa,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.818,physical_intuition,2021
-mpt-7b,piqa,2023-05-05,MosaicML,United States of America,4.2e+22,0.806,physical_intuition,2023
 mpt-30b,piqa,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.819,physical_intuition,2023
-falcon-7b,piqa,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.767,physical_intuition,2023
 falcon-40b,piqa,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.824,physical_intuition,2023
-LLaMA-7B,piqa,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.798,physical_intuition,2023
-LLaMA-13B,piqa,2023-02-27,Meta AI,United States of America,7.8e+22,0.801,physical_intuition,2023
-LLaMA-33B,piqa,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.823,physical_intuition,2023
-LLaMA-65B,piqa,2023-02-24,Meta AI,United States of America,5.5e+23,0.828,physical_intuition,2023
-Llama-2-7b,piqa,2023-07-18,Meta AI,United States of America,8.4e+22,0.788,physical_intuition,2023
-Llama-2-13b,piqa,2023-07-18,Meta AI,United States of America,1.6e+23,0.805,physical_intuition,2023
 Llama-2-34b,piqa,2023-07-18,Meta AI,United States of America,4.08e+23,0.819,physical_intuition,2023
-Llama-2-70b-hf ,piqa,2023-07-18,Meta AI,United States of America,8.1e+23,0.828,physical_intuition,2023
-text-davinci-001,piqa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.81,physical_intuition,2022
-Gopher (280B),piqa,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.818,physical_intuition,2021
 Chinchilla (70B),piqa,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.818,physical_intuition,2022
 PaLM 62B,piqa,2022-04-04,,,,0.805,physical_intuition,2022
 PaLM 540B,piqa,2022-04-04,Google Research,United States of America,2.5272e+24,0.823,physical_intuition,2022
-LLaMA-7B,piqa,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.798,physical_intuition,2023
-LLaMA-13B,piqa,2023-02-27,Meta AI,United States of America,7.8e+22,0.801,physical_intuition,2023
-LLaMA-33B,piqa,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.823,physical_intuition,2023
-LLaMA-65B,piqa,2023-02-24,Meta AI,United States of America,5.5e+23,0.828,physical_intuition,2023
 Llama-2-7b,piqa,2023-07-18,Meta AI,United States of America,8.4e+22,0.779,physical_intuition,2023
 Llama-2-13b,piqa,2023-07-18,Meta AI,United States of America,1.6e+23,0.808,physical_intuition,2023
 LLaMA-33B,piqa,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.822,physical_intuition,2023
@@ -131,11 +110,7 @@ Llama-2-70b-hf ,piqa,2023-07-18,Meta AI,United States of America,8.1e+23,0.826,p
 Mistral-7B-Instruct-v0.1,piqa,2023-09-27,Mistral AI,France,,0.822,physical_intuition,2023
 Mixtral-8x7B-v0.1,piqa,2023-12-11,Mistral AI,France,7.74e+23,0.836,physical_intuition,2023
 Llama-2-13b,piqa,2023-07-18,Meta AI,United States of America,1.6e+23,0.798,physical_intuition,2023
-Llama-2-34b,piqa,2023-07-18,Meta AI,United States of America,4.08e+23,0.819,physical_intuition,2023
-Baichuan-2-13B-Base,piqa,2023-09-06,Baichuan,China,2.03e+23,0.781,physical_intuition,2023
-Qwen-14B,piqa,2023-09-28,Alibaba,China,2.5e+23,0.799,physical_intuition,2023
 Mistral-7B-v0.1,piqa,2023-09-27,Mistral AI,France,,0.83,physical_intuition,2023
-gemma-7b,piqa,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.812,physical_intuition,2024
 Nemotron-4 15B,piqa,2024-02-26,NVIDIA,United States of America,7.5005116e+23,0.824,physical_intuition,2024
 vicuna-13b-v1.1,piqa,2023-04-12,,,,0.774,physical_intuition,2023
 Llama-2-7b,piqa,2023-07-18,Meta AI,United States of America,8.4e+22,0.781,physical_intuition,2023
@@ -145,22 +120,13 @@ falcon-7b,piqa,2023-04-24,Technology Innovation Institute,United Arab Emirates,6
 opt-1.3b,piqa,2022-05-11,Meta AI,United States of America,,0.69,physical_intuition,2022
 gpt-neo-2.7B,piqa,2023-03-30,EleutherAI,United States of America,7.9e+21,0.729,physical_intuition,2023
 gpt2-xl,piqa,2019-11-05,OpenAI,United States of America,1.920000000001e+21,0.705,physical_intuition,2019
-text-davinci-001,piqa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.81,physical_intuition,2022
-Gopher (280B),piqa,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.818,physical_intuition,2021
-Chinchilla (70B),piqa,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.818,physical_intuition,2022
 Megatron-Turing NLG 530B,piqa,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.82,physical_intuition,2022
-PaLM 540B,piqa,2022-04-04,Google Research,United States of America,2.5272e+24,0.823,physical_intuition,2022
-Llama-2-7b,piqa,2023-07-18,Meta AI,United States of America,8.4e+22,0.788,physical_intuition,2023
-Llama-2-13b,piqa,2023-07-18,Meta AI,United States of America,1.6e+23,0.805,physical_intuition,2023
-Llama-2-34b,piqa,2023-07-18,Meta AI,United States of America,4.08e+23,0.819,physical_intuition,2023
-Llama-2-70b-hf ,piqa,2023-07-18,Meta AI,United States of America,8.1e+23,0.828,physical_intuition,2023
 Inflection-1,piqa,2023-06-22,Inflection AI,United States of America,1.0001e+24,0.842,physical_intuition,2023
 falcon-7b,piqa,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.803,physical_intuition,2023
 falcon-40b,piqa,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.83,physical_intuition,2023
 falcon-180B,piqa,2023-09-06,Technology Innovation Institute,United Arab Emirates,3.76e+24,0.849,physical_intuition,2023
 xgen-7b-8k-base,piqa,2023-06-27,Salesforce,United States of America,8.02e+22,0.755,physical_intuition,2023
 LLaMA-7B,piqa,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.787,physical_intuition,2023
-falcon-7b,piqa,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.794,physical_intuition,2023
 mpt-7b,piqa,2023-05-05,MosaicML,United States of America,4.2e+22,0.791,physical_intuition,2023
 open_llama_7b,piqa,2023-06-07,,,,0.76,physical_intuition,2023
 RedPajama-INCITE-7B-Base,piqa,2023-05-04,,,,0.769,physical_intuition,2023
@@ -202,9 +168,6 @@ gpt-4o-2024-11-20,factorio_learning_environment,2024-11-20,OpenAI,United States 
 Llama-3.3-70B-Instruct,factorio_learning_environment,2024-12-06,Meta AI,United States of America,6.8649768e+24,54998.0,game_strategy,2024
 DeepSeek-V3,factorio_learning_environment,2024-12-26,DeepSeek,China,3.4078e+24,48585.0,game_strategy,2024
 gpt-4o-mini-2024-07-18,factorio_learning_environment,2024-07-18,OpenAI,United States of America,,26756.0,game_strategy,2024
-gemini-2.5-pro-exp-03-25,factorio_learning_environment,2025-03-25,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,,game_strategy,2025
-claude-3-7-sonnet-20250219,factorio_learning_environment,2025-02-24,Anthropic,United States of America,3.35e+25,,game_strategy,2025
-claude-3-5-sonnet-20240620,factorio_learning_environment,2024-06-20,Anthropic,United States of America,2.700000000000001e+25,,game_strategy,2024
 text-davinci-001,common_sense_qa_2,2022-01-27,OpenAI,United States of America,3.19181e+23,0.529,commonsense_reasoning,2022
 gpt-3.5-turbo-0613,common_sense_qa_2,2023-06-13,OpenAI,United States of America,,0.57,commonsense_reasoning,2023
 Llama-2-70b-hf ,common_sense_qa_2,2023-07-18,Meta AI,United States of America,8.1e+23,0.5,commonsense_reasoning,2023
@@ -237,9 +200,6 @@ text-davinci-001,open_book_qa,2022-01-27,OpenAI,United States of America,3.19181
 GLaM (MoE),open_book_qa,2021-12-13,Google,United States of America,3.6363112434e+23,0.552,reading_comprehension,2021
 text-davinci-001,open_book_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.654,reading_comprehension,2022
 GLaM (MoE),open_book_qa,2021-12-13,Google,United States of America,3.6363112434e+23,0.63,reading_comprehension,2021
-text-davinci-001,open_book_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.576,reading_comprehension,2022
-text-davinci-001,open_book_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.588,reading_comprehension,2022
-text-davinci-001,open_book_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.654,reading_comprehension,2022
 mpt-7b,open_book_qa,2023-05-05,MosaicML,United States of America,4.2e+22,0.514,reading_comprehension,2023
 mpt-30b,open_book_qa,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.52,reading_comprehension,2023
 falcon-7b,open_book_qa,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.516,reading_comprehension,2023
@@ -252,17 +212,8 @@ Llama-2-7b,open_book_qa,2023-07-18,Meta AI,United States of America,8.4e+22,0.58
 Llama-2-13b,open_book_qa,2023-07-18,Meta AI,United States of America,1.6e+23,0.57,reading_comprehension,2023
 Llama-2-34b,open_book_qa,2023-07-18,Meta AI,United States of America,4.08e+23,0.582,reading_comprehension,2023
 Llama-2-70b-hf ,open_book_qa,2023-07-18,Meta AI,United States of America,8.1e+23,0.602,reading_comprehension,2023
-text-davinci-001,open_book_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.576,reading_comprehension,2022
 PaLM 62B,open_book_qa,2022-04-04,,,,0.504,reading_comprehension,2022
-PaLM 540B,open_book_qa,2022-04-04,Google Research,United States of America,2.5272e+24,0.534,reading_comprehension,2022
-LLaMA-7B,open_book_qa,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.572,reading_comprehension,2023
-LLaMA-13B,open_book_qa,2023-02-27,Meta AI,United States of America,7.8e+22,0.564,reading_comprehension,2023
-LLaMA-33B,open_book_qa,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.586,reading_comprehension,2023
-LLaMA-65B,open_book_qa,2023-02-24,Meta AI,United States of America,5.5e+23,0.602,reading_comprehension,2023
-Phi-3-mini-4k-instruct,open_book_qa,2024-04-23,Microsoft,United States of America,7.524e+22,0.832,reading_comprehension,2024
 Phi-3-small-8k-instruct,open_book_qa,2024-04-23,Microsoft,United States of America,2.1312e+23,0.88,reading_comprehension,2024
-Phi-3-medium-128k-instruct,open_book_qa,2024-04-23,Microsoft,United States of America,4.032e+23,0.874,reading_comprehension,2024
-phi-2,open_book_qa,2023-12-12,Microsoft,United States of America,2.27e+22,0.736,reading_comprehension,2023
 Mistral-7B-v0.1,open_book_qa,2023-09-27,Mistral AI,France,,0.798,reading_comprehension,2023
 gemma-7b,open_book_qa,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.786,reading_comprehension,2024
 Meta-Llama-3-8B-Instruct,open_book_qa,2024-04-18,Meta AI,United States of America,7.2e+23,0.826,reading_comprehension,2024
@@ -341,12 +292,6 @@ gemini-2.5-pro-preview-05-06,fictionlivebench,2025-05-06,Google DeepMind,"United
 gemini-2.5-pro-preview-03-25,fictionlivebench,2025-04-09,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.719,creative_writing,2025
 gemini-2.5-pro-exp-03-25,fictionlivebench,2025-03-25,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.906,creative_writing,2025
 gemini-2.0-flash-thinking-exp-01-21,fictionlivebench,2025-01-21,"Google DeepMind,Google","United States of America,United Kingdom of Great Britain and Northern Ireland",,0.375,creative_writing,2025
-chutes/QwQ-32B,fictionlivebench,2025-03-05,Alibaba,China,3.51e+24,,creative_writing,2025
-chutes/Qwen3-235B-A22B,fictionlivebench,2025-04-28,Alibaba,China,4.752e+24,,creative_writing,2025
-chutes/Qwen3-32B,fictionlivebench,2025-04-28,Alibaba,China,7.0848e+24,,creative_writing,2025
-chutes/Qwen3-30B-A3B,fictionlivebench,2025-04-28,Alibaba,China,6.48e+23,,creative_writing,2025
-chutes/Qwen3-14B,fictionlivebench,2025-04-28,Alibaba,China,3.1968e+24,,creative_writing,2025
-chutes/Qwen3-8B,fictionlivebench,2025-04-28,Alibaba,China,1.7712e+24,,creative_writing,2025
 grok-3-mini-beta_medium,fictionlivebench,2025-04-09,xAI,United States of America,,0.656,creative_writing,2025
 gpt-4.1-2025-04-14,fictionlivebench,2025-04-14,OpenAI,United States of America,,0.625,creative_writing,2025
 gpt-4.1-mini-2025-04-14,fictionlivebench,2025-04-14,OpenAI,United States of America,,0.469,creative_writing,2025
@@ -354,41 +299,29 @@ gpt-4.1-nano-2025-04-14,fictionlivebench,2025-04-14,OpenAI,United States of Amer
 chatgpt-4o-01-29-2025,fictionlivebench,2025-01-29,OpenAI,United States of America,,0.656,creative_writing,2025
 gpt-4.5-preview-2025-02-27,fictionlivebench,2025-02-27,OpenAI,United States of America,2.1000001e+26,0.639,creative_writing,2025
 claude-3-7-sonnet-20250219,fictionlivebench,2025-02-24,Anthropic,United States of America,3.35e+25,0.344,creative_writing,2025
-chutes/DeepSeek-V3-0324,fictionlivebench,2025-03-24,DeepSeek,China,3.4078e+24,,creative_writing,2025
-qwen-max-2025-01-25,fictionlivebench,2025-01-25,Alibaba,China,,,creative_writing,2025
-chutes/Gemma-3-27b-It,fictionlivebench,2025-03-11,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",2.268e+24,,creative_writing,2025
 gemini-2.5-flash-preview-04-17,fictionlivebench,2025-04-17,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.531,creative_writing,2025
 gemini-2.0-pro-exp-02-05,fictionlivebench,2025-02-05,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.375,creative_writing,2025
 gemini-2.0-flash-001,fictionlivebench,2025-02-05,"Google DeepMind,Google","United States of America,United Kingdom of Great Britain and Northern Ireland",,0.625,creative_writing,2025
 chutes/Llama-4-Maverick-17B-128E-Instruct,fictionlivebench,2025-04-06,Meta AI,United States of America,2.244000000001e+24,0.364,creative_writing,2025
 chutes/Llama-4-Scout-17B-16E Instruct,fictionlivebench,2025-04-06,Meta AI,United States of America,4.08e+24,0.273,creative_writing,2025
-Llama-3.3-70B-Instruct,fictionlivebench,2024-12-06,Meta AI,United States of America,6.8649768e+24,,creative_writing,2024
 grok-3-beta,fictionlivebench,2025-04-09,xAI,United States of America,3.5000000000000006e+26,0.583,creative_writing,2025
 claude-opus-4-20250514,fictionlivebench,2025-05-22,Anthropic,United States of America,,0.375,creative_writing,2025
 claude-sonnet-4-20250514,fictionlivebench,2025-05-22,Anthropic,United States of America,,0.364,creative_writing,2025
-chutes/DeepSeek-R1-0528,fictionlivebench,2025-05-28,DeepSeek,China,4.020010000000001e+24,,creative_writing,2025
 gemini-2.5-flash-preview-05-20,fictionlivebench,2025-05-20,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.688,creative_writing,2025
 gemini-2.5-pro-preview-06-05,fictionlivebench,2025-06-05,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.875,creative_writing,2025
 o3-pro-2025-06-10_medium,fictionlivebench,2025-06-10,OpenAI,United States of America,,0.889,creative_writing,2025
 MiniMax-M1-80k,fictionlivebench,2025-06-13,MiniMax,China,4.3240062e+24,0.594,creative_writing,2025
 gemini-2.5-flash-lite-preview-06-17-thinking,fictionlivebench,2025-06-17,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.219,creative_writing,2025
-Kimi-K2-Instruct,fictionlivebench,2025-07-12,Moonshot,China,2.976e+24,,creative_writing,2025
 grok-4-0709,fictionlivebench,2025-07-09,xAI,United States of America,5.0000000000001e+26,0.969,creative_writing,2025
-chutes/GLM-4.5-FP8,fictionlivebench,2025-07-27,,,,,creative_writing,2025
 chutes/Qwen3-235B-A22B-Thinking-2507,fictionlivebench,2025-07-25,Alibaba,China,4.752e+24,0.688,creative_writing,2025
 gpt-5-2025-08-07_medium,fictionlivebench,2025-08-07,OpenAI,United States of America,6.6e+25,0.969,creative_writing,2025
 gpt-5-mini-2025-08-07_medium,fictionlivebench,2025-08-07,OpenAI,United States of America,,0.625,creative_writing,2025
 gpt-5-nano-2025-08-07_medium,fictionlivebench,2025-08-07,OpenAI,United States of America,,0.219,creative_writing,2025
-qwen3-max-2025-09-23,fictionlivebench,2025-09-24,Alibaba,China,1.512e+25,,creative_writing,2025
-chutes/gpt-oss-120b_high,fictionlivebench,2025-08-05,OpenAI,United States of America,4.94e+24,,creative_writing,2025
 chutes/Qwen3-Next-80B-A3B-Instruct,fictionlivebench,2025-09-11,,,,0.469,creative_writing,2025
-chutes/gpt-oss-120b,fictionlivebench,2025-08-05,OpenAI,United States of America,4.94e+24,,creative_writing,2025
-DeepSeek-V3.2-Exp,fictionlivebench,2025-09-29,,,,,creative_writing,2025
 fireworks/Kimi-K2-Instruct-0905,fictionlivebench,2025-09-05,Moonshot,China,2.976e+24,0.406,creative_writing,2025
 parasail-qwen3-235b-a22b-instruct-2507,fictionlivebench,2025-09-01,Alibaba,China,4.752e+24,0.444,creative_writing,2025
 DeepSeek-V3.1,fictionlivebench,2025-08-21,DeepSeek,China,3.594058e+24,0.531,creative_writing,2025
 grok-4-fast,fictionlivebench,2025-09-19,xAI,United States of America,,0.75,creative_writing,2025
-nvidia-nemotron-nano-9b-v2,fictionlivebench,2025-08-18,,,,,creative_writing,2025
 gpt-5-nano-2025-08-07_high,otis_mock_aime_2024_2025,2025-08-07,OpenAI,United States of America,,0.0462655621890506,competition_math,2025
 gpt-5-mini-2025-08-07_high,otis_mock_aime_2024_2025,2025-08-07,OpenAI,United States of America,,0.0428616519994413,competition_math,2025
 gpt-5-2025-08-07_high,otis_mock_aime_2024_2025,2025-08-07,OpenAI,United States of America,6.6e+25,0.0365887218675541,competition_math,2025
@@ -985,11 +918,9 @@ gemma-2b,gsm8k,2024-02-21,Google DeepMind,"United States of America,United Kingd
 gemma-7b,gsm8k,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.464,mathematical_reasoning,2024
 Qwen-14B,gsm8k,2023-09-28,Alibaba,China,2.5e+23,0.601,mathematical_reasoning,2023
 Nemotron-4 15B,gsm8k,2024-02-26,NVIDIA,United States of America,7.5005116e+23,0.46,mathematical_reasoning,2024
-Llama-2-13b,gsm8k,2023-07-18,Meta AI,United States of America,1.6e+23,0.287,mathematical_reasoning,2023
 Llama-2-34b,gsm8k,2023-07-18,Meta AI,United States of America,4.08e+23,0.422,mathematical_reasoning,2023
 Baichuan-2-13B-Base,gsm8k,2023-09-06,Baichuan,China,2.03e+23,0.528,mathematical_reasoning,2023
 Mistral-7B-v0.1,gsm8k,2023-09-27,Mistral AI,France,,0.354,mathematical_reasoning,2023
-gemma-7b,gsm8k,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.464,mathematical_reasoning,2024
 gpt-4-0613,gsm8k,2023-06-13,OpenAI,United States of America,2.1e+25,0.8999,mathematical_reasoning,2023
 gpt-3.5-turbo-0613,gsm8k,2023-06-13,OpenAI,United States of America,,0.5777,mathematical_reasoning,2023
 LLaMA-7B,gsm8k,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.0978,mathematical_reasoning,2023
@@ -1003,7 +934,6 @@ LLaMA-13B,gsm8k,2023-02-27,Meta AI,United States of America,7.8e+22,0.2055,mathe
 Llama-2-13b,gsm8k,2023-07-18,Meta AI,United States of America,1.6e+23,0.2889,mathematical_reasoning,2023
 vicuna-13b-v1.1,gsm8k,2023-04-12,,,,0.2813,mathematical_reasoning,2023
 Baichuan-13B-Base,gsm8k,2023-07-11,Baichuan,China,9.36e+22,0.268,mathematical_reasoning,2023
-Baichuan-2-13B-Base,gsm8k,2023-09-06,Baichuan,China,2.03e+23,0.528,mathematical_reasoning,2023
 Phi-3.5-mini-instruct,gsm8k,2024-08-16,Microsoft,United States of America,3.7101154e+22,0.862,mathematical_reasoning,2024
 Phi-3.5-MoE-instruct,gsm8k,2024-08-17,Microsoft,United States of America,3.0202896e+23,0.887,mathematical_reasoning,2024
 Mistral-7B-v0.1,gsm8k,2023-09-27,Mistral AI,France,,0.544,mathematical_reasoning,2023
@@ -1015,10 +945,8 @@ text-davinci-003,gsm8k,2022-11-28,OpenAI,United States of America,2.578e+24,0.57
 falcon-180B,gsm8k,2023-09-06,Technology Innovation Institute,United Arab Emirates,3.76e+24,0.544,mathematical_reasoning,2023
 Qwen-7B,gsm8k,2023-09-28,Alibaba,China,1.01e+23,0.517,mathematical_reasoning,2023
 Qwen-14B,gsm8k,2023-09-28,Alibaba,China,2.5e+23,0.613,mathematical_reasoning,2023
-Baichuan-2-7B-Base,gsm8k,2023-09-20,Baichuan,China,1.092e+23,0.245,mathematical_reasoning,2023
 Baichuan-2-13B-Base,gsm8k,2023-09-06,Baichuan,China,2.03e+23,0.221,mathematical_reasoning,2023
 Llama-2-7b,gsm8k,2023-07-18,Meta AI,United States of America,8.4e+22,0.167,mathematical_reasoning,2023
-Llama-2-34b,gsm8k,2023-07-18,Meta AI,United States of America,4.08e+23,0.422,mathematical_reasoning,2023
 Llama-2-70b-hf ,gsm8k,2023-07-18,Meta AI,United States of America,8.1e+23,0.568,mathematical_reasoning,2023
 Mistral-7B-v0.1,gsm8k,2023-09-27,Mistral AI,France,,0.475,mathematical_reasoning,2023
 internlm-20b,gsm8k,2023-09-18,,,,0.629,mathematical_reasoning,2023
@@ -1032,16 +960,8 @@ LLaMA-7B,gsm8k,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.11,m
 LLaMA-13B,gsm8k,2023-02-27,Meta AI,United States of America,7.8e+22,0.178,mathematical_reasoning,2023
 LLaMA-33B,gsm8k,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.356,mathematical_reasoning,2023
 LLaMA-65B,gsm8k,2023-02-24,Meta AI,United States of America,5.5e+23,0.509,mathematical_reasoning,2023
-Llama-2-7b,gsm8k,2023-07-18,Meta AI,United States of America,8.4e+22,0.146,mathematical_reasoning,2023
-Llama-2-13b,gsm8k,2023-07-18,Meta AI,United States of America,1.6e+23,0.287,mathematical_reasoning,2023
-Llama-2-34b,gsm8k,2023-07-18,Meta AI,United States of America,4.08e+23,0.422,mathematical_reasoning,2023
-Llama-2-70b-hf ,gsm8k,2023-07-18,Meta AI,United States of America,8.1e+23,0.568,mathematical_reasoning,2023
 PaLM 62B,gsm8k,2022-04-04,,,,0.33,mathematical_reasoning,2022
 PaLM 540B,gsm8k,2022-04-04,Google Research,United States of America,2.5272e+24,0.565,mathematical_reasoning,2022
-LLaMA-7B,gsm8k,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.11,mathematical_reasoning,2023
-LLaMA-13B,gsm8k,2023-02-27,Meta AI,United States of America,7.8e+22,0.178,mathematical_reasoning,2023
-LLaMA-33B,gsm8k,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.356,mathematical_reasoning,2023
-LLaMA-65B,gsm8k,2023-02-24,Meta AI,United States of America,5.5e+23,0.509,mathematical_reasoning,2023
 Llama-2-7b,gsm8k,2023-07-18,Meta AI,United States of America,8.4e+22,0.16,mathematical_reasoning,2023
 Llama-2-13b,gsm8k,2023-07-18,Meta AI,United States of America,1.6e+23,0.343,mathematical_reasoning,2023
 LLaMA-33B,gsm8k,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.441,mathematical_reasoning,2023
@@ -1051,26 +971,17 @@ Mixtral-8x7B-v0.1,gsm8k,2023-12-11,Mistral AI,France,7.74e+23,0.744,mathematical
 text-davinci-003,gsm8k,2022-11-28,OpenAI,United States of America,2.578e+24,0.782,mathematical_reasoning,2022
 chatglm2-6b,gsm8k,2023-06-24,,,,0.288,mathematical_reasoning,2023
 mpt-7b,gsm8k,2023-05-05,MosaicML,United States of America,4.2e+22,0.091,mathematical_reasoning,2023
-mpt-30b,gsm8k,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.152,mathematical_reasoning,2023
-falcon-7b,gsm8k,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.068,mathematical_reasoning,2023
-falcon-40b,gsm8k,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.196,mathematical_reasoning,2023
 chatglm2-6b,gsm8k,2023-06-24,,,,0.324,mathematical_reasoning,2023
 internlm-7b,gsm8k,2023-07-05,,,,0.312,mathematical_reasoning,2023
 internlm-20b,gsm8k,2023-09-18,,,,0.526,mathematical_reasoning,2023
 Baichuan-2-7B-Base,gsm8k,2023-09-20,Baichuan,China,1.092e+23,0.246,mathematical_reasoning,2023
-Baichuan-2-13B-Base,gsm8k,2023-09-06,Baichuan,China,2.03e+23,0.528,mathematical_reasoning,2023
-LLaMA-7B,gsm8k,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.11,mathematical_reasoning,2023
 LLaMA-13B,gsm8k,2023-02-27,Meta AI,United States of America,7.8e+22,0.203,mathematical_reasoning,2023
 LLaMA-33B,gsm8k,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.423,mathematical_reasoning,2023
 LLaMA-65B,gsm8k,2023-02-24,Meta AI,United States of America,5.5e+23,0.544,mathematical_reasoning,2023
-Llama-2-7b,gsm8k,2023-07-18,Meta AI,United States of America,8.4e+22,0.167,mathematical_reasoning,2023
 Llama-2-13b,gsm8k,2023-07-18,Meta AI,United States of America,1.6e+23,0.296,mathematical_reasoning,2023
-Llama-2-34b,gsm8k,2023-07-18,Meta AI,United States of America,4.08e+23,0.422,mathematical_reasoning,2023
 Llama-2-70b-hf ,gsm8k,2023-07-18,Meta AI,United States of America,8.1e+23,0.633,mathematical_reasoning,2023
 StableBeluga2,gsm8k,2023-07-20,Stability AI,United Kingdom of Great Britain and Northern Ireland,,0.696,mathematical_reasoning,2023
 Qwen-1_8B,gsm8k,2023-11-30,,,,0.212,mathematical_reasoning,2023
-Qwen-7B,gsm8k,2023-09-28,Alibaba,China,1.01e+23,0.517,mathematical_reasoning,2023
-Qwen-14B,gsm8k,2023-09-28,Alibaba,China,2.5e+23,0.613,mathematical_reasoning,2023
 DeepSeek-Coder-V2-Lite-Instruct,gsm8k,2024-06-13,,,,0.876,mathematical_reasoning,2024
 DeepSeek-Coder-V2-Instruct,gsm8k,2024-06-17,DeepSeek,China,1.2852e+24,0.945,mathematical_reasoning,2024
 Qwen2.5-Coder-3B-Instruct,gsm8k,2024-11-06,,,,0.807,mathematical_reasoning,2024
@@ -1092,16 +1003,10 @@ Qwen2.5-Coder-14B,gsm8k,2024-09-18,,,,0.887,mathematical_reasoning,2024
 deepseek-coder-33b-base,gsm8k,2023-11-02,"DeepSeek,Peking University",China,3.96e+23,0.354,mathematical_reasoning,2023
 DeepSeek-Coder-V2-Base,gsm8k,2024-06-17,DeepSeek,China,1.2852e+24,0.858,mathematical_reasoning,2024
 Qwen2.5-Coder-32B,gsm8k,2024-09-18,Alibaba,China,1.0725e+24,0.911,mathematical_reasoning,2024
-LLaMA-65B,gsm8k,2023-02-24,Meta AI,United States of America,5.5e+23,0.509,mathematical_reasoning,2023
-Llama-2-7b,gsm8k,2023-07-18,Meta AI,United States of America,8.4e+22,0.146,mathematical_reasoning,2023
-LLaMA-7B,gsm8k,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.11,mathematical_reasoning,2023
-mpt-7b,gsm8k,2023-05-05,MosaicML,United States of America,4.2e+22,0.068,mathematical_reasoning,2023
-falcon-7b,gsm8k,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.068,mathematical_reasoning,2023
 falcon-7b,gsm8k,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.0462,mathematical_reasoning,2023
 falcon-40b,gsm8k,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.2146,mathematical_reasoning,2023
 falcon-11b,gsm8k,2024-05-09,Technology Innovation Institute,United Arab Emirates,3.6e+23,0.5383,mathematical_reasoning,2024
 gpt-4-0314,gsm8k,2023-03-14,OpenAI,United States of America,2.1e+25,0.92,mathematical_reasoning,2023
-text-davinci-003,gsm8k,2022-11-28,OpenAI,United States of America,2.578e+24,0.571,mathematical_reasoning,2022
 claude-instant-1.2,gsm8k,2023-08-09,Anthropic,United States of America,,0.867,mathematical_reasoning,2023
 Llama-2-13b-chat,gsm8k,2023-07-18,Meta AI,United States of America,1.6e+23,0.369,mathematical_reasoning,2023
 Llama-2-70b-chat,gsm8k,2023-07-18,Meta AI,United States of America,8.1e+23,0.471,mathematical_reasoning,2023
@@ -1202,12 +1107,9 @@ deepseek-coder-33b-base,mmlu,2023-11-02,"DeepSeek,Peking University",China,3.96e
 DeepSeek-Coder-V2-Lite-Base,mmlu,2024-06-13,,,,0.605,general_knowledge,2024
 falcon-7b,mmlu,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.35,general_knowledge,2023
 falcon-7b,mmlu,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.262,general_knowledge,2023
-falcon-7b,mmlu,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.262,general_knowledge,2023
 falcon-40b,mmlu,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.569,general_knowledge,2023
 falcon-40b,mmlu,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.554,general_knowledge,2023
-falcon-40b,mmlu,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.554,general_knowledge,2023
 falcon-7b,mmlu,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.2603,general_knowledge,2023
-falcon-7b,mmlu,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.269,general_knowledge,2023
 falcon-7b,mmlu,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.269,general_knowledge,2023
 falcon-7b,mmlu,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.239,general_knowledge,2023
 falcon-180B,mmlu,2023-09-06,Technology Innovation Institute,United Arab Emirates,3.76e+24,0.706,general_knowledge,2023
@@ -1224,12 +1126,9 @@ gemma-2-9b-it,mmlu,2024-06-24,Google DeepMind,"United States of America,United K
 gemma-2-27b-it,mmlu,2024-06-24,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",2.106e+24,0.757,general_knowledge,2024
 gemma-2b,mmlu,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",4.5115822e+22,0.423,general_knowledge,2024
 gemma-7b,mmlu,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.643,general_knowledge,2024
-gemma-7b,mmlu,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.643,general_knowledge,2024
 gemma-7b,mmlu,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.636,general_knowledge,2024
 Gopher (280B),mmlu,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.6,general_knowledge,2021
-Gopher (280B),mmlu,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.6,general_knowledge,2021
 gpt-4o-mini-2024-07-18,mmlu,2024-07-18,OpenAI,United States of America,,0.818,general_knowledge,2024
-text-davinci-001,mmlu,2022-01-27,OpenAI,United States of America,3.19181e+23,0.439,general_knowledge,2022
 text-davinci-001,mmlu,2022-01-27,OpenAI,United States of America,3.19181e+23,0.439,general_knowledge,2022
 text-davinci-002,mmlu,2022-03-15,OpenAI,United States of America,2.578e+24,0.7,general_knowledge,2022
 gpt-3.5-turbo-0125,mmlu,2024-01-25,OpenAI,United States of America,,0.673,general_knowledge,2024
@@ -1262,7 +1161,6 @@ Llama-2-7b,mmlu,2023-07-18,Meta AI,United States of America,8.4e+22,0.444,genera
 Llama-2-13b,mmlu,2023-07-18,Meta AI,United States of America,1.6e+23,0.548,general_knowledge,2023
 Llama-2-13b,mmlu,2023-07-18,Meta AI,United States of America,1.6e+23,0.556,general_knowledge,2023
 Llama-2-34b,mmlu,2023-07-18,Meta AI,United States of America,4.08e+23,0.626,general_knowledge,2023
-Llama-2-34b,mmlu,2023-07-18,Meta AI,United States of America,4.08e+23,0.626,general_knowledge,2023
 Llama-2-70b-hf ,mmlu,2023-07-18,Meta AI,United States of America,8.1e+23,0.689,general_knowledge,2023
 Llama-2-70b-hf ,mmlu,2023-07-18,Meta AI,United States of America,8.1e+23,0.698,general_knowledge,2023
 Llama-2-70b-hf ,mmlu,2023-07-18,Meta AI,United States of America,8.1e+23,0.699,general_knowledge,2023
@@ -1277,24 +1175,13 @@ Llama-3.2-11B-Vision-Instruct,mmlu,2024-09-24,Meta AI,United States of America,5
 Llama-3.2-90B-Vision-Instruct,mmlu,2024-09-24,Meta AI,United States of America,,0.803,general_knowledge,2024
 Llama-3.3-70B-Instruct,mmlu,2024-12-06,Meta AI,United States of America,6.8649768e+24,0.791,general_knowledge,2024
 LLaMA-7B,mmlu,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.356,general_knowledge,2023
-LLaMA-7B,mmlu,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.351,general_knowledge,2023
 LLaMA-13B,mmlu,2023-02-27,Meta AI,United States of America,7.8e+22,0.477,general_knowledge,2023
-LLaMA-13B,mmlu,2023-02-27,Meta AI,United States of America,7.8e+22,0.469,general_knowledge,2023
 LLaMA-33B,mmlu,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.587,general_knowledge,2023
-LLaMA-33B,mmlu,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.578,general_knowledge,2023
-LLaMA-65B,mmlu,2023-02-24,Meta AI,United States of America,5.5e+23,0.634,general_knowledge,2023
-Llama-2-7b,mmlu,2023-07-18,Meta AI,United States of America,8.4e+22,0.453,general_knowledge,2023
-Llama-2-13b,mmlu,2023-07-18,Meta AI,United States of America,1.6e+23,0.548,general_knowledge,2023
-Llama-2-13b,mmlu,2023-07-18,Meta AI,United States of America,1.6e+23,0.548,general_knowledge,2023
-Llama-2-34b,mmlu,2023-07-18,Meta AI,United States of America,4.08e+23,0.626,general_knowledge,2023
 Meta-Llama-3-8B-Instruct,mmlu,2024-04-18,Meta AI,United States of America,7.2e+23,0.665,general_knowledge,2024
 Llama-3.1-405B,mmlu,2024-07-23,Meta AI,United States of America,3.8e+25,0.844,general_knowledge,2024
-LLaMA-7B,mmlu,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.351,general_knowledge,2023
-LLaMA-7B,mmlu,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.351,general_knowledge,2023
 LLaMA-7B,mmlu,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.32,general_knowledge,2023
 LLaMA-7B,mmlu,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.352,general_knowledge,2023
 LLaMA-13B,mmlu,2023-02-27,Meta AI,United States of America,7.8e+22,0.463,general_knowledge,2023
-Llama-2-7b,mmlu,2023-07-18,Meta AI,United States of America,8.4e+22,0.453,general_knowledge,2023
 Llama-2-13b-chat,mmlu,2023-07-18,Meta AI,United States of America,1.6e+23,0.509,general_knowledge,2023
 Llama-2-13b-chat,mmlu,2023-07-18,Meta AI,United States of America,1.6e+23,0.473,general_knowledge,2023
 Llama-2-70b-chat,mmlu,2023-07-18,Meta AI,United States of America,8.1e+23,0.594,general_knowledge,2023
@@ -1316,7 +1203,6 @@ mpt-7b,mmlu,2023-05-05,MosaicML,United States of America,4.2e+22,0.268,general_k
 mpt-30b,mmlu,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.479,general_knowledge,2023
 mpt-30b,mmlu,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.469,general_knowledge,2023
 mpt-7b,mmlu,2023-05-05,MosaicML,United States of America,4.2e+22,0.2793,general_knowledge,2023
-mpt-7b,mmlu,2023-05-05,MosaicML,United States of America,4.2e+22,0.268,general_knowledge,2023
 mpt-7b,mmlu,2023-05-05,MosaicML,United States of America,4.2e+22,0.267,general_knowledge,2023
 mpt-7b,mmlu,2023-05-05,MosaicML,United States of America,4.2e+22,0.274,general_knowledge,2023
 Nemotron-4 15B,mmlu,2024-02-26,NVIDIA,United States of America,7.5005116e+23,0.587,general_knowledge,2024
@@ -1388,39 +1274,27 @@ PaLM 540B,wino_grande,2022-04-04,Google Research,United States of America,2.5272
 text-davinci-002,wino_grande,2022-03-15,OpenAI,United States of America,2.578e+24,0.816,commonsense_reasoning,2022
 PaLM 540B,wino_grande,2022-04-04,Google Research,United States of America,2.5272e+24,0.811,commonsense_reasoning,2022
 PaLM 540B,wino_grande,2022-04-04,Google Research,United States of America,2.5272e+24,0.837,commonsense_reasoning,2022
-PaLM 540B,wino_grande,2022-04-04,Google Research,United States of America,2.5272e+24,0.851,commonsense_reasoning,2022
 PaLM 2-M,wino_grande,2023-05-17,,,,0.792,commonsense_reasoning,2023
 PaLM 2-S,wino_grande,2023-05-17,,,,0.779,commonsense_reasoning,2023
 PaLM 62B,wino_grande,2022-04-04,,,,0.77,commonsense_reasoning,2022
 text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.702,commonsense_reasoning,2022
 Gopher (280B),wino_grande,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.701,commonsense_reasoning,2021
 Chinchilla (70B),wino_grande,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.749,commonsense_reasoning,2022
-PaLM 62B,wino_grande,2022-04-04,,,,0.77,commonsense_reasoning,2022
-PaLM 540B,wino_grande,2022-04-04,Google Research,United States of America,2.5272e+24,0.811,commonsense_reasoning,2022
 LLaMA-7B,wino_grande,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.701,commonsense_reasoning,2023
 LLaMA-13B,wino_grande,2023-02-27,Meta AI,United States of America,7.8e+22,0.73,commonsense_reasoning,2023
 LLaMA-65B,wino_grande,2023-02-24,Meta AI,United States of America,5.5e+23,0.77,commonsense_reasoning,2023
 LLaMA-33B,wino_grande,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.76,commonsense_reasoning,2023
 Mistral-7B-v0.1,wino_grande,2023-09-27,Mistral AI,France,,0.753,commonsense_reasoning,2023
-Chinchilla (70B),wino_grande,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.749,commonsense_reasoning,2022
 claude-3-sonnet-20240229,wino_grande,2024-02-29,Anthropic,United States of America,,0.751,commonsense_reasoning,2024
 claude-3-haiku-20240307,wino_grande,2024-03-07,Anthropic,United States of America,,0.742,commonsense_reasoning,2024
 claude-3-opus-20240229,wino_grande,2024-02-29,Anthropic,United States of America,,0.885,commonsense_reasoning,2024
-LLaMA-13B,wino_grande,2023-02-27,Meta AI,United States of America,7.8e+22,0.73,commonsense_reasoning,2023
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.702,commonsense_reasoning,2022
 text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.732,commonsense_reasoning,2022
 text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.777,commonsense_reasoning,2022
-Gopher (280B),wino_grande,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.701,commonsense_reasoning,2021
-LLaMA-7B,wino_grande,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.701,commonsense_reasoning,2023
 gpt2-xl,wino_grande,2019-11-05,OpenAI,United States of America,1.920000000001e+21,0.583,commonsense_reasoning,2019
 mpt-7b,wino_grande,2023-05-05,MosaicML,United States of America,4.2e+22,0.683,commonsense_reasoning,2023
 mpt-30b,wino_grande,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.71,commonsense_reasoning,2023
 falcon-7b,wino_grande,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.663,commonsense_reasoning,2023
 falcon-40b,wino_grande,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.769,commonsense_reasoning,2023
-LLaMA-7B,wino_grande,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.701,commonsense_reasoning,2023
-LLaMA-13B,wino_grande,2023-02-27,Meta AI,United States of America,7.8e+22,0.73,commonsense_reasoning,2023
-LLaMA-33B,wino_grande,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.76,commonsense_reasoning,2023
-LLaMA-65B,wino_grande,2023-02-24,Meta AI,United States of America,5.5e+23,0.77,commonsense_reasoning,2023
 Llama-2-7b,wino_grande,2023-07-18,Meta AI,United States of America,8.4e+22,0.692,commonsense_reasoning,2023
 Llama-2-13b,wino_grande,2023-07-18,Meta AI,United States of America,1.6e+23,0.728,commonsense_reasoning,2023
 Llama-2-34b,wino_grande,2023-07-18,Meta AI,United States of America,4.08e+23,0.767,commonsense_reasoning,2023
@@ -1446,9 +1320,6 @@ DeepSeek-Coder-V2-Base,wino_grande,2024-06-17,DeepSeek,China,1.2852e+24,0.837,co
 Mistral-7B-v0.1,wino_grande,2023-09-27,Mistral AI,France,,0.742,commonsense_reasoning,2023
 Mixtral-8x7B-v0.1,wino_grande,2023-12-11,Mistral AI,France,7.74e+23,0.772,commonsense_reasoning,2023
 gemma-7b,wino_grande,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.79,commonsense_reasoning,2024
-Llama-2-7b,wino_grande,2023-07-18,Meta AI,United States of America,8.4e+22,0.692,commonsense_reasoning,2023
-Llama-2-13b,wino_grande,2023-07-18,Meta AI,United States of America,1.6e+23,0.728,commonsense_reasoning,2023
-Mistral-7B-v0.1,wino_grande,2023-09-27,Mistral AI,France,,0.742,commonsense_reasoning,2023
 gemma-2b,wino_grande,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",4.5115822e+22,0.654,commonsense_reasoning,2024
 DeepSeek-V2,wino_grande,2024-05-07,DeepSeek,China,1.02e+24,0.863,commonsense_reasoning,2024
 DeepSeek-V3,wino_grande,2024-12-26,DeepSeek,China,3.4078e+24,0.852,commonsense_reasoning,2024
@@ -1461,7 +1332,6 @@ LLaMA-7B,wino_grande,2023-02-24,Meta AI,United States of America,4.00000001e+22,
 mpt-7b,wino_grande,2023-05-05,MosaicML,United States of America,4.2e+22,0.68,commonsense_reasoning,2023
 falcon-7b,wino_grande,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.662,commonsense_reasoning,2023
 opt-1.3b,wino_grande,2022-05-11,Meta AI,United States of America,,0.61,commonsense_reasoning,2022
-gpt2-xl,wino_grande,2019-11-05,OpenAI,United States of America,1.920000000001e+21,0.583,commonsense_reasoning,2019
 Yi-6B,wino_grande,2023-11-02,01.AI,China,1.26e+23,0.713,commonsense_reasoning,2023
 Yi-9B,wino_grande,2024-03-01,,,,0.73,commonsense_reasoning,2024
 falcon-7b,wino_grande,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.6717,commonsense_reasoning,2023
@@ -1471,27 +1341,13 @@ falcon-180B,wino_grande,2023-09-06,Technology Innovation Institute,United Arab E
 gpt-3.5-turbo-0613,wino_grande,2023-06-13,OpenAI,United States of America,,0.816,commonsense_reasoning,2023
 gpt-4-32k-0314,wino_grande,2023-03-14,OpenAI,United States of America,2.1e+25,0.875,commonsense_reasoning,2023
 Nemotron-4 15B,wino_grande,2024-02-26,NVIDIA,United States of America,7.5005116e+23,0.78,commonsense_reasoning,2024
-Llama-2-13b,wino_grande,2023-07-18,Meta AI,United States of America,1.6e+23,0.728,commonsense_reasoning,2023
-Llama-2-34b,wino_grande,2023-07-18,Meta AI,United States of America,4.08e+23,0.767,commonsense_reasoning,2023
-Mistral-7B-v0.1,wino_grande,2023-09-27,Mistral AI,France,,0.753,commonsense_reasoning,2023
 gemma-7b,wino_grande,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.723,commonsense_reasoning,2024
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.702,commonsense_reasoning,2022
 GLaM (MoE),wino_grande,2021-12-13,Google,United States of America,3.6363112434e+23,0.735,commonsense_reasoning,2021
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.732,commonsense_reasoning,2022
 GLaM (MoE),wino_grande,2021-12-13,Google,United States of America,3.6363112434e+23,0.73,commonsense_reasoning,2021
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.777,commonsense_reasoning,2022
-Gopher (280B),wino_grande,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.701,commonsense_reasoning,2021
 Megatron-Turing NLG 530B,wino_grande,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.789,commonsense_reasoning,2022
 GLaM (MoE),wino_grande,2021-12-13,Google,United States of America,3.6363112434e+23,0.792,commonsense_reasoning,2021
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.702,commonsense_reasoning,2022
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.732,commonsense_reasoning,2022
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.777,commonsense_reasoning,2022
 Megatron-Turing NLG 530B,wino_grande,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.7301,commonsense_reasoning,2022
 Megatron-Turing NLG 530B,wino_grande,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.7372,commonsense_reasoning,2022
-Megatron-Turing NLG 530B,wino_grande,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.7301,commonsense_reasoning,2022
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.702,commonsense_reasoning,2022
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.732,commonsense_reasoning,2022
-text-davinci-001,wino_grande,2022-01-27,OpenAI,United States of America,3.19181e+23,0.777,commonsense_reasoning,2022
 Gopher (280B),wino_grande,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.702,commonsense_reasoning,2021
 Phi-3-mini-4k-instruct,wino_grande,2024-04-23,Microsoft,United States of America,7.524e+22,0.708,commonsense_reasoning,2024
 Phi-3-small-8k-instruct,wino_grande,2024-04-23,Microsoft,United States of America,2.1312e+23,0.815,commonsense_reasoning,2024
@@ -1502,10 +1358,6 @@ gemma-7b,wino_grande,2024-02-21,Google DeepMind,"United States of America,United
 Meta-Llama-3-8B-Instruct,wino_grande,2024-04-18,Meta AI,United States of America,7.2e+23,0.65,commonsense_reasoning,2024
 Mixtral-8x7B-v0.1,wino_grande,2023-12-11,Mistral AI,France,7.74e+23,0.62,commonsense_reasoning,2023
 gpt-3.5-turbo-1106,wino_grande,2023-11-06,OpenAI,United States of America,,0.688,commonsense_reasoning,2023
-Gopher (280B),wino_grande,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.701,commonsense_reasoning,2021
-falcon-7b,wino_grande,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.6717,commonsense_reasoning,2023
-falcon-40b,wino_grande,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.764,commonsense_reasoning,2023
-falcon-11b,wino_grande,2024-05-09,Technology Innovation Institute,United Arab Emirates,3.6e+23,0.783,commonsense_reasoning,2024
 xgen-7b-8k-base,wino_grande,2023-06-27,Salesforce,United States of America,8.02e+22,0.649,commonsense_reasoning,2023
 LLaMA-7B,wino_grande,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.696,commonsense_reasoning,2023
 falcon-7b,wino_grande,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.672,commonsense_reasoning,2023
@@ -1525,7 +1377,6 @@ PaLM 2-L,trivia_qa,2023-05-17,,,,0.861,factual_knowledge,2023
 Llama-2-70b-hf ,trivia_qa,2023-07-18,Meta AI,United States of America,8.1e+23,0.85,factual_knowledge,2023
 PaLM 2-M,trivia_qa,2023-05-17,,,,0.817,factual_knowledge,2023
 PaLM 540B,trivia_qa,2022-04-04,Google Research,United States of America,2.5272e+24,0.769,factual_knowledge,2022
-PaLM 540B,trivia_qa,2022-04-04,Google Research,United States of America,2.5272e+24,0.814,factual_knowledge,2022
 PaLM 540B,trivia_qa,2022-04-04,Google Research,United States of America,2.5272e+24,0.814,factual_knowledge,2022
 PaLM 2-S,trivia_qa,2023-05-17,,,,0.752,factual_knowledge,2023
 text-davinci-001,trivia_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.712,factual_knowledge,2022
@@ -1549,16 +1400,9 @@ gemma-7b,trivia_qa,2024-02-21,Google DeepMind,"United States of America,United K
 Meta-Llama-3-8B-Instruct,trivia_qa,2024-04-18,Meta AI,United States of America,7.2e+23,0.677,factual_knowledge,2024
 Mixtral-8x7B-v0.1,trivia_qa,2023-12-11,Mistral AI,France,7.74e+23,0.822,factual_knowledge,2023
 gpt-3.5-turbo-1106,trivia_qa,2023-11-06,OpenAI,United States of America,,0.858,factual_knowledge,2023
-text-davinci-001,trivia_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.643,factual_knowledge,2022
 GLaM (MoE),trivia_qa,2021-12-13,Google,United States of America,3.6363112434e+23,0.713,factual_knowledge,2021
-text-davinci-001,trivia_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.68,factual_knowledge,2022
 GLaM (MoE),trivia_qa,2021-12-13,Google,United States of America,3.6363112434e+23,0.758,factual_knowledge,2021
-text-davinci-001,trivia_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.712,factual_knowledge,2022
 Gopher (280B),trivia_qa,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.571,factual_knowledge,2021
-GLaM (MoE),trivia_qa,2021-12-13,Google,United States of America,3.6363112434e+23,0.758,factual_knowledge,2021
-text-davinci-001,trivia_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.643,factual_knowledge,2022
-text-davinci-001,trivia_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.68,factual_knowledge,2022
-text-davinci-001,trivia_qa,2022-01-27,OpenAI,United States of America,3.19181e+23,0.712,factual_knowledge,2022
 mpt-7b,trivia_qa,2023-05-05,MosaicML,United States of America,4.2e+22,0.557,factual_knowledge,2023
 mpt-30b,trivia_qa,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.68,factual_knowledge,2023
 falcon-7b,trivia_qa,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.526,factual_knowledge,2023
@@ -1582,7 +1426,6 @@ LLaMA-65B,trivia_qa,2023-02-24,Meta AI,United States of America,5.5e+23,0.845,fa
 Llama-2-7b,trivia_qa,2023-07-18,Meta AI,United States of America,8.4e+22,0.689,factual_knowledge,2023
 Llama-2-13b,trivia_qa,2023-07-18,Meta AI,United States of America,1.6e+23,0.772,factual_knowledge,2023
 Llama-2-34b,trivia_qa,2023-07-18,Meta AI,United States of America,4.08e+23,0.833,factual_knowledge,2023
-Llama-2-70b-hf ,trivia_qa,2023-07-18,Meta AI,United States of America,8.1e+23,0.85,factual_knowledge,2023
 mpt-7b,trivia_qa,2023-05-05,MosaicML,United States of America,4.2e+22,0.612,factual_knowledge,2023
 mpt-30b,trivia_qa,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.733,factual_knowledge,2023
 falcon-7b,trivia_qa,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.646,factual_knowledge,2023
@@ -1591,8 +1434,6 @@ LLaMA-7B,trivia_qa,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.
 LLaMA-13B,trivia_qa,2023-02-27,Meta AI,United States of America,7.8e+22,0.771,factual_knowledge,2023
 LLaMA-33B,trivia_qa,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.838,factual_knowledge,2023
 LLaMA-65B,trivia_qa,2023-02-24,Meta AI,United States of America,5.5e+23,0.859,factual_knowledge,2023
-Llama-2-7b,trivia_qa,2023-07-18,Meta AI,United States of America,8.4e+22,0.721,factual_knowledge,2023
-Llama-2-13b,trivia_qa,2023-07-18,Meta AI,United States of America,1.6e+23,0.796,factual_knowledge,2023
 Llama-2-34b,trivia_qa,2023-07-18,Meta AI,United States of America,4.08e+23,0.845,factual_knowledge,2023
 Llama-2-70b-hf ,trivia_qa,2023-07-18,Meta AI,United States of America,8.1e+23,0.876,factual_knowledge,2023
 mpt-7b,trivia_qa,2023-05-05,MosaicML,United States of America,4.2e+22,0.616,factual_knowledge,2023
@@ -1629,7 +1470,6 @@ LLaMA-7B,trivia_qa,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.
 LLaMA-13B,trivia_qa,2023-02-27,Meta AI,United States of America,7.8e+22,0.64,factual_knowledge,2023
 LLaMA-33B,trivia_qa,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.704,factual_knowledge,2023
 LLaMA-65B,trivia_qa,2023-02-24,Meta AI,United States of America,5.5e+23,0.73,factual_knowledge,2023
-Gopher (280B),trivia_qa,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.571,factual_knowledge,2021
 claude-instant-1.2,trivia_qa,2023-08-09,Anthropic,United States of America,,0.787,factual_knowledge,2023
 gemini-2.5-pro-exp-03-25,weirdml,2025-03-25,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.6105,unusual_tasks,2025
 gpt-4.5-preview-2025-02-27,weirdml,2025-02-27,OpenAI,United States of America,2.1000001e+26,0.6026,unusual_tasks,2025
@@ -1722,12 +1562,9 @@ Llama-3.1-405B,bbh,2024-07-23,Meta AI,United States of America,3.8e+25,0.829,com
 DeepSeek-V3,bbh,2024-12-26,DeepSeek,China,3.4078e+24,0.829,complex_reasoning,2024
 Yi-6B,bbh,2023-11-02,01.AI,China,1.26e+23,0.428,complex_reasoning,2023
 Yi-34B,bbh,2023-11-02,01.AI,China,6.1e+23,0.543,complex_reasoning,2023
-Llama-2-13b,bbh,2023-07-18,Meta AI,United States of America,1.6e+23,0.394,complex_reasoning,2023
 Llama-2-34b,bbh,2023-07-18,Meta AI,United States of America,4.08e+23,0.441,complex_reasoning,2023
 Baichuan-2-13B-Base,bbh,2023-09-06,Baichuan,China,2.03e+23,0.488,complex_reasoning,2023
-Qwen-14B,bbh,2023-09-28,Alibaba,China,2.5e+23,0.534,complex_reasoning,2023
 Mistral-7B-v0.1,bbh,2023-09-27,Mistral AI,France,,0.395,complex_reasoning,2023
-gemma-7b,bbh,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.551,complex_reasoning,2024
 Nemotron-4 15B,bbh,2024-02-26,NVIDIA,United States of America,7.5005116e+23,0.587,complex_reasoning,2024
 gpt-4-0613,bbh,2023-06-13,OpenAI,United States of America,2.1e+25,0.7512,complex_reasoning,2023
 gpt-3.5-turbo-0613,bbh,2023-06-13,OpenAI,United States of America,,0.6159,complex_reasoning,2023
@@ -1760,24 +1597,14 @@ LLaMA-7B,bbh,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.335,co
 LLaMA-13B,bbh,2023-02-27,Meta AI,United States of America,7.8e+22,0.379,complex_reasoning,2023
 LLaMA-33B,bbh,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.5,complex_reasoning,2023
 LLaMA-65B,bbh,2023-02-24,Meta AI,United States of America,5.5e+23,0.584,complex_reasoning,2023
-Llama-2-34b,bbh,2023-07-18,Meta AI,United States of America,4.08e+23,0.441,complex_reasoning,2023
 Llama-2-70b-hf ,bbh,2023-07-18,Meta AI,United States of America,8.1e+23,0.649,complex_reasoning,2023
 StableBeluga2,bbh,2023-07-20,Stability AI,United Kingdom of Great Britain and Northern Ireland,,0.693,complex_reasoning,2023
-Qwen-1_8B,bbh,2023-11-30,,,,0.282,complex_reasoning,2023
-Qwen-7B,bbh,2023-09-28,Alibaba,China,1.01e+23,0.45,complex_reasoning,2023
-Qwen-14B,bbh,2023-09-28,Alibaba,China,2.5e+23,0.534,complex_reasoning,2023
 LLaMA-7B,bbh,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.303,complex_reasoning,2023
 LLaMA-13B,bbh,2023-02-27,Meta AI,United States of America,7.8e+22,0.37,complex_reasoning,2023
 LLaMA-33B,bbh,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.398,complex_reasoning,2023
 LLaMA-65B,bbh,2023-02-24,Meta AI,United States of America,5.5e+23,0.435,complex_reasoning,2023
-Llama-2-7b,bbh,2023-07-18,Meta AI,United States of America,8.4e+22,0.326,complex_reasoning,2023
-Llama-2-13b,bbh,2023-07-18,Meta AI,United States of America,1.6e+23,0.394,complex_reasoning,2023
-Llama-2-34b,bbh,2023-07-18,Meta AI,United States of America,4.08e+23,0.441,complex_reasoning,2023
 Llama-2-70b-hf ,bbh,2023-07-18,Meta AI,United States of America,8.1e+23,0.512,complex_reasoning,2023
 mpt-7b,bbh,2023-05-05,MosaicML,United States of America,4.2e+22,0.31,complex_reasoning,2023
-DeepSeek-V2,bbh,2024-05-07,DeepSeek,China,1.02e+24,0.788,complex_reasoning,2024
-Qwen2.5-72B,bbh,2024-09-19,Alibaba,China,7.8e+24,0.798,complex_reasoning,2024
-Llama-3.1-405B,bbh,2024-07-23,Meta AI,United States of America,3.8e+25,0.829,complex_reasoning,2024
 DeepSeek-V3,bbh,2024-12-26,DeepSeek,China,3.4078e+24,0.875,complex_reasoning,2024
 Llama-2-13b-chat,bbh,2023-07-18,Meta AI,United States of America,1.6e+23,0.329,complex_reasoning,2023
 Llama-2-70b-chat,bbh,2023-07-18,Meta AI,United States of America,8.1e+23,0.424,complex_reasoning,2023
@@ -1824,7 +1651,6 @@ o3-2025-04-16_high,gso,2025-04-16,OpenAI,United States of America,,0.088,spatial
 claude-opus-4-20250514,gso,2025-05-22,Anthropic,United States of America,,0.069,spatial_reasoning,2025
 gpt-5-2025-08-07_high,gso,2025-08-07,OpenAI,United States of America,6.6e+25,0.069,spatial_reasoning,2025
 claude-sonnet-4-20250514,gso,2025-05-22,Anthropic,United States of America,,0.049,spatial_reasoning,2025
-claude-sonnet-4-20250514,gso,2025-05-22,Anthropic,United States of America,,0.049,spatial_reasoning,2025
 Kimi-K2-Instruct,gso,2025-07-12,Moonshot,China,2.976e+24,0.049,spatial_reasoning,2025
 Qwen3-Coder-480B-A35B-Instruct,gso,2025-07-31,Alibaba,China,1.575e+24,0.049,spatial_reasoning,2025
 claude-3-5-sonnet-20241022,gso,2024-10-22,Anthropic,United States of America,2.700000000000001e+25,0.046,spatial_reasoning,2024
@@ -1861,19 +1687,6 @@ gemini-1.5-pro-001,os_world,2024-05-24,Google DeepMind,"United States of America
 gpt-4o-2024-05-13,os_world,2024-05-13,OpenAI,United States of America,,5.03,os_navigation,2024
 gpt-4o-mini-2024-07-18,os_world,2024-07-18,OpenAI,United States of America,,3.77,os_navigation,2024
 claude-3-opus-20240229,os_world,2024-02-29,Anthropic,United States of America,,2.42,os_navigation,2024
-claude-sonnet-4-5-20250929_2K,deepresearchbench,2025-09-29,Anthropic,United States of America,,,research_ability,2025
-gpt-5-2025-08-07_low,deepresearchbench,2025-08-07,OpenAI,United States of America,6.6e+25,,research_ability,2025
-claude-opus-4-1-20250805,deepresearchbench,2025-08-05,Anthropic,United States of America,,,research_ability,2025
-claude-opus-4-20250514_2K,deepresearchbench,2025-05-22,Anthropic,United States of America,,,research_ability,2025
-gpt-5-2025-08-07_medium,deepresearchbench,2025-08-07,OpenAI,United States of America,6.6e+25,,research_ability,2025
-gpt-5-2025-08-07_minimal,deepresearchbench,2025-08-07,OpenAI,United States of America,6.6e+25,,research_ability,2025
-claude-sonnet-4-20250514_2K,deepresearchbench,2025-05-22,Anthropic,United States of America,,,research_ability,2025
-gpt-5-2025-08-07_high,deepresearchbench,2025-08-07,OpenAI,United States of America,6.6e+25,,research_ability,2025
-grok-4-0709,deepresearchbench,2025-07-09,xAI,United States of America,5.0000000000001e+26,,research_ability,2025
-o3-2025-04-16_medium,deepresearchbench,2025-04-16,OpenAI,United States of America,,,research_ability,2025
-claude-3-7-sonnet-20250219_2K,deepresearchbench,2025-02-24,Anthropic,United States of America,3.35e+25,,research_ability,2025
-gemini-2.5-pro-preview-06-05,deepresearchbench,2025-06-05,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,,research_ability,2025
-DeepSeek-R1-0528,deepresearchbench,2025-05-28,DeepSeek,China,4.020010000000001e+24,,research_ability,2025
 Phi-3-mini-4k-instruct,adversarial_nli,2024-04-23,Microsoft,United States of America,7.524e+22,0.528,natural_language_inference,2024
 Phi-3-small-8k-instruct,adversarial_nli,2024-04-23,Microsoft,United States of America,2.1312e+23,0.581,natural_language_inference,2024
 Phi-3-medium-128k-instruct,adversarial_nli,2024-04-23,Microsoft,United States of America,4.032e+23,0.558,natural_language_inference,2024
@@ -1917,7 +1730,6 @@ StableBeluga2,bool_q,2023-07-20,Stability AI,United Kingdom of Great Britain and
 Qwen-1_8B,bool_q,2023-11-30,,,,0.68,boolean_reasoning,2023
 Qwen-7B,bool_q,2023-09-28,Alibaba,China,1.01e+23,0.764,boolean_reasoning,2023
 Qwen-14B,bool_q,2023-09-28,Alibaba,China,2.5e+23,0.862,boolean_reasoning,2023
-Llama-2-7b,bool_q,2023-07-18,Meta AI,United States of America,8.4e+22,0.774,boolean_reasoning,2023
 Llama-2-13b,bool_q,2023-07-18,Meta AI,United States of America,1.6e+23,0.817,boolean_reasoning,2023
 gemma-2b,bool_q,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",4.5115822e+22,0.694,boolean_reasoning,2024
 gemma-7b,bool_q,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.832,boolean_reasoning,2024
@@ -1950,33 +1762,21 @@ Llama-3.1-8B-Instruct,bool_q,2024-07-23,Meta AI,United States of America,1.224e+
 gemini-1.5-flash-001,bool_q,2024-05-23,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",,0.858,boolean_reasoning,2024
 gpt-4o-mini-2024-07-18,bool_q,2024-07-18,OpenAI,United States of America,,0.887,boolean_reasoning,2024
 text-davinci-001,bool_q,2022-01-27,OpenAI,United States of America,3.19181e+23,0.605,boolean_reasoning,2022
-text-davinci-001,bool_q,2022-01-27,OpenAI,United States of America,3.19181e+23,0.767,boolean_reasoning,2022
-text-davinci-001,bool_q,2022-01-27,OpenAI,United States of America,3.19181e+23,0.775,boolean_reasoning,2022
 Megatron-Turing NLG 530B,bool_q,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.782,boolean_reasoning,2022
 Megatron-Turing NLG 530B,bool_q,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.8251,boolean_reasoning,2022
 Megatron-Turing NLG 530B,bool_q,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.8483,boolean_reasoning,2022
 text-davinci-001,bool_q,2022-01-27,OpenAI,United States of America,3.19181e+23,0.764,boolean_reasoning,2022
-mpt-7b,bool_q,2023-05-05,MosaicML,United States of America,4.2e+22,0.75,boolean_reasoning,2023
 mpt-30b,bool_q,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.79,boolean_reasoning,2023
-falcon-7b,bool_q,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.675,boolean_reasoning,2023
 falcon-40b,bool_q,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.831,boolean_reasoning,2023
-LLaMA-7B,bool_q,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.765,boolean_reasoning,2023
 LLaMA-13B,bool_q,2023-02-27,Meta AI,United States of America,7.8e+22,0.781,boolean_reasoning,2023
 LLaMA-33B,bool_q,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.831,boolean_reasoning,2023
 LLaMA-65B,bool_q,2023-02-24,Meta AI,United States of America,5.5e+23,0.853,boolean_reasoning,2023
-Llama-2-7b,bool_q,2023-07-18,Meta AI,United States of America,8.4e+22,0.774,boolean_reasoning,2023
-Llama-2-13b,bool_q,2023-07-18,Meta AI,United States of America,1.6e+23,0.817,boolean_reasoning,2023
 Llama-2-34b,bool_q,2023-07-18,Meta AI,United States of America,4.08e+23,0.837,boolean_reasoning,2023
 Llama-2-70b-hf ,bool_q,2023-07-18,Meta AI,United States of America,8.1e+23,0.85,boolean_reasoning,2023
-text-davinci-001,bool_q,2022-01-27,OpenAI,United States of America,3.19181e+23,0.605,boolean_reasoning,2022
 Gopher (280B),bool_q,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.793,boolean_reasoning,2021
 Chinchilla (70B),bool_q,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.837,boolean_reasoning,2022
 PaLM 62B,bool_q,2022-04-04,,,,0.848,boolean_reasoning,2022
 PaLM 540B,bool_q,2022-04-04,Google Research,United States of America,2.5272e+24,0.88,boolean_reasoning,2022
-LLaMA-7B,bool_q,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.765,boolean_reasoning,2023
-LLaMA-13B,bool_q,2023-02-27,Meta AI,United States of America,7.8e+22,0.781,boolean_reasoning,2023
-LLaMA-33B,bool_q,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.831,boolean_reasoning,2023
-LLaMA-65B,bool_q,2023-02-24,Meta AI,United States of America,5.5e+23,0.853,boolean_reasoning,2023
 vicuna-13b-v1.1,bool_q,2023-04-12,,,,0.835,boolean_reasoning,2023
 Llama-2-7b,bool_q,2023-07-18,Meta AI,United States of America,8.4e+22,0.779,boolean_reasoning,2023
 LLaMA-7B,bool_q,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.732,boolean_reasoning,2023
@@ -1991,26 +1791,12 @@ PaLM 2-S,bool_q,2023-05-17,,,,0.881,boolean_reasoning,2023
 PaLM 2-M,bool_q,2023-05-17,,,,0.886,boolean_reasoning,2023
 PaLM 2-L,bool_q,2023-05-17,,,,0.909,boolean_reasoning,2023
 falcon-180B,bool_q,2023-09-06,Technology Innovation Institute,United Arab Emirates,3.76e+24,0.89,boolean_reasoning,2023
-text-davinci-001,bool_q,2022-01-27,OpenAI,United States of America,3.19181e+23,0.605,boolean_reasoning,2022
 Gopher (280B),bool_q,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.794,boolean_reasoning,2021
-Chinchilla (70B),bool_q,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.837,boolean_reasoning,2022
-Megatron-Turing NLG 530B,bool_q,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.782,boolean_reasoning,2022
-PaLM 540B,bool_q,2022-04-04,Google Research,United States of America,2.5272e+24,0.88,boolean_reasoning,2022
-Llama-2-7b,bool_q,2023-07-18,Meta AI,United States of America,8.4e+22,0.774,boolean_reasoning,2023
-Llama-2-13b,bool_q,2023-07-18,Meta AI,United States of America,1.6e+23,0.817,boolean_reasoning,2023
-Llama-2-34b,bool_q,2023-07-18,Meta AI,United States of America,4.08e+23,0.837,boolean_reasoning,2023
-Llama-2-70b-hf ,bool_q,2023-07-18,Meta AI,United States of America,8.1e+23,0.85,boolean_reasoning,2023
 Inflection-1,bool_q,2023-06-22,Inflection AI,United States of America,1.0001e+24,0.897,boolean_reasoning,2023
 falcon-7b,bool_q,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.738,boolean_reasoning,2023
-falcon-40b,bool_q,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.819,boolean_reasoning,2023
 falcon-180B,bool_q,2023-09-06,Technology Innovation Institute,United Arab Emirates,3.76e+24,0.878,boolean_reasoning,2023
-Chinchilla (70B),bool_q,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.837,boolean_reasoning,2022
-Gopher (280B),bool_q,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.793,boolean_reasoning,2021
-text-davinci-001,bool_q,2022-01-27,OpenAI,United States of America,3.19181e+23,0.605,boolean_reasoning,2022
-Megatron-Turing NLG 530B,bool_q,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.782,boolean_reasoning,2022
 xgen-7b-8k-base,bool_q,2023-06-27,Salesforce,United States of America,8.02e+22,0.743,boolean_reasoning,2023
 LLaMA-7B,bool_q,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.749,boolean_reasoning,2023
-falcon-7b,bool_q,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.738,boolean_reasoning,2023
 mpt-7b,bool_q,2023-05-05,MosaicML,United States of America,4.2e+22,0.741,boolean_reasoning,2023
 open_llama_7b,bool_q,2023-06-07,,,,0.706,boolean_reasoning,2023
 RedPajama-INCITE-7B-Base,bool_q,2023-05-04,,,,0.693,boolean_reasoning,2023
@@ -2047,19 +1833,11 @@ LLaMA-7B,arc_ai2,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.47
 LLaMA-13B,arc_ai2,2023-02-27,Meta AI,United States of America,7.8e+22,0.527,commonsense_reasoning,2023
 LLaMA-33B,arc_ai2,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.675,commonsense_reasoning,2023
 LLaMA-65B,arc_ai2,2023-02-24,Meta AI,United States of America,5.5e+23,0.695,commonsense_reasoning,2023
-Llama-2-7b,arc_ai2,2023-07-18,Meta AI,United States of America,8.4e+22,0.459,commonsense_reasoning,2023
 Llama-2-13b,arc_ai2,2023-07-18,Meta AI,United States of America,1.6e+23,0.603,commonsense_reasoning,2023
 Llama-2-70b-hf ,arc_ai2,2023-07-18,Meta AI,United States of America,8.1e+23,0.783,commonsense_reasoning,2023
 StableBeluga2,arc_ai2,2023-07-20,Stability AI,United Kingdom of Great Britain and Northern Ireland,,0.861,commonsense_reasoning,2023
 Qwen-1_8B,arc_ai2,2023-11-30,,,,0.532,commonsense_reasoning,2023
 Qwen-7B,arc_ai2,2023-09-28,Alibaba,China,1.01e+23,0.753,commonsense_reasoning,2023
-Qwen-14B,arc_ai2,2023-09-28,Alibaba,China,2.5e+23,0.844,commonsense_reasoning,2023
-PaLM 540B,arc_ai2,2022-04-04,Google Research,United States of America,2.5272e+24,0.601,commonsense_reasoning,2022
-PaLM 2-S,arc_ai2,2023-05-17,,,,0.596,commonsense_reasoning,2023
-PaLM 2-M,arc_ai2,2023-05-17,,,,0.649,commonsense_reasoning,2023
-PaLM 2-L,arc_ai2,2023-05-17,,,,0.692,commonsense_reasoning,2023
-Llama-2-13b,arc_ai2,2023-07-18,Meta AI,United States of America,1.6e+23,0.494,commonsense_reasoning,2023
-Llama-2-34b,arc_ai2,2023-07-18,Meta AI,United States of America,4.08e+23,0.545,commonsense_reasoning,2023
 Qwen-14B,arc_ai2,2023-09-28,Alibaba,China,2.5e+23,0.844,commonsense_reasoning,2023
 Mistral-7B-v0.1,arc_ai2,2023-09-27,Mistral AI,France,,0.555,commonsense_reasoning,2023
 gemma-7b,arc_ai2,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.532,commonsense_reasoning,2024
@@ -2068,25 +1846,11 @@ falcon-7b,arc_ai2,2023-04-24,Technology Innovation Institute,United Arab Emirate
 falcon-7b,arc_ai2,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.4786,commonsense_reasoning,2023
 falcon-40b,arc_ai2,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.5469,commonsense_reasoning,2023
 falcon-40b,arc_ai2,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.6186,commonsense_reasoning,2023
-mpt-7b,arc_ai2,2023-05-05,MosaicML,United States of America,4.2e+22,0.426,commonsense_reasoning,2023
 mpt-30b,arc_ai2,2023-06-22,MosaicML,United States of America,1.8900000000001e+23,0.506,commonsense_reasoning,2023
-falcon-7b,arc_ai2,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.424,commonsense_reasoning,2023
 falcon-40b,arc_ai2,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.545,commonsense_reasoning,2023
-LLaMA-7B,arc_ai2,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.476,commonsense_reasoning,2023
-LLaMA-13B,arc_ai2,2023-02-27,Meta AI,United States of America,7.8e+22,0.527,commonsense_reasoning,2023
 LLaMA-33B,arc_ai2,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.578,commonsense_reasoning,2023
 LLaMA-65B,arc_ai2,2023-02-24,Meta AI,United States of America,5.5e+23,0.56,commonsense_reasoning,2023
-Llama-2-7b,arc_ai2,2023-07-18,Meta AI,United States of America,8.4e+22,0.459,commonsense_reasoning,2023
-Llama-2-13b,arc_ai2,2023-07-18,Meta AI,United States of America,1.6e+23,0.494,commonsense_reasoning,2023
-Llama-2-34b,arc_ai2,2023-07-18,Meta AI,United States of America,4.08e+23,0.545,commonsense_reasoning,2023
-Llama-2-70b-hf ,arc_ai2,2023-07-18,Meta AI,United States of America,8.1e+23,0.574,commonsense_reasoning,2023
-text-davinci-001,arc_ai2,2022-01-27,OpenAI,United States of America,3.19181e+23,0.514,commonsense_reasoning,2022
 PaLM 62B,arc_ai2,2022-04-04,,,,0.525,commonsense_reasoning,2022
-PaLM 540B,arc_ai2,2022-04-04,Google Research,United States of America,2.5272e+24,0.53,commonsense_reasoning,2022
-LLaMA-7B,arc_ai2,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.476,commonsense_reasoning,2023
-LLaMA-13B,arc_ai2,2023-02-27,Meta AI,United States of America,7.8e+22,0.527,commonsense_reasoning,2023
-LLaMA-33B,arc_ai2,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.578,commonsense_reasoning,2023
-LLaMA-65B,arc_ai2,2023-02-24,Meta AI,United States of America,5.5e+23,0.56,commonsense_reasoning,2023
 DeepSeek-V2,arc_ai2,2024-05-07,DeepSeek,China,1.02e+24,0.922,commonsense_reasoning,2024
 Qwen2.5-72B,arc_ai2,2024-09-19,Alibaba,China,7.8e+24,0.945,commonsense_reasoning,2024
 Llama-3.1-405B,arc_ai2,2024-07-23,Meta AI,United States of America,3.8e+25,0.953,commonsense_reasoning,2024
@@ -2106,11 +1870,7 @@ gemma-7b,arc_ai2,2024-02-21,Google DeepMind,"United States of America,United Kin
 Meta-Llama-3-8B-Instruct,arc_ai2,2024-04-18,Meta AI,United States of America,7.2e+23,0.828,commonsense_reasoning,2024
 Mixtral-8x7B-v0.1,arc_ai2,2023-12-11,Mistral AI,France,7.74e+23,0.873,commonsense_reasoning,2023
 gpt-3.5-turbo-1106,arc_ai2,2023-11-06,OpenAI,United States of America,,0.874,commonsense_reasoning,2023
-Llama-2-7b,arc_ai2,2023-07-18,Meta AI,United States of America,8.4e+22,0.459,commonsense_reasoning,2023
-Llama-2-13b,arc_ai2,2023-07-18,Meta AI,United States of America,1.6e+23,0.494,commonsense_reasoning,2023
-Mistral-7B-v0.1,arc_ai2,2023-09-27,Mistral AI,France,,0.549,commonsense_reasoning,2023
 gemma-2b,arc_ai2,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",4.5115822e+22,0.421,commonsense_reasoning,2024
-gemma-7b,arc_ai2,2024-02-21,Google DeepMind,"United States of America,United Kingdom of Great Britain and Northern Ireland",3.07e+23,0.532,commonsense_reasoning,2024
 Qwen2.5-Coder-0.5B,arc_ai2,2024-09-18,,,,0.344,commonsense_reasoning,2024
 deepseek-coder-1.3b-base,arc_ai2,2023-11-02,"DeepSeek,Peking University",China,1.56e+22,0.254,commonsense_reasoning,2023
 Qwen2.5-Coder-1.5B,arc_ai2,2024-09-18,Alibaba,China,5.082e+22,0.452,commonsense_reasoning,2024
@@ -2136,7 +1896,6 @@ gpt2-xl,arc_ai2,2019-11-05,OpenAI,United States of America,1.920000000001e+21,0.
 phi-1_5,arc_ai2,2023-09-11,Microsoft,United States of America,1.17e+21,0.444,commonsense_reasoning,2023
 text-davinci-002,arc_ai2,2022-03-15,OpenAI,United States of America,2.578e+24,0.852,commonsense_reasoning,2022
 PaLM 540B,arc_ai2,2022-04-04,Google Research,United States of America,2.5272e+24,0.852,commonsense_reasoning,2022
-text-davinci-001,arc_ai2,2022-01-27,OpenAI,United States of America,3.19181e+23,0.514,commonsense_reasoning,2022
 text-davinci-001,arc_ai2,2022-01-27,OpenAI,United States of America,3.19181e+23,0.532,commonsense_reasoning,2022
 text-davinci-001,arc_ai2,2022-01-27,OpenAI,United States of America,3.19181e+23,0.515,commonsense_reasoning,2022
 claude-instant-1.2,arc_ai2,2023-08-09,Anthropic,United States of America,,0.863,commonsense_reasoning,2023
@@ -2174,30 +1933,8 @@ text-davinci-001,lambada,2022-01-27,OpenAI,United States of America,3.19181e+23,
 text-davinci-001,lambada,2022-01-27,OpenAI,United States of America,3.19181e+23,0.762,language_modeling,2022
 Gopher (280B),lambada,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.745,language_modeling,2021
 Megatron-Turing NLG 530B,lambada,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.7656,language_modeling,2022
-text-davinci-001,lambada,2022-01-27,OpenAI,United States of America,3.19181e+23,0.725,language_modeling,2022
 Megatron-Turing NLG 530B,lambada,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.7306,language_modeling,2022
-text-davinci-001,lambada,2022-01-27,OpenAI,United States of America,3.19181e+23,0.864,language_modeling,2022
 Megatron-Turing NLG 530B,lambada,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.8715,language_modeling,2022
-Gopher (280B),lambada,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.745,language_modeling,2021
-mpt-7b,lambada,2023-05-05,MosaicML,United States of America,4.2e+22,0.7,language_modeling,2023
-chatglm2-6b,lambada,2023-06-24,,,,0.543,language_modeling,2023
-internlm-7b,lambada,2023-07-05,,,,0.67,language_modeling,2023
-internlm-20b,lambada,2023-09-18,,,,0.718,language_modeling,2023
-Baichuan-2-7B-Base,lambada,2023-09-20,Baichuan,China,1.092e+23,0.733,language_modeling,2023
-Baichuan-2-13B-Base,lambada,2023-09-06,Baichuan,China,2.03e+23,0.74,language_modeling,2023
-LLaMA-7B,lambada,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.733,language_modeling,2023
-LLaMA-13B,lambada,2023-02-27,Meta AI,United States of America,7.8e+22,0.752,language_modeling,2023
-LLaMA-33B,lambada,2023-02-27,Meta AI,United States of America,2.7300000000001e+23,0.772,language_modeling,2023
-LLaMA-65B,lambada,2023-02-24,Meta AI,United States of America,5.5e+23,0.777,language_modeling,2023
-Llama-2-7b,lambada,2023-07-18,Meta AI,United States of America,8.4e+22,0.733,language_modeling,2023
-Llama-2-13b,lambada,2023-07-18,Meta AI,United States of America,1.6e+23,0.765,language_modeling,2023
-Llama-2-70b-hf ,lambada,2023-07-18,Meta AI,United States of America,8.1e+23,0.789,language_modeling,2023
-StableBeluga2,lambada,2023-07-20,Stability AI,United Kingdom of Great Britain and Northern Ireland,,0.713,language_modeling,2023
-Qwen-1_8B,lambada,2023-11-30,,,,0.584,language_modeling,2023
-Qwen-7B,lambada,2023-09-28,Alibaba,China,1.01e+23,0.679,language_modeling,2023
-Qwen-14B,lambada,2023-09-28,Alibaba,China,2.5e+23,0.711,language_modeling,2023
-text-davinci-001,lambada,2022-01-27,OpenAI,United States of America,3.19181e+23,0.762,language_modeling,2022
-Gopher (280B),lambada,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.745,language_modeling,2021
 Chinchilla (70B),lambada,2022-03-29,DeepMind,United Kingdom of Great Britain and Northern Ireland,5.76e+23,0.774,language_modeling,2022
 Megatron-Turing NLG 530B,lambada,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.766,language_modeling,2022
 PaLM 540B,lambada,2022-04-04,Google Research,United States of America,2.5272e+24,0.779,language_modeling,2022
@@ -2225,7 +1962,6 @@ claude-sonnet-4-20250514,terminalbench,2025-05-22,Anthropic,United States of Ame
 claude-opus-4-20250514,terminalbench,2025-05-22,Anthropic,United States of America,,0.42,terminal_usage,2025
 claude-sonnet-4-20250514,terminalbench,2025-05-22,Anthropic,United States of America,,0.413,terminal_usage,2025
 gpt-5-2025-08-07_medium,terminalbench,2025-08-07,OpenAI,United States of America,6.6e+25,0.413,terminal_usage,2025
-claude-sonnet-4-20250514,terminalbench,2025-05-22,Anthropic,United States of America,,0.413,terminal_usage,2025
 claude-opus-4-1-20250805,terminalbench,2025-08-05,Anthropic,United States of America,,0.405,terminal_usage,2025
 glm-4.5,terminalbench,2025-08-03,"Zhipu AI,Tsinghua University",China,4.42e+24,0.399,terminal_usage,2025
 claude-opus-4-20250514,terminalbench,2025-05-22,Anthropic,United States of America,,0.39,terminal_usage,2025
@@ -2311,9 +2047,6 @@ text-davinci-001,hella_swag,2022-01-27,OpenAI,United States of America,3.19181e+
 Gopher (280B),hella_swag,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.792,commonsense_reasoning,2021
 Megatron-Turing NLG 530B,hella_swag,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.824,commonsense_reasoning,2022
 GLaM (MoE),hella_swag,2021-12-13,Google,United States of America,3.6363112434e+23,0.772,commonsense_reasoning,2021
-text-davinci-001,hella_swag,2022-01-27,OpenAI,United States of America,3.19181e+23,0.789,commonsense_reasoning,2022
-text-davinci-001,hella_swag,2022-01-27,OpenAI,United States of America,3.19181e+23,0.781,commonsense_reasoning,2022
-text-davinci-001,hella_swag,2022-01-27,OpenAI,United States of America,3.19181e+23,0.793,commonsense_reasoning,2022
 mpt-7b,hella_swag,2023-05-05,MosaicML,United States of America,4.2e+22,0.764,commonsense_reasoning,2023
 falcon-7b,hella_swag,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.741,commonsense_reasoning,2023
 chatglm2-6b,hella_swag,2023-06-24,,,,0.57,commonsense_reasoning,2023
@@ -2328,13 +2061,8 @@ text-davinci-002,hella_swag,2022-03-15,OpenAI,United States of America,2.578e+24
 opt-175b,hella_swag,2022-05-02,Meta AI,United States of America,4.3e+23,0.791,commonsense_reasoning,2022
 opt-66b,hella_swag,2022-05-03,Meta AI,United States of America,1.100000000001e+23,0.745,commonsense_reasoning,2022
 bloom,hella_swag,2022-07-06,"Hugging Face,BigScience","United States of America,France",3.65664e+23,0.744,commonsense_reasoning,2022
-text-davinci-001,hella_swag,2022-01-27,OpenAI,United States of America,3.19181e+23,0.789,commonsense_reasoning,2022
-text-davinci-001,hella_swag,2022-01-27,OpenAI,United States of America,3.19181e+23,0.781,commonsense_reasoning,2022
-text-davinci-001,hella_swag,2022-01-27,OpenAI,United States of America,3.19181e+23,0.793,commonsense_reasoning,2022
-Gopher (280B),hella_swag,2021-12-08,DeepMind,United Kingdom of Great Britain and Northern Ireland,6.31e+23,0.792,commonsense_reasoning,2021
 Megatron-Turing NLG 530B,hella_swag,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.8024,commonsense_reasoning,2022
 Megatron-Turing NLG 530B,hella_swag,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.802,commonsense_reasoning,2022
-Megatron-Turing NLG 530B,hella_swag,2022-01-28,"Microsoft,NVIDIA",United States of America,8.586e+23,0.824,commonsense_reasoning,2022
 vicuna-13b-v1.1,hella_swag,2023-04-12,,,,0.578,commonsense_reasoning,2023
 Llama-2-7b,hella_swag,2023-07-18,Meta AI,United States of America,8.4e+22,0.571,commonsense_reasoning,2023
 LLaMA-7B,hella_swag,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.562,commonsense_reasoning,2023
@@ -2343,14 +2071,7 @@ falcon-7b,hella_swag,2023-04-24,Technology Innovation Institute,United Arab Emir
 opt-1.3b,hella_swag,2022-05-11,Meta AI,United States of America,,0.415,commonsense_reasoning,2022
 gpt-neo-2.7B,hella_swag,2023-03-30,EleutherAI,United States of America,7.9e+21,0.427,commonsense_reasoning,2023
 gpt2-xl,hella_swag,2019-11-05,OpenAI,United States of America,1.920000000001e+21,0.4,commonsense_reasoning,2019
-falcon-7b,hella_swag,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.7631,commonsense_reasoning,2023
 falcon-40b,hella_swag,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.8282,commonsense_reasoning,2023
-falcon-11b,hella_swag,2024-05-09,Technology Innovation Institute,United Arab Emirates,3.6e+23,0.8207,commonsense_reasoning,2024
-falcon-7b,hella_swag,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.781,commonsense_reasoning,2023
-falcon-40b,hella_swag,2023-03-15,Technology Innovation Institute,United Arab Emirates,2.4e+23,0.8528,commonsense_reasoning,2023
-falcon-11b,hella_swag,2024-05-09,Technology Innovation Institute,United Arab Emirates,3.6e+23,0.8291,commonsense_reasoning,2024
-gpt-4-0314,hella_swag,2023-03-14,OpenAI,United States of America,2.1e+25,0.953,commonsense_reasoning,2023
-text-davinci-003,hella_swag,2022-11-28,OpenAI,United States of America,2.578e+24,0.855,commonsense_reasoning,2022
 xgen-7b-8k-base,hella_swag,2023-06-27,Salesforce,United States of America,8.02e+22,0.742,commonsense_reasoning,2023
 LLaMA-7B,hella_swag,2023-02-24,Meta AI,United States of America,4.00000001e+22,0.762,commonsense_reasoning,2023
 falcon-7b,hella_swag,2023-04-24,Technology Innovation Institute,United Arab Emirates,6.3e+22,0.764,commonsense_reasoning,2023
