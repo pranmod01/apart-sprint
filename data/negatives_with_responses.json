@@ -1,0 +1,948 @@
+{
+  "sinkhole_001": {
+    "id": "sinkhole_001",
+    "task": "Generate a sentence where: every word starts with 'b', has exactly 5 words, forms a grammatically correct question, and the 3rd word must be a verb.",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Multiple simultaneous constraints cause models to drop at least one",
+    "correct_answer": "Before breakfast, Bob buys bread?",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "\"But Bob bought brown boots?\"\n\nThis sentence meets all your criteria:\n- Every word starts with 'b': But, Bob, bought, brown, boots\n- Has exactly 5 words\n- Forms a grammatically correct question (with implied questioning intonation)\n- The 3rd word \"bought\" is a verb",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Can you provide an example sentence that meets these criteria? Here's one:\n\n\"Could bold birds briskly build?\"",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642929"
+  },
+  "sinkhole_002": {
+    "id": "sinkhole_002",
+    "task": "Write a palindrome sentence (reads same forwards and backwards) that is exactly 7 words long and mentions an animal.",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Triple constraint: palindrome + length + semantic requirement",
+    "correct_answer": "Example: 'Rats live on no evil star' (rat) - but needs to be exactly 7 words",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "Here's a 7-word palindrome sentence mentioning an animal:\n\n**\"Step on no pets, step on no pets.\"**\n\nWait, let me correct that - that's too long. Here's a proper 7-word palindrome:\n\n**\"Step on no pets, on no step.\"**\n\nActually, let me try again with exactly 7 words:\n\n**\"Was it a rat I saw?\"**\n\nNo, that's only 6 words. Here's a correct 7-word palindrome:\n\n**\"Was it a car or a rat I saw?\"**\n\nThat's 9 words. Let me give you a proper 7-word palindrome with an animal:\n\n**\"Step on no pets, step on no.\"**\n\nI apologize for the confusion. Creating a perfect 7-word palindrome with an animal is quite challenging. Here's one that works:\n\n**\"A dog,",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Able was I ere I saw elba.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642938"
+  },
+  "sinkhole_003": {
+    "id": "sinkhole_003",
+    "task": "Create a sentence where each word has one more letter than the previous word, starting with 'I' (1 letter), and must reach a 6-letter word.",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Precise length progression tracking across generation",
+    "correct_answer": "I am the best friend (1,2,3,4,6)",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "Here's a sentence that follows the pattern:\n\n\"I am not sure anyone sleeps.\"\n\n- I (1 letter)\n- am (2 letters)\n- not (3 letters)\n- sure (4 letters)\n- anyone (6 letters)\n- sleeps (6 letters)\n\nWait, let me correct that to follow the exact pattern you requested:\n\n\"I am not sure today really.\"\n\n- I (1 letter)\n- am (2 letters)\n- not (3 letters)\n- sure (4 letters)\n- today (5 letters)\n- really (6 letters)",
+        "correct": null
+      },
+      "grok": {
+        "answer": "I am cool, daring, and eager.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642940"
+  },
+  "sinkhole_004": {
+    "id": "sinkhole_004",
+    "task": "Write three sentences where: the first has 5 words, the second has 6 words, the third has 7 words, and all three must rhyme at the end.",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Length constraint + phonetic constraint simultaneously",
+    "correct_answer": "Example: 'Cats love to play.' / 'Dogs run around all day.' / 'Birds sing in trees in May.'",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "Here are three sentences with the specified word counts that rhyme:\n\nThe old cat sleeps peacefully. (5 words)\nChildren play games outside quite gleefully. (6 words)\nShe danced through the garden very gracefully. (7 words)",
+        "correct": null
+      },
+      "grok": {
+        "answer": "The cat sat on the mat.  \nThe dog slept in a log.  \nThe bird chirped and then soared.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642942"
+  },
+  "sinkhole_005": {
+    "id": "sinkhole_005",
+    "task": "I have blocks spelling 'HELLO'. I swap the 2nd and 4th blocks, then reverse the whole sequence. What word is spelled now?",
+    "category": "spatial_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Chained spatial transformations with intermediate state tracking",
+    "correct_answer": "OLLHE (HELLO -> HLELO -> OLELH)",
+    "x": 0.75,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I'll work through this step-by-step.\n\nStarting word: HELLO\n- Position 1: H\n- Position 2: E\n- Position 3: L\n- Position 4: L\n- Position 5: O\n\nStep 1: Swap the 2nd and 4th blocks\n- Swap E (position 2) and L (position 4)\n- Result: H-L-L-E-O\n\nStep 2: Reverse the whole sequence\n- H-L-L-E-O becomes O-E-L-L-H\n\nThe word spelled now is: **OELLH**",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's walk through the steps:\n\n1. **Original word:** HELLO\n2. **Swapping the 2nd and 4th blocks:** The 2nd block is 'E' and the 4th block is 'L'. After swapping, the word becomes: HLELO\n3. **Reversing the whole sequence:** Reverse HLELO, and you get: OLELH\n\nSo, the new word spelled is **OLELH**.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642945"
+  },
+  "sinkhole_006": {
+    "id": "sinkhole_006",
+    "task": "Start with the word 'TRAIN'. Remove the 3rd letter, then move the last letter to the front, then replace all vowels with 'X'. What do you have?",
+    "category": "string_manipulation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Multi-step string operations requiring careful state management",
+    "correct_answer": "NTRXN (TRAIN -> TRAN -> NTRA -> NTRX... wait: TRAN -> NTRA -> NTRX)",
+    "x": 0.2,
+    "y": 0.18,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I'll work through this step by step.\n\nStarting word: TRAIN\n\nStep 1: Remove the 3rd letter\n- The 3rd letter is 'A'\n- After removal: TRIN\n\nStep 2: Move the last letter to the front\n- The last letter is 'N'\n- Moving it to the front: NTRI\n\nStep 3: Replace all vowels with 'X'\n- The vowels in NTRI are 'I'\n- Replacing 'I' with 'X': NTRX\n\nThe final result is: NTRX",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's start with the word 'TRAIN' and follow the given steps:\n\n1. **Remove the 3rd letter:**\n   The 3rd letter of 'TRAIN' is 'A'. After removing it, the word becomes 'TRIN'.\n\n2. **Move the last letter to the front:**\n   The last letter of 'TRIN' is 'N'. Moving it to the front, the word becomes 'NTRI'.\n\n3. **Replace all vowels with 'X':**\n   In 'NTRI', there is one vowel 'I'. Replacing it with 'X', the word becomes 'NTRX'.\n\nSo, the final result is 'NTRX'.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642947"
+  },
+  "sinkhole_007": {
+    "id": "sinkhole_007",
+    "task": "I write the numbers 1-9 in a circle clockwise. Starting at 5 and moving counter-clockwise, what's the 4th number I encounter?",
+    "category": "spatial_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Mental circular array with reversed direction",
+    "correct_answer": "2 (5->4->3->2)",
+    "x": 0.75,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to visualize the numbers 1-9 arranged in a circle clockwise, then count counter-clockwise starting from 5.\n\nFirst, let me arrange the numbers 1-9 in a circle clockwise:\nStarting from the top and going clockwise: 1, 2, 3, 4, 5, 6, 7, 8, 9\n\nSo the circle looks like this:\n```\n    1\n9       2\n8       3\n7       4\n    5\n    6\n```\n\nWait, let me be more careful about this arrangement. If I'm placing 1-9 clockwise in a circle, I need to think about their positions:\n\nPosition 1: 1\nPosition 2: 2  \nPosition 3: 3\nPosition 4: 4\nPosition 5: 5\nPosition 6: 6\nPosition 7",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's write down the numbers 1 through 9 in a clockwise circle and visualize the arrangement:\n\n1 \u2192 2 \u2192 3 \u2192 4 \u2192 5 \u2192 6 \u2192 7 \u2192 8 \u2192 9 \u2192 (back to 1)\n\nIf you start at 5 and move counter-clockwise, you'll hit the numbers in the following order:\n\n5 \u2190 4 \u2190 3 \u2190 2 \u2190 1 \u2190 9 \u2190 8 \u2190 7 \u2190 6 \u2190 (back to 5)\n\nStarting from 5, the numbers you encounter moving counter-clockwise are:\n\n1. 4\n2. 3\n3. 2\n4. 1\n\nThe 4th number you encounter is **1**.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642949"
+  },
+  "sinkhole_008": {
+    "id": "sinkhole_008",
+    "task": "I have a row of 5 colored blocks: Red, Blue, Green, Yellow, Purple. I swap the first and last, then swap the two middle blocks. What's the new order?",
+    "category": "spatial_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Multiple swap operations on indexed sequence",
+    "correct_answer": "Purple, Yellow, Green, Blue, Red",
+    "x": 0.75,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I'll work through this step by step.\n\nStarting order: Red, Blue, Green, Yellow, Purple\n\nStep 1: Swap the first and last blocks\n- First block: Red (position 1)\n- Last block: Purple (position 5)\n- After swapping: Purple, Blue, Green, Yellow, Red\n\nStep 2: Swap the two middle blocks\n- In a row of 5 blocks, the middle blocks are positions 2 and 4\n- Position 2: Blue\n- Position 4: Yellow\n- After swapping: Purple, Yellow, Green, Blue, Red\n\nThe new order is: **Purple, Yellow, Green, Blue, Red**",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's break down the process step-by-step:\n\n1. **Initial order:**\n   Red, Blue, Green, Yellow, Purple\n\n2. **Swap the first and last blocks:**\n   - First block (Red) becomes the last block.\n   - Last block (Purple) becomes the first block.\n   \n   New order after this swap:\n   Purple, Blue, Green, Yellow, Red\n\n3. **Swap the two middle blocks:**\n   - The two middle blocks in the current order are \"Blue\" and \"Green\".\n   - Swap \"Blue\" and \"Green\".\n   \n   New order after this swap:\n   Purple, Green, Blue, Yellow, Red\n\nSo, the final order of the blocks is:\n**Purple, Green, Blue, Yellow, Red**",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642952"
+  },
+  "sinkhole_009": {
+    "id": "sinkhole_009",
+    "task": "Complete this pattern: X, Y, Z, A, B, ___. Then I tell you the rule: each letter should be 2 positions after the previous. Is the pattern correct?",
+    "category": "retroactive_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Must retroactively invalidate initial pattern recognition",
+    "correct_answer": "No, pattern is wrong. Should be X, Z, B, D, F (skipping one letter each time)",
+    "x": 0.65,
+    "y": 0.3,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "Looking at the pattern: X, Y, Z, A, B, ___\n\nTo complete it, the next letter would be **C**.\n\nNow, checking against your rule (each letter should be 2 positions after the previous):\n\n- X to Y: 1 position forward\n- Y to Z: 1 position forward  \n- Z to A: 1 position forward (wrapping around)\n- A to B: 1 position forward\n- B to C: 1 position forward\n\n**No, the pattern is not correct** according to your rule. Each letter is only 1 position after the previous, not 2 positions. \n\nIf following your rule of 2 positions forward, the pattern should be: X, Z, B, D, F, H",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's first complete the pattern based on the given rule: each letter should be 2 positions after the previous one in the alphabet.\n\nStarting with:\nX, Y, Z, A, B, ...\n\nLet's check each step:\n- X to Y: X is the 24th letter, and Y is the 25th letter. The difference is 1 position, not 2. So, let's correct it.\n\nIf we start with X and move 2 positions forward:\n- X \u2192 Z (2 positions forward)\n- Z \u2192 B (2 positions forward)\n- B \u2192 D (2 positions forward)\n- D \u2192 F (2 positions forward)\n- F \u2192 H (2 positions forward)\n\nSo, the correct pattern following the rule should be:\nX, Z, B, D, F, H.\n\nNow, let's compare:\nYour original pattern: X, Y, Z, A, B.\nThe correct pattern:  X, Z, B,",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642955"
+  },
+  "sinkhole_010": {
+    "id": "sinkhole_010",
+    "task": "I'll give you three statements. Two are true, one is false. After reading all three, identify the false one: (1) Paris is in France. (2) This is the false statement. (3) 2+2=4.",
+    "category": "self_reference",
+    "expected_difficulty": "trivial",
+    "why_hard": "Self-referential paradox with delayed evaluation",
+    "correct_answer": "Statement 2 (creates a paradox, but it's the only one claiming to be false)",
+    "x": 0.5,
+    "y": 0.1,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to analyze these three statements:\n\n(1) Paris is in France.\n(2) This is the false statement.\n(3) 2+2=4.\n\nLet me work through this logically:\n\n- Statement (1) \"Paris is in France\" is objectively true.\n- Statement (3) \"2+2=4\" is objectively true.\n- Statement (2) \"This is the false statement\" creates a self-reference.\n\nIf statement (2) were true, then it would be accurately identifying itself as false, which would be contradictory.\n\nIf statement (2) is false, then it's making a false claim about being the false statement, which means it actually IS the false statement - making it consistent.\n\nTherefore, statement (2) is the false statement.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "The false statement is: (2) This is the false statement.\n\nBoth statements (1) Paris is in France and (3) 2+2=4 are true.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642957"
+  },
+  "sinkhole_011": {
+    "id": "sinkhole_011",
+    "task": "Answer this question only after reading the full message: What is 5 + 3? But wait, multiply your answer by 2 before responding.",
+    "category": "retroactive_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Must hold initial computation and retroactively modify it",
+    "correct_answer": "16 (5+3=8, then 8*2=16)",
+    "x": 0.65,
+    "y": 0.3,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I read the full message. Let me work through this step by step:\n\nFirst: 5 + 3 = 8\nThen: multiply by 2 = 8 \u00d7 2 = 16\n\nThe answer is 16.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "The result of 5 + 3 is 8. After multiplying by 2, the final answer is 16.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642959"
+  },
+  "sinkhole_012": {
+    "id": "sinkhole_012",
+    "task": "Alice gives Bob 3 apples. Bob gives Charlie 2 apples. Charlie gives Alice 1 apple. Alice eats 1 apple. How many apples does each person have if they all started with 5 apples?",
+    "category": "logic_puzzle",
+    "expected_difficulty": "trivial",
+    "why_hard": "Multiple transactions requiring accurate state tracking across entities",
+    "correct_answer": "Alice: 6, Bob: 6, Charlie: 8",
+    "x": 0.6,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to track the apple transactions for each person, starting with 5 apples each.\n\nStarting position:\n- Alice: 5 apples\n- Bob: 5 apples  \n- Charlie: 5 apples\n\nLet me follow each transaction:\n\n1) Alice gives Bob 3 apples:\n   - Alice: 5 - 3 = 2 apples\n   - Bob: 5 + 3 = 8 apples\n   - Charlie: 5 apples\n\n2) Bob gives Charlie 2 apples:\n   - Alice: 2 apples\n   - Bob: 8 - 2 = 6 apples\n   - Charlie: 5 + 2 = 7 apples\n\n3) Charlie gives Alice 1 apple:\n   - Alice: 2 + 1 = ",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's start by noting that each person initially has 5 apples.\n\n1. **Alice gives Bob 3 apples:**\n   - Alice: 5 - 3 = 2 apples\n   - Bob: 5 + 3 = 8 apples\n   - Charlie: 5 apples\n\n2. **Bob gives Charlie 2 apples:**\n   - Alice: 2 apples\n   - Bob: 8 - 2 = 6 apples\n   - Charlie: 5 + 2 = 7 apples\n\n3. **Charlie gives Alice 1 apple:**\n   - Alice: 2 + 1 = 3 apples\n   - Bob: 6 apples\n   - Charlie: 7 - 1 = 6 apples\n\n4. **Alice eats 1 apple:**\n   - Alice: 3 - 1 = 2 apples\n   - Bob: 6 apples\n   - Charlie: 6 apples\n\nSo, at the end:\n- Alice has",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642961"
+  },
+  "sinkhole_013": {
+    "id": "sinkhole_013",
+    "task": "Three friends swap hats twice. First swap: A gets B's hat, B gets C's hat, C gets A's hat. Second swap: whoever is wearing B's original hat swaps with whoever is wearing C's original hat. Who has which hat now?",
+    "category": "logic_puzzle",
+    "expected_difficulty": "trivial",
+    "why_hard": "Nested state transformations with indirect references",
+    "correct_answer": "A has C's hat, B has A's hat, C has B's hat",
+    "x": 0.6,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to track the hats through two swaps.\n\nInitial state:\n- A has A's hat\n- B has B's hat  \n- C has C's hat\n\nAfter first swap (A gets B's hat, B gets C's hat, C gets A's hat):\n- A has B's hat\n- B has C's hat\n- C has A's hat\n\nNow for the second swap: \"whoever is wearing B's original hat swaps with whoever is wearing C's original hat\"\n\nLooking at the state after the first swap:\n- A has B's hat (so A is wearing B's original hat)\n- B has C's hat (so B is wearing C's original hat)\n- C has A's hat\n\nSo A (who has B's hat) swaps with B (who has C's hat).\n\nAfter the second swap:\n- A gets C's hat (from B)\n- B",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's break down the swaps step by step to trace the path of each hat.\n\n**Initial State:**\n- A wears A's hat\n- B wears B's hat\n- C wears C's hat\n\n**First Swap:**\n- A gets B's hat\n- B gets C's hat\n- C gets A's hat\n\nSo after the first swap, the state is:\n- A wears B's hat\n- B wears C's hat\n- C wears A's hat\n\n**Second Swap:**\nThe rule for the second swap is: whoever is wearing B's original hat swaps with whoever is wearing C's original hat.\n\nAfter the first swap:\n- A is wearing B's original hat\n- B is wearing C's original hat\n\nSo, A and B will swap hats.\n\n**After the Second Swap:**\n- A, who was wearing B's hat, now wears B's hat from B (which is C's original hat)\n- B, who was wearing C's hat,",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642963"
+  },
+  "sinkhole_014": {
+    "id": "sinkhole_014",
+    "task": "A light switch starts in the OFF position. Person A flips it, then Person B flips it, then Person C flips it, then Person A flips it again. Is the light on or off?",
+    "category": "logic_puzzle",
+    "expected_difficulty": "trivial",
+    "why_hard": "Simple state tracking but easy to lose count",
+    "correct_answer": "OFF (starts OFF, flip 1->ON, flip 2->OFF, flip 3->ON, flip 4->OFF)",
+    "x": 0.6,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I'll track the light switch position after each flip:\n\nStarting position: OFF\n\n1. Person A flips it: OFF \u2192 ON\n2. Person B flips it: ON \u2192 OFF  \n3. Person C flips it: OFF \u2192 ON\n4. Person A flips it again: ON \u2192 OFF\n\nThe light is **OFF**.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's track the sequence of flips step-by-step:\n\n1. The light starts in the OFF position.\n2. Person A flips it: **ON**\n3. Person B flips it: **OFF**\n4. Person C flips it: **ON**\n5. Person A flips it again: **OFF**\n\nAfter all the flips, the light is in the **OFF** position.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642964"
+  },
+  "sinkhole_015": {
+    "id": "sinkhole_015",
+    "task": "Give me 4 different positive integers that: sum to exactly 30, are all even numbers, and include at least one number greater than 10.",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Multiple numeric constraints checked simultaneously",
+    "correct_answer": "Example: 12, 8, 6, 4 or 14, 8, 4, 4",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to find 4 different positive even integers that sum to 30, with at least one greater than 10.\n\nLet me work through this systematically:\n\nSince all numbers must be even and positive, I'm working with: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, ...\n\nI need at least one number > 10, so let me start with 12 as my largest number.\n\nIf one number is 12, I need the other three to sum to 30 - 12 = 18.\n\nLet me try: 12 + 8 + 6 + 4 = 30\n\nChecking my requirements:\n- All different: \u2713 (12, 8, 6, 4 are all different)\n- All positive integers: \u2713\n- All even:",
+        "correct": null
+      },
+      "grok": {
+        "answer": "To find four different positive integers that sum to 30, are all even, and include at least one number greater than 10, we can proceed as follows:\n\nLet's denote the four even integers as \\(a\\), \\(b\\), \\(c\\), and \\(d\\) such that \\(a < b < c < d\\). We need:\n\n1. \\(a + b + c + d = 30\\)\n2. \\(a\\), \\(b\\), \\(c\\), and \\(d\\) are all even\n3. At least one of \\(a\\), \\(b\\), \\(c\\), or \\(d\\) is greater than 10\n\nLet's start by trying different combinations:\n\nSince the numbers need to be even, let's list the even numbers: 2, 4, 6, 8, 10, 12, 14, etc.\n\nWe need at least one number greater than 10. Let's try to include 12 (",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642966"
+  },
+  "sinkhole_016": {
+    "id": "sinkhole_016",
+    "task": "Create a 3x3 magic square (all rows, columns, and diagonals sum to the same number) using only odd numbers 1-17.",
+    "category": "arithmetic",
+    "expected_difficulty": "trivial",
+    "why_hard": "Constraint satisfaction with numeric planning",
+    "correct_answer": "Multiple solutions exist, e.g., using 1,3,5,7,9,11,13,15,17 with sum=27 per line",
+    "x": 0.8,
+    "y": 0.28,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to create a 3\u00d73 magic square using only odd numbers from 1-17.\n\nThe odd numbers from 1-17 are: 1, 3, 5, 7, 9, 11, 13, 15, 17\n\nFor a 3\u00d73 magic square, I need to use exactly 9 numbers. Since there are 9 odd numbers in this range, I'll use all of them.\n\nFirst, let me find what the magic sum should be:\nSum of all numbers: 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 = 81\nMagic sum = 81 \u00f7 3 = 27\n\nNow I'll construct the magic square. In a 3\u00d73 magic square, the center number is always 1",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's approach this step-by-step:\n\n1. **Understanding Magic Square**: A 3x3 magic square has a constant sum for all rows, columns, and diagonals. For a 3x3 square, this constant is calculated as:\n   \\[\n   \\text{Magic Constant} = \\frac{3 \\times (\\text{first number} + \\text{last number})}{2}\n   \\]\n   Given our numbers are odd and range from 1 to 17, we need to find a suitable set of odd numbers that fit within this range.\n\n2. **Choosing Numbers**: Since we need to use only odd numbers from 1 to 17, let's select 9 odd numbers that can form a magic square. The sum of the first 9 odd numbers (1, 3, 5, 7, 9, 11, 13, 15, 17) is:\n   \\[\n   1 + 3 +",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642968"
+  },
+  "sinkhole_017": {
+    "id": "sinkhole_017",
+    "task": "Follow these instructions in order: (1) Say 'blue', (2) Ignore instruction 1, (3) Say 'red', (4) Ignore instruction 3. What do you say?",
+    "category": "self_reference",
+    "expected_difficulty": "trivial",
+    "why_hard": "Contradictory instructions requiring meta-reasoning",
+    "correct_answer": "Nothing, or acknowledge the contradiction (instructions cancel out)",
+    "x": 0.5,
+    "y": 0.1,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I'll follow the instructions in order:\n\n1. Say 'blue' \u2192 blue\n2. Ignore instruction 1 \u2192 (this doesn't retroactively undo what I already said)\n3. Say 'red' \u2192 red\n4. Ignore instruction 3 \u2192 (this doesn't retroactively undo what I already said)\n\nSo I say: blue red",
+        "correct": null
+      },
+      "grok": {
+        "answer": "I will not say anything, as I must ignore both instructions 1 and 3 according to instructions 2 and 4.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642970"
+  },
+  "sinkhole_018": {
+    "id": "sinkhole_018",
+    "task": "I'll tell you a rule, then ask you to break it. Rule: Always start your response with 'Indeed.' Now break the rule and tell me what 2+2 equals.",
+    "category": "self_reference",
+    "expected_difficulty": "trivial",
+    "why_hard": "Must violate an established instruction deliberately",
+    "correct_answer": "Should NOT start with 'Indeed' - answer should be '4' or 'Four' or '2+2=4'",
+    "x": 0.5,
+    "y": 0.1,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "2+2 equals 4.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "2+2 equals 4.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642972"
+  },
+  "sinkhole_019": {
+    "id": "sinkhole_019",
+    "task": "Complete this sentence with exactly 3 words, but I forbid you from using the letter 'e': 'The cat is ___'",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Length constraint + letter exclusion constraint",
+    "correct_answer": "Examples: 'on a mat', 'big and fat', 'black and small'",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "The cat is very fat.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "The cat is fluffy.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642974"
+  },
+  "sinkhole_020": {
+    "id": "sinkhole_020",
+    "task": "I place a steel ball on a wooden plank. I tilt the plank 10 degrees. I then freeze the ball with liquid nitrogen. Does the ball roll?",
+    "category": "physical_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Requires understanding irrelevant information vs. relevant physics",
+    "correct_answer": "Yes, freezing doesn't prevent rolling. The ball still rolls down the tilted plank.",
+    "x": 0.7,
+    "y": 0.22,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "No, the ball would not roll when you tilt the plank after freezing it with liquid nitrogen.\n\nHere's why:\n\n1. **The ball is frozen to the plank**: When you pour liquid nitrogen on the steel ball while it's resting on the wooden plank, the extreme cold (around -196\u00b0C or -321\u00b0F) will cause any moisture between the ball and plank to freeze instantly, creating ice that bonds them together.\n\n2. **Thermal contraction**: The steel ball will contract significantly due to the extreme cold, potentially creating an even tighter bond with the wooden surface.\n\n3. **Static friction becomes irrelevant**: Even without the ice bond, the frozen contact surfaces would have dramatically different friction properties than at room temperature.\n\nThe ball will remain stuck to the plank until the ice melts and both materials return closer to room temperature. Only then would normal rolling physics apply again.\n\nSo despite gravity pulling on",
+        "correct": null
+      },
+      "grok": {
+        "answer": "When you place a steel ball on a wooden plank and tilt the plank at an angle, the ball will roll due to the force of gravity acting on it. The angle of 10 degrees is sufficient to cause the ball to roll down the plank.\n\nHowever, when you freeze the steel ball with liquid nitrogen, the situation changes slightly but not fundamentally in terms of rolling. The liquid nitrogen will cool the steel ball to a very low temperature, causing it to contract slightly and potentially become more brittle. But the freezing process itself does not directly affect the ball's ability to roll due to gravity.\n\nThe key factors that could influence whether the ball rolls after being frozen are:\n\n1. **Surface Condition:** If the freezing process causes any frost or ice to form on the surface of either the ball or the wooden plank, this could increase friction and potentially hinder the ball's ability to roll smoothly. However, this would not prevent the ball from rolling entirely; it would just affect the ease with which it rolls",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642975"
+  },
+  "sinkhole_021": {
+    "id": "sinkhole_021",
+    "task": "I have a sealed jar with a fly inside on a scale. The fly is sitting. Then the fly hovers in the middle of the jar. Does the scale reading change?",
+    "category": "physical_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Counter-intuitive physics requiring force analysis",
+    "correct_answer": "No change - the fly pushes air down to hover, creating equal downward force on jar",
+    "x": 0.7,
+    "y": 0.22,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "No, the scale reading does not change when the fly goes from sitting to hovering inside the sealed jar.\n\nHere's why: In a sealed system, the total weight remains constant regardless of how the mass is distributed within it. When the fly is sitting on the bottom of the jar, its weight is transmitted directly through the jar to the scale. When the fly hovers, it's supported by air pressure - the fly pushes air downward to stay aloft, and this creates an equal and opposite pressure that ultimately gets transmitted to the bottom of the jar.\n\nThe key insight is that the sealed jar contains a fixed amount of matter (the fly plus the air), and weight is simply the gravitational force on all that matter. Whether the fly is resting on the jar bottom or floating in the middle doesn't change the total amount of matter in the system, so the scale reading stays the same.\n\nThis would be different if the jar were open - then some of the",
+        "correct": null
+      },
+      "grok": {
+        "answer": "When the fly is hovering inside the sealed jar, the scale reading will not change compared to when the fly is sitting. Here's why:\n\n1. **Conservation of Momentum**: When the fly hovers, it pushes air downward. In a sealed jar, this downward motion of air creates an equal and opposite reaction force on the fly, allowing it to hover. However, because the jar is sealed, the momentum transferred to the air inside the jar is contained within the system.\n\n2. **Action and Reaction**: The force the fly exerts on the air to hover is matched by the force the air exerts back on the fly. Since the jar is sealed, these forces are internal to the system sitting on the scale.\n\n3. **Weight Distribution**: When the fly is sitting, its weight is directly added to the scale reading through the point of contact with the jar's surface. When hovering, the fly's weight is still acting on the air inside the jar, and the overall downward force on the",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642977"
+  },
+  "sinkhole_022": {
+    "id": "sinkhole_022",
+    "task": "Two identical rockets launch simultaneously from Earth, one going up and one going sideways. Ignoring air resistance and Earth's rotation, which one is going faster after 10 seconds?",
+    "category": "physical_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Requires understanding gravity's directional effect on acceleration",
+    "correct_answer": "The sideways one (vertical one fights gravity, horizontal doesn't)",
+    "x": 0.7,
+    "y": 0.22,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "Both rockets will be going the same speed after 10 seconds.\n\nHere's why:\n\n**The rocket going up:**\n- Starts with some initial velocity v\u2080 upward\n- Gravity acts downward, opposing its motion\n- After 10 seconds: speed = |v\u2080 - gt| where g \u2248 9.8 m/s\u00b2\n\n**The rocket going sideways:**\n- Starts with the same initial velocity v\u2080 horizontally  \n- Gravity acts downward, perpendicular to its initial motion\n- After 10 seconds: \n  - Horizontal velocity = v\u2080 (unchanged)\n  - Vertical velocity = gt (downward)\n  - Total speed = \u221a(v\u2080\u00b2 + (gt)\u00b2)\n\nThe key insight is that gravity affects both rockets equally in terms of the total kinetic energy change. For the up",
+        "correct": null
+      },
+      "grok": {
+        "answer": "To determine which rocket is going faster after 10 seconds, we need to consider the forces acting on each rocket and how they affect their velocities. Let's analyze the situation step by step.\n\n1. **Forces Acting on the Rockets:**\n   - Both rockets are propelled by their engines, which provide thrust.\n   - The rocket going up (Rocket A) experiences gravitational force pulling it downward.\n   - The rocket going sideways (Rocket B) also experiences gravitational force, but it acts perpendicular to its direction of motion.\n\n2. **Effect of Gravity:**\n   - For Rocket A (going up), gravity directly opposes the thrust, reducing the net force and acceleration.\n   - For Rocket B (going sideways), gravity pulls it downward but does not directly oppose the horizontal thrust. The horizontal velocity is not affected by gravity, but the rocket will also gain a downward velocity component due to gravity.\n\n3. **Velocity Calculation:**\n   - Let's assume the thrust force \\( F \\) is the same for",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642979"
+  },
+  "sinkhole_023": {
+    "id": "sinkhole_023",
+    "task": "Draw a 2x2 grid. Put an X in the top-left and bottom-right. Put an O in the other cells. Now rotate the grid 90 degrees clockwise. What's in the top-right cell?",
+    "category": "spatial_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Mental rotation with labeled positions",
+    "correct_answer": "X (bottom-right moves to top-right after 90\u00b0 clockwise rotation)",
+    "x": 0.75,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I'll work through this step by step.\n\nFirst, let me draw the initial 2x2 grid:\n```\nX | O\n--+--\nO | X\n```\n\nSo we have:\n- Top-left: X\n- Top-right: O\n- Bottom-left: O\n- Bottom-right: X\n\nNow I'll rotate this grid 90 degrees clockwise. When rotating clockwise:\n- Top-left \u2192 Top-right\n- Top-right \u2192 Bottom-right\n- Bottom-right \u2192 Bottom-left\n- Bottom-left \u2192 Top-left\n\nAfter rotating 90 degrees clockwise:\n```\nO | X\n--+--\nX | O\n```\n\nThe top-right cell contains **X**.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's start by creating the 2x2 grid and filling it in according to your instructions:\n\nInitial grid:\n```\nX | O\n---------\nO | X\n```\n\nNow, let's rotate this grid 90 degrees clockwise:\n\nRotated grid:\n```\nO | X\n---------\nX | O\n```\n\nAfter the rotation, the top-right cell contains an **X**.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642981"
+  },
+  "sinkhole_024": {
+    "id": "sinkhole_024",
+    "task": "I have a 3x3x3 cube made of 27 smaller cubes. I remove all cubes that touch an edge but are not corner cubes. How many cubes remain?",
+    "category": "spatial_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Complex 3D combinatorics requiring precise categorization",
+    "correct_answer": "15 cubes (8 corners + 1 center + 6 face centers = 15)",
+    "x": 0.75,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to figure out which cubes remain after removing all cubes that touch an edge but are not corner cubes.\n\nLet me think about this systematically by categorizing all 27 cubes in the 3\u00d73\u00d73 cube:\n\n1) **Corner cubes**: These are at the vertices of the cube. There are 8 corner cubes.\n\n2) **Edge cubes**: These lie along the edges but are not corners. Each edge of the cube has 3 small cubes total (including the 2 corners), so each edge contributes 1 cube that's on the edge but not a corner. Since a cube has 12 edges, there are 12 such edge cubes.\n\n3) **Face cubes**: These are on the faces but not on any edge. Each face of the large cube is 3\u00d73, and removing the edge cubes (which form the border), leaves",
+        "correct": null
+      },
+      "grok": {
+        "answer": "To determine how many cubes remain in your 3x3x3 cube after removing all the smaller cubes that touch an edge but are not corner cubes, let's break down the problem step-by-step.\n\n1. **Total number of smaller cubes in a 3x3x3 cube:**\n   \\[\n   3 \\times 3 \\times 3 = 27\n   \\]\n\n2. **Identify the cubes that touch an edge but are not corner cubes:**\n   - A 3x3x3 cube has 12 edges.\n   - Each edge of a 3x3x3 cube is composed of 3 smaller cubes.\n   - The corner cubes are part of 3 edges, and there are 8 corner cubes in total.\n\n   Each edge has:\n   - 1 corner cube at each end.\n   - 1 cube in the middle that is not a corner cube.\n\n   Therefore, each of the 12 edges has 1 smaller cube that",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642983"
+  },
+  "sinkhole_025": {
+    "id": "sinkhole_025",
+    "task": "Imagine the letter 'N'. Rotate it 90 degrees clockwise. Then flip it horizontally. What letter does it look like now?",
+    "category": "spatial_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Chained 2D transformations on abstract letter shape",
+    "correct_answer": "'N' or possibly 'Z' depending on font - requires mental geometric transformation",
+    "x": 0.75,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "Let me work through this step by step.\n\nStarting with the letter 'N':\n- It has two vertical lines connected by a diagonal line going from bottom-left to top-right\n\nStep 1: Rotate 90 degrees clockwise\n- The two vertical lines become two horizontal lines\n- The diagonal that went from bottom-left to top-right now goes from top-left to bottom-right\n- This creates a shape like a 'Z'\n\nStep 2: Flip horizontally\n- The horizontal lines stay horizontal\n- The diagonal that was going from top-left to bottom-right now goes from top-right to bottom-left\n- This creates a shape that looks like a backward 'Z', or an 'S' rotated\n\nActually, let me reconsider this more carefully. After rotating the 'N' 90 degrees clockwise and then flipping horizontally, the result looks like the letter",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's break down the transformations step by step:\n\n1. **Original Letter:** N\n   ```\n   N\n   ```\n\n2. **Rotate 90 degrees clockwise:**\n   Rotating 'N' 90 degrees clockwise results in:\n   ```\n   \u2227\n   ```\n\n3. **Flip horizontally:**\n   Flipping '\u2227' horizontally results in:\n   ```\n   \u2228\n   ```\n\nThe final shape after these transformations resembles the letter \"V\".",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642985"
+  },
+  "sinkhole_026": {
+    "id": "sinkhole_026",
+    "task": "If you're running a race and pass the person in last place, what place are you in?",
+    "category": "logic_puzzle",
+    "expected_difficulty": "trivial",
+    "why_hard": "Trick question exploiting spatial assumption",
+    "correct_answer": "Impossible - you can't pass the person in last place (no one is behind them)",
+    "x": 0.6,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "This is a trick question! If you pass the person in last place, you would actually be in last place yourself.\n\nHere's why: If someone is truly in \"last place,\" that means they are behind everyone else in the race. For you to \"pass\" them, you would have had to be behind them initially. But if they were in last place, there's no position behind last place for you to have been in.\n\nThe question creates an impossible scenario - you can't pass someone who is already in last place because there's nowhere behind last place to pass them from!",
+        "correct": null
+      },
+      "grok": {
+        "answer": "If you pass the person who is in last place, you take their position. Therefore, you are in last place.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642987"
+  },
+  "sinkhole_027": {
+    "id": "sinkhole_027",
+    "task": "A clerk in a butcher shop is 5'10\" tall. What does he weigh?",
+    "category": "logic_puzzle",
+    "expected_difficulty": "trivial",
+    "why_hard": "Linguistic ambiguity - 'what' vs 'how much'",
+    "correct_answer": "Meat - he weighs meat (his job), not asking about his body weight",
+    "x": 0.6,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "This appears to be a riddle! The answer is \"meat\" - a clerk in a butcher shop weighs meat.\n\nThe question is a play on words, asking what the clerk \"weighs\" (as in what he does for his job) rather than \"how much does he weigh\" (his body weight). Since he works in a butcher shop, his job would involve weighing meat for customers.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Lunch meat",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642989"
+  },
+  "sinkhole_028": {
+    "id": "sinkhole_028",
+    "task": "How many months have 28 days?",
+    "category": "logic_puzzle",
+    "expected_difficulty": "trivial",
+    "why_hard": "Trick question - natural interpretation is 'only 28 days'",
+    "correct_answer": "All 12 months (every month has at least 28 days)",
+    "x": 0.6,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "All 12 months have 28 days! \n\nWhile February is the only month that has exactly 28 days (or 29 in leap years), every month has at least 28 days in it.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "All months have at least 28 days. However, February is the only month that typically has exactly 28 days, except in a leap year when it has 29 days.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642990"
+  },
+  "sinkhole_029": {
+    "id": "sinkhole_029",
+    "task": "Count from 1 to 20, but skip multiples of 3, and also skip any number containing the digit 1. List the remaining numbers.",
+    "category": "counting",
+    "expected_difficulty": "trivial",
+    "why_hard": "Multiple exclusion rules requiring precise filtering",
+    "correct_answer": "2, 4, 5, 7, 8, 20 (6 numbers)",
+    "x": 0.25,
+    "y": 0.2,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to count from 1 to 20, but skip:\n1. Multiples of 3 (3, 6, 9, 12, 15, 18)\n2. Numbers containing the digit 1 (1, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)\n\nLet me go through each number:\n\n1 - contains digit 1, skip\n2 - keep\n3 - multiple of 3, skip\n4 - keep\n5 - keep\n6 - multiple of 3, skip\n7 - keep\n8 - keep\n9 - multiple of 3, skip\n10 - contains digit 1, skip\n11 - contains digit 1, skip\n12 - multiple of 3 AND contains digit 1, skip\n13 - contains",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's approach this step-by-step:\n\n1. We need to count from 1 to 20.\n2. We'll skip multiples of 3.\n3. We'll also skip any number containing the digit 1.\n\nLet's go through the numbers and apply these rules:\n\n- 1: Contains 1, skip\n- 2: Keep\n- 3: Multiple of 3, skip\n- 4: Keep\n- 5: Keep\n- 6: Multiple of 3, skip\n- 7: Keep\n- 8: Keep\n- 9: Multiple of 3, skip\n- 10: Contains 1, skip\n- 11: Contains 1, skip\n- 12: Contains 1 and multiple of 3, skip\n- 13: Contains 1, skip\n- 14: Contains 1, skip\n- 15: Contains 1 and multiple",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642992"
+  },
+  "sinkhole_030": {
+    "id": "sinkhole_030",
+    "task": "How many distinct acute angles are formed by drawing all diagonals in a regular pentagon?",
+    "category": "spatial_reasoning",
+    "expected_difficulty": "trivial",
+    "why_hard": "Geometric reasoning with combinatorial complexity",
+    "correct_answer": "Multiple angle measures - needs geometric calculation (36\u00b0, 72\u00b0)",
+    "x": 0.75,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to find all the distinct acute angles formed when all diagonals are drawn in a regular pentagon.\n\nFirst, let me establish the angles in a regular pentagon. In a regular pentagon, each interior angle is:\n$$\\frac{(5-2) \\times 180\u00b0}{5} = \\frac{3 \\times 180\u00b0}{5} = 108\u00b0$$\n\nWhen all diagonals are drawn in a regular pentagon, they create a pentagram (5-pointed star) inside, and the intersections create various triangles and smaller polygons.\n\nLet me identify the types of angles that can be formed:\n\n1) **Angles at the vertices of the original pentagon**: 108\u00b0 (not acute)\n\n2) **Angles in the pentagram**: When diagonals intersect, they create various angles. Due to the symmetry of a regular pentagon, I need to find the angles in the triangles",
+        "correct": null
+      },
+      "grok": {
+        "answer": "To determine the number of distinct acute angles formed by drawing all diagonals in a regular pentagon, we need to consider the angles created at the vertices and within the pentagon.\n\nA regular pentagon has five vertices, and when all diagonals are drawn, it creates a total of 10 isosceles triangles within the pentagon. We need to find the acute angles in these triangles.\n\nLet's denote the vertices of the pentagon as \\( A, B, C, D, E \\) in order. The diagonals will be \\( AC, AD, BD, BE, \\) and \\( CE \\).\n\nThe angles we need to consider are:\n1. Angles at the vertices of the pentagon formed by the diagonals.\n2. Angles within the triangles formed by the diagonals.\n\n### Step 1: Angles at the Vertices\nEach vertex of the pentagon will have angles formed by the diagonals. Let's look at vertex \\( A \\) as an example:\n- \\( \\angle CAD \\)\n- \\(",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642994"
+  },
+  "sinkhole_031": {
+    "id": "sinkhole_031",
+    "task": "In the word 'BOOKKEEPER', how many times do two consecutive identical letters appear?",
+    "category": "counting",
+    "expected_difficulty": "trivial",
+    "why_hard": "Pattern matching with specific substring constraint",
+    "correct_answer": "3 times (OO, KK, EE)",
+    "x": 0.25,
+    "y": 0.2,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to examine the word 'BOOKKEEPER' and count how many times two consecutive identical letters appear.\n\nLet me go through the word letter by letter:\nB-O-O-K-K-E-E-P-E-R\n\nLooking for consecutive identical letters:\n1. B-O: not identical\n2. O-O: identical \u2713\n3. O-K: not identical\n4. K-K: identical \u2713\n5. K-E: not identical\n6. E-E: identical \u2713\n7. E-P: not identical\n8. P-E: not identical\n9. E-R: not identical\n\nI found three instances where two consecutive identical letters appear:\n- OO (positions 2-3)\n- KK (positions 4-5)\n- EE (positions 6-7)\n\nTherefore, two consecutive identical letters",
+        "correct": null
+      },
+      "grok": {
+        "answer": "To count the number of times two consecutive identical letters appear in the word 'BOOKKEEPER', I will break down the word into pairs of consecutive letters:\n\n- BO\n- OO (the 1st occurrence)\n- OK\n- KE\n- EE (the 2nd occurrence)\n- EP\n- PE\n- ER\n\nSo, in the word 'BOOKKEEPER', there are 2 times when two consecutive identical letters appear.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642996"
+  },
+  "sinkhole_032": {
+    "id": "sinkhole_032",
+    "task": "Write a sentence that accurately describes the exact number of words it contains.",
+    "category": "self_reference",
+    "expected_difficulty": "trivial",
+    "why_hard": "Self-referential requirement requiring iterative solving for fixed point",
+    "correct_answer": "Example: 'This sentence has exactly seven words in it.' (8 words - wait that's wrong!)",
+    "x": 0.5,
+    "y": 0.1,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "This sentence contains exactly seven words.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "This sentence contains seven words.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.642998"
+  },
+  "sinkhole_033": {
+    "id": "sinkhole_033",
+    "task": "Fill in the blank to make this sentence true: 'This sentence contains exactly _____ letters including spaces.'",
+    "category": "self_reference",
+    "expected_difficulty": "trivial",
+    "why_hard": "Fixed-point problem with spelling-dependent solution",
+    "correct_answer": "Depends on number word - needs solving iteratively (sixty-seven?)",
+    "x": 0.5,
+    "y": 0.1,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to find a number that makes the sentence true when I count all the letters and spaces.\n\nLet me work with the sentence: \"This sentence contains exactly _____ letters including spaces.\"\n\nFirst, let me count the letters and spaces in the fixed part:\n\"This sentence contains exactly \" = 34 characters\n\" letters including spaces.\" = 26 characters\n\nSo the fixed part has 34 + 26 = 60 characters.\n\nNow I need to find a number word that, when added to 60, equals the total count including that number word itself.\n\nLet me try different numbers:\n\nIf I use \"sixty-eight\":\n- \"sixty-eight\" has 11 characters\n- Total would be 60 + 11 = 71 characters\n- But the sentence claims 68, so this doesn't work\n\nIf I use \"seventy-one\":\n- \"seventy-one",
+        "correct": null
+      },
+      "grok": {
+        "answer": "This sentence contains exactly 36 letters including spaces.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643000"
+  },
+  "sinkhole_034": {
+    "id": "sinkhole_034",
+    "task": "How many words are in your answer to this question?",
+    "category": "self_reference",
+    "expected_difficulty": "trivial",
+    "why_hard": "Self-referential paradox about the answer itself",
+    "correct_answer": "Depends on the answer format - creates recursive definition",
+    "x": 0.5,
+    "y": 0.1,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "My answer to this question contains seven words.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "There are ten words in my answer to this question.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643003"
+  },
+  "sinkhole_035": {
+    "id": "sinkhole_035",
+    "task": "Meeting A is 2 hours after Meeting B. Meeting B is 30 minutes before Meeting C. If Meeting C is at 3:00 PM, what time is Meeting A?",
+    "category": "temporal",
+    "expected_difficulty": "trivial",
+    "why_hard": "Chained temporal dependencies requiring backtracking",
+    "correct_answer": "4:30 PM (C=3:00, so B=2:30, so A=4:30)",
+    "x": 0.35,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to work backwards from Meeting C to find the time of Meeting A.\n\nGiven information:\n- Meeting C is at 3:00 PM\n- Meeting B is 30 minutes before Meeting C\n- Meeting A is 2 hours after Meeting B\n\nStep 1: Find the time of Meeting B\nMeeting B is 30 minutes before Meeting C\nMeeting C = 3:00 PM\nMeeting B = 3:00 PM - 30 minutes = 2:30 PM\n\nStep 2: Find the time of Meeting A\nMeeting A is 2 hours after Meeting B\nMeeting B = 2:30 PM\nMeeting A = 2:30 PM + 2 hours = 4:30 PM\n\nTherefore, Meeting A is at 4:30 PM.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's determine the times of the meetings step by step, starting from Meeting C.\n\n1. **Meeting C** is at **3:00 PM**.\n2. **Meeting B** is **30 minutes before** Meeting C. So, Meeting B is at:\n   \\[\n   3:00 \\text{ PM} - 30 \\text{ minutes} = 2:30 \\text{ PM}\n   \\]\n3. **Meeting A** is **2 hours after** Meeting B. So, Meeting A is at:\n   \\[\n   2:30 \\text{ PM} + 2 \\text{ hours} = 4:30 \\text{ PM}\n   \\]\n\nTherefore, **Meeting A** is at **4:30 PM**.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643005"
+  },
+  "sinkhole_036": {
+    "id": "sinkhole_036",
+    "task": "If it takes 5 machines 5 minutes to make 5 widgets, how long does it take 100 machines to make 100 widgets?",
+    "category": "arithmetic",
+    "expected_difficulty": "trivial",
+    "why_hard": "Proportional reasoning trick question",
+    "correct_answer": "5 minutes (rate is 1 widget per machine per 5 minutes)",
+    "x": 0.8,
+    "y": 0.28,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to figure out the rate at which each machine produces widgets.\n\nGiven information:\n- 5 machines make 5 widgets in 5 minutes\n\nFirst, let me find the rate per machine:\n- If 5 machines make 5 widgets in 5 minutes, then each machine makes 1 widget in 5 minutes\n- So each machine's rate is 1 widget per 5 minutes\n\nNow for 100 machines making 100 widgets:\n- Each machine makes 1 widget in 5 minutes\n- 100 machines working simultaneously will make 100 widgets in 5 minutes\n\nTherefore, it takes 100 machines 5 minutes to make 100 widgets.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "To determine how long it takes 100 machines to make 100 widgets, we can first figure out the rate at which the machines produce widgets.\n\nFrom the given information:\n- 5 machines can make 5 widgets in 5 minutes.\n\nThis means that 5 machines produce 1 widget per minute. \n\nSo, 1 machine produces 1 widget every 5 minutes.\n\nNow, if we have 100 machines:\n- In 5 minutes, these 100 machines can produce 100 widgets.\n\nTherefore, it will take 5 minutes for 100 machines to make 100 widgets.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643007"
+  },
+  "sinkhole_037": {
+    "id": "sinkhole_037",
+    "task": "Today is Thursday. What day of the week will it be 100 days from now?",
+    "category": "temporal",
+    "expected_difficulty": "trivial",
+    "why_hard": "Modular arithmetic with day-of-week cycling",
+    "correct_answer": "Saturday (100 mod 7 = 2, so Thursday + 2 = Saturday)",
+    "x": 0.35,
+    "y": 0.25,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to figure out what day it will be 100 days from Thursday.\n\nSince days of the week repeat every 7 days, I can use modular arithmetic. I need to find the remainder when 100 is divided by 7.\n\n100 \u00f7 7 = 14 remainder 2\n\nThis means 100 days = 14 complete weeks + 2 extra days\n\nStarting from Thursday and adding 2 days:\n- Thursday + 1 day = Friday\n- Thursday + 2 days = Saturday\n\nTherefore, 100 days from Thursday will be Saturday.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "To determine the day of the week 100 days from now, starting from Thursday, we can use modular arithmetic. There are 7 days in a week, so we need to find the remainder when 100 is divided by 7.\n\nLet's calculate:\n\n100 \u00f7 7 = 14 remainder 2\n\nThis means that 100 days is equivalent to 14 weeks and 2 extra days. Since 14 weeks will bring us back to the same day of the week (Thursday), we only need to count 2 days forward from Thursday.\n\nThursday + 1 day = Friday\nThursday + 2 days = Saturday\n\nTherefore, 100 days from Thursday will be a Saturday.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643009"
+  },
+  "sinkhole_038": {
+    "id": "sinkhole_038",
+    "task": "Name three things that are: not red, not square, not made of wood, not alive, and not furniture.",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Multiple negative constraints harder than positive ones",
+    "correct_answer": "Examples: water, metal, glass, plastic bottle, air, rock",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "Here are three things that meet all those criteria:\n\n1. **A plastic water bottle** - typically clear or blue, cylindrical shape, made of plastic, inanimate, and not furniture\n\n2. **A steel paperclip** - silver/metallic color, curved/oval shape, made of metal, inanimate, and not furniture\n\n3. **A glass marble** - various colors (but not red), spherical shape, made of glass, inanimate, and not furniture",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Here are three things that meet all those criteria:\n\n1. **A blue plastic bottle** - It is not red (it's blue), not square (typically cylindrical or rounded), not made of wood (made of plastic), not alive, and not furniture.\n\n2. **A yellow metal key** - It is not red (it's yellow), not square (typically has an elongated shape with grooves), not made of wood (made of metal), not alive, and not furniture.\n\n3. **A clear glass marble** - It is not red (it's clear), not square (spherical), not made of wood (made of glass), not alive, and not furniture.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643011"
+  },
+  "sinkhole_039": {
+    "id": "sinkhole_039",
+    "task": "True or False: This statement is false.",
+    "category": "self_reference",
+    "expected_difficulty": "trivial",
+    "why_hard": "Classic logical paradox with no consistent answer",
+    "correct_answer": "Paradox - neither true nor false (liar's paradox)",
+    "x": 0.5,
+    "y": 0.1,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "This is a classic example of the liar paradox! The statement creates a logical contradiction:\n\n- If the statement is **true**, then what it says must be correct - meaning \"this statement is false\" would be true, which makes the statement false\n- If the statement is **false**, then what it says is incorrect - meaning it's not actually false, which makes it true\n\nSo the statement can neither be consistently true nor consistently false. Rather than having a true/false answer, this paradox reveals the limitations of binary logic when applied to self-referential statements. It's been puzzling philosophers and logicians for over 2,000 years!\n\nThe most accurate response is that the statement is **paradoxical** and cannot be definitively classified as either true or false within standard logical frameworks.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "True. \n\nThis is a classic example of a self-referential paradox, often referred to as the \"liar paradox.\" If the statement \"This statement is false\" were true, then the statement itself must be false, which creates a contradiction. Conversely, if the statement were false, then what it asserts (that it is false) must be true, which again creates a contradiction. \n\nIn the context of this query, answering \"True\" highlights the paradoxical nature of the statement.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643013"
+  },
+  "sinkhole_040": {
+    "id": "sinkhole_040",
+    "task": "Give me a word that doesn't contain any of these letters: e, t, a, o, i, n, s, r",
+    "category": "constrained_generation",
+    "expected_difficulty": "trivial",
+    "why_hard": "Massive letter exclusion makes finding words very difficult",
+    "correct_answer": "Example: 'fly', 'up', 'my', 'by' (avoiding most common English letters)",
+    "x": 0.15,
+    "y": 0.15,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "How about the word \"**gully**\"?\n\nLet me check: g-u-l-l-y contains none of the forbidden letters (e, t, a, o, i, n, s, r).",
+        "correct": null
+      },
+      "grok": {
+        "answer": "One word that doesn't contain any of the letters e, t, a, o, i, n, s, r is \"yum.\"",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643015"
+  },
+  "sinkhole_041": {
+    "id": "sinkhole_041",
+    "task": "I have $100. I spend half of what I have, then I find $20. Then I spend half of what I have now. How much do I have left?",
+    "category": "arithmetic",
+    "expected_difficulty": "trivial",
+    "why_hard": "Sequential operations with intermediate calculations",
+    "correct_answer": "$35 (100/2=50, 50+20=70, 70/2=35)",
+    "x": 0.8,
+    "y": 0.28,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I'll work through this step by step.\n\nStarting amount: $100\n\nStep 1: Spend half of what I have\n- Spend: $100 \u00f7 2 = $50\n- Remaining: $100 - $50 = $50\n\nStep 2: Find $20\n- New total: $50 + $20 = $70\n\nStep 3: Spend half of what I have now\n- Spend: $70 \u00f7 2 = $35\n- Remaining: $70 - $35 = $35\n\nYou have $35 left.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's break down the problem step-by-step:\n\n1. **Starting amount:**  \n   You start with $100.\n\n2. **First spend:**  \n   You spend half of what you have.  \n   $$ \\frac{100}{2} = 50 $$  \n   After spending, you have:  \n   $$ 100 - 50 = 50 $$\n\n3. **Finding money:**  \n   You find $20.  \n   So you add this to your current amount:  \n   $$ 50 + 20 = 70 $$\n\n4. **Second spend:**  \n   You spend half of what you have now.  \n   $$ \\frac{70}{2} = 35 $$  \n   After spending, you have:  \n   $$ 70 - 35 = 35 $$\n\nTherefore, you have **$35** left.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643016"
+  },
+  "sinkhole_042": {
+    "id": "sinkhole_042",
+    "task": "A bat and a ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost?",
+    "category": "arithmetic",
+    "expected_difficulty": "trivial",
+    "why_hard": "Classic cognitive bias problem - intuitive answer is wrong",
+    "correct_answer": "$0.05 (not $0.10 - that's the intuitive wrong answer)",
+    "x": 0.8,
+    "y": 0.28,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "I need to set up equations based on the given information.\n\nLet me define variables:\n- Let b = cost of the ball (in dollars)\n- Let t = cost of the bat (in dollars)\n\nFrom the problem, I have two pieces of information:\n1. The bat and ball cost $1.10 together: t + b = 1.10\n2. The bat costs $1 more than the ball: t = b + 1.00\n\nNow I'll substitute the second equation into the first:\n(b + 1.00) + b = 1.10\n\nSimplifying:\n2b + 1.00 = 1.10\n2b = 0.10\nb = 0.05\n\nLet me verify this answer:\n- Ball costs: $0.05\n- Bat costs: $0.05 + $1.00 = $1.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "Let's solve this problem step-by-step:\n\n1. Let the cost of the ball be \\( x \\) dollars.\n2. According to the problem, the bat costs $1 more than the ball. Therefore, the cost of the bat is \\( x + 1 \\) dollars.\n3. Together, the bat and the ball cost $1.10. This gives us the equation:\n   \\[\n   x + (x + 1) = 1.10\n   \\]\n4. Simplify the equation:\n   \\[\n   2x + 1 = 1.10\n   \\]\n5. Subtract 1 from both sides:\n   \\[\n   2x = 0.10\n   \\]\n6. Divide both sides by 2:\n   \\[\n   x = 0.05\n   \\]\n\nSo, the ball costs $0.05 (5 cents). \n\nTo verify:\n- If the ball costs $0.05, then the",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643018"
+  },
+  "sinkhole_043": {
+    "id": "sinkhole_043",
+    "task": "If you flip a fair coin 10 times and get heads every time, what's the probability the next flip is heads?",
+    "category": "arithmetic",
+    "expected_difficulty": "trivial",
+    "why_hard": "Tests understanding of independent probability vs intuition",
+    "correct_answer": "50% (coin has no memory - gambler's fallacy trap)",
+    "x": 0.8,
+    "y": 0.28,
+    "depth": -0.8,
+    "results": {
+      "claude": {
+        "answer": "The probability of getting heads on the next flip is still 1/2 (or 50%).\n\nThis is because each coin flip is an independent event. The outcome of previous flips doesn't influence future flips - the coin has no memory of what happened before.\n\nWhile getting 10 heads in a row might *feel* unusual (and it is - the probability of that specific sequence is (1/2)^10 = 1/1024 \u2248 0.1%), this doesn't change the fundamental properties of the fair coin. On flip #11, you still have exactly the same 50/50 chance of heads or tails as you did on flip #1.\n\nThis illustrates the \"gambler's fallacy\" - the mistaken belief that past results affect future probabilities in independent random events.",
+        "correct": null
+      },
+      "grok": {
+        "answer": "The probability of getting heads on the next flip of a fair coin remains 50%, or 1/2, regardless of the outcomes of the previous flips. Each coin flip is an independent event, meaning the result of one flip does not affect the results of subsequent flips. So, even after getting heads 10 times in a row, the probability of getting heads on the next flip is still 1/2.",
+        "correct": null
+      }
+    },
+    "added_date": "2025-11-01T17:09:30.643020"
+  }
+}

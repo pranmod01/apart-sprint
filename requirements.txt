@@ -10,4 +10,8 @@ requests
 beautifulsoup4
 ipykernel
 requests
-json
+anthropic
+openai
+google-generativeai 
+replicate 
+python-dotenv
