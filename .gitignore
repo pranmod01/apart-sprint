@@ -1,0 +1,26 @@
+# Raw data (don't commit)
+data/epoch_benchmark_data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+apart-venv*/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+
+# Outputs
+*.log
