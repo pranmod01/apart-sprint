@@ -286,10 +286,22 @@ export default function Visualizer() {
       </header>
 
       <div style={{ flex: 1 }}>
-        <Canvas shadows camera={{ position: [0, 400, 800], fov: 45 }} style={{ width: "100%", height: "100%" }}>
+        <Canvas
+          shadows
+          gl={{ antialias: true }}
+          camera={{ position: [0, 400, 800], fov: 45, near: 0.1, far: 5000 }}
+          style={{ width: "100%", height: "100%" }}
+        >
           <color attach="background" args={["#f0f0f0"]} />
           <Scene />
-          <OrbitControls makeDefault />
+          <OrbitControls
+            makeDefault
+            enableDamping
+            dampingFactor={0.06}
+            minDistance={20}
+            maxDistance={3500}
+            maxPolarAngle={Math.PI * 0.495}
+          />
         </Canvas>
       </div>
     </div>
