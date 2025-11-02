@@ -61,7 +61,7 @@ class SinkholeCollector:
         }
         return positions.get(category, 0.2)
     
-    def save(self, output_path='data/negatives.json'):
+    def save(self, output_path='data/sinkhole_data/negatives.json'):
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         with open(output_path, 'w') as f:
             json.dump(self.sinkholes, f, indent=2)

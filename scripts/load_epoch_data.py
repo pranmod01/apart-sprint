@@ -6,7 +6,7 @@ from datetime import datetime
 
 print("✓ All imports complete, defining functions...")
 
-def get_available_benchmarks(data_dir='data/epoch_benchmark_data'):
+def get_available_benchmarks(data_dir='data/raw/epoch_benchmark_data'):
     """Scan directory and find all available CSV files"""
     
     path = Path(data_dir)
@@ -150,7 +150,7 @@ def standardize_dataframe(df, benchmark_name):
     
     return result[available]
 
-def aggregate_all_benchmarks(data_dir='data/epoch_benchmark_data'):
+def aggregate_all_benchmarks(data_dir='data/raw/epoch_benchmark_data'):
     """Load all available benchmarks"""
     
     print("="*70)
@@ -201,7 +201,7 @@ if __name__ == '__main__':
     if df is not None:
         
         # Save combined dataset
-        output_path = 'data/processed/combined_benchmarks.csv'
+        output_path = 'data/intermediate/combined_benchmarks.csv'
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         df.to_csv(output_path, index=False)
         print(f"\n✓ Saved: {output_path}")
@@ -212,10 +212,10 @@ if __name__ == '__main__':
             'benchmarks': sorted(df['benchmark'].unique().tolist()),
             'capabilities': sorted(df['capability'].unique().tolist()),
         }
-        
-        with open('data/processed/data_summary.json', 'w') as f:
+
+        with open('data/intermediate/data_summary.json', 'w') as f:
             json.dump(summary, f, indent=2)
-        print(f"✓ Saved: data/processed/data_summary.json")
+        print(f"✓ Saved: data/intermediate/data_summary.json")
 
         # Show what capabilities we have
         print(f"\n{'='*70}")

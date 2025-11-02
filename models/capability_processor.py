@@ -6,7 +6,7 @@ from pathlib import Path
 class CapabilityProcessor:
     """Process benchmark data into capability heights over time"""
     
-    def __init__(self, combined_data_path='data/processed/combined_benchmarks_cleaned.csv'):
+    def __init__(self, combined_data_path='data/intermediate/combined_benchmarks_cleaned.csv'):
         self.df = pd.read_csv(combined_data_path)
         self.capabilities = self.build_capability_taxonomy()
         self.model_families = self._identify_model_families()
@@ -391,7 +391,7 @@ class CapabilityProcessor:
         
         return results
     
-    def save_results(self, results, output_path='data/processed/capability_heights.json'):
+    def save_results(self, results, output_path='data/intermediate/capability_heights.json'):
         """Save processed capabilities with model family breakdown"""
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
 

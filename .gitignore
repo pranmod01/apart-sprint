@@ -24,11 +24,17 @@ dist-ssr
 *.sw?
 
 
-# macOS
-.DS_Store
-
 # Raw data (don't commit)
 data/epoch_benchmark_data/
+
+# Raw data (don't commit large CSVs)
+data/raw/epoch_benchmark_data/*.csv
+!data/raw/epoch_benchmark_data/epoch_capabilities_index.csv
+!data/raw/epoch_benchmark_data/README.md
+
+# Generated outputs (don't commit)
+data/outputs/
+data/intermediate/combined_benchmarks*.csv
 
 # Python
 __pycache__/
@@ -46,7 +52,7 @@ env/
 *.swp
 *.swo
 
-# OS
+# OS / macOS
 .DS_Store
 .DS_Store?
 ._*
