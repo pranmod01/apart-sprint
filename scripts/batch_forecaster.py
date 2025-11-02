@@ -92,8 +92,15 @@ class BatchForecaster:
             # Sort by date
             cap_df = cap_df.sort_values('date')
             
-            # Remove duplicates (keep most recent if multiple scores on same date)
-            cap_df = cap_df.drop_duplicates(subset=['date'], keep='last')
+            # If multiple scores per date, take the BEST (max) score
+            # This represents the state-of-the-art on that date
+            cap_df = cap_df.groupby('date', as_index=False).agg({
+                'score': 'max',  # Best performance on that date
+                'capability': 'first'
+            })
+            
+            # Re-sort after aggregation
+            cap_df = cap_df.sort_values('date')
             
             # Check minimum points
             if len(cap_df) < min_points:
@@ -106,12 +113,37 @@ class BatchForecaster:
             
             # Auto-detect scale and normalize to 0-100
             max_score = max(scores)
-            if max_score <= 1.0:
-                # Scores are on 0-1 scale, convert to 0-100
+            min_score = min(scores)
+            
+            # Check if we have MIXED scales (some 0-1, some 0-100)
+            has_small = any(s <= 1.0 for s in scores)
+            has_large = any(s > 1.0 for s in scores)
+            
+            if has_small and has_large:
+                # MIXED SCALES: Convert small values (<=1.0) to 0-100
+                print(f"  ⚠️  MIXED SCALES detected! Converting values <=1.0 to percentage")
+                scores = [s * 100 if s <= 1.0 else s for s in scores]
+                max_score = max(scores)
+                min_score = min(scores)
+            elif max_score <= 1.0:
+                # All scores are 0-1 scale, convert to 0-100
                 scores = [s * 100 for s in scores]
-                print(f"  ℹ️  Normalized {capability} from 0-1 scale to 0-100")
+                print(f"  ℹ️  Normalized from 0-1 scale: {min_score:.3f}-{max_score:.3f} → {min_score*100:.1f}-{max_score*100:.1f}")
+                max_score = max(scores)
+                min_score = min(scores)
+            elif max_score <= 10.0 and min_score >= 1.0:
+                # Looks like 1-10 scale (e.g., rating), convert to 0-100
+                scores = [s * 10 for s in scores]
+                print(f"  ℹ️  Detected 1-10 rating scale: {min_score:.2f}-{max_score:.2f} → {min_score*10:.1f}-{max_score*10:.1f}")
+                max_score = max(scores)
+                min_score = min(scores)
             elif max_score > 100:
-                print(f"⚠️  Warning: {capability} has scores > 100, may need custom normalization")
+                print(f"⚠️  Warning: max score = {max_score:.2f} (>100), may need custom normalization")
+            
+            # Show the data we'll use
+            print(f"  → {len(dates)} time points: {dates[0]} to {dates[-1]}")
+            print(f"  → Score range: {min(scores):.1f} to {max(scores):.1f}")
+            print(f"  → Trend: {scores[0]:.1f} → {scores[-1]:.1f} ({scores[-1]-scores[0]:+.1f})")
             
             capabilities_data[capability] = {
                 'dates': dates,
@@ -158,14 +190,10 @@ class BatchForecaster:
                 if pred.get('already_achieved'):
                     print(f"  {threshold}%: Already achieved on {pred['date_achieved']}")
                 else:
-                    try:
-                        ci_range = (pd.to_datetime(pred['confidence_interval']['upper']) -
-                                   pd.to_datetime(pred['confidence_interval']['lower'])).days // 2
-                        print(f"  {threshold}%: {pred['predicted_date']} (±{ci_range} days)")
-                    except (OverflowError, pd._libs.tslibs.np_datetime.OutOfBoundsDatetime):
-                        # Handle extremely large confidence intervals
-                        print(f"  {threshold}%: {pred['predicted_date']} (CI too large to compute)")
-
+                    ci_range = (pd.to_datetime(pred['confidence_interval']['upper']) - 
+                               pd.to_datetime(pred['confidence_interval']['lower'])).days // 2
+                    print(f"  {threshold}%: {pred['predicted_date']} (±{ci_range} days)")
+                
                 predictions.append(pred)
         
         # Generate forecast curve for visualization
@@ -324,7 +352,6 @@ if __name__ == "__main__":
     
     print("\n" + "="*60)
     print("AI CAPABILITY FORECASTING")
-    print("Loading your actual Epoch AI data")
     print("="*60)
     
     # Create forecaster
@@ -341,10 +368,4 @@ if __name__ == "__main__":
         thresholds=[85, 90, 95]
     )
     
-    print("\n" + "="*60)
     print("✅ COMPLETE! Files ready in ./predictions/")
-    print("="*60)
-    print("\nNext steps:")
-    print("1. Check predictions/forecast_summary.csv")
-    print("2. Load predictions/forecast_nodes.json into 3D terrain")
-    print("3. Review predictions/forecast_results.json for details")
