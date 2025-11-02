@@ -1,6 +1,6 @@
 """
 Batch Forecasting Script
-Processes multiple capabilities and generates predictions for integration
+Processes capabilities from combined_benchmarks_cleaned.csv
 """
 
 import json
@@ -14,20 +14,97 @@ import os
 class BatchForecaster:
     """Generate forecasts for multiple capabilities at once."""
     
-    def __init__(self, output_dir: str = "predictions"):
+    def __init__(self, data_path: str, output_dir: str = "predictions"):
+        """
+        Args:
+            data_path: Path to combined_benchmarks_cleaned.csv
+            output_dir: Where to save predictions
+        """
+        self.data_path = data_path
         self.output_dir = output_dir
         self.forecaster = CapabilityForecaster(saturation_point=100.0)
         self.results = {
             'metadata': {
                 'generated_at': datetime.now().isoformat(),
                 'model': 'logistic_growth',
-                'confidence_level': 0.95
+                'confidence_level': 0.95,
+                'data_source': data_path
             },
             'capabilities': {}
         }
         
         # Create output directory
         os.makedirs(output_dir, exist_ok=True)
+    
+    def load_data(self) -> pd.DataFrame:
+        """Load your combined benchmarks data."""
+        print(f"\n{'='*60}")
+        print(f"Loading data from: {self.data_path}")
+        print(f"{'='*60}")
+        
+        df = pd.read_csv(self.data_path)
+        
+        print(f"\n✓ Loaded {len(df)} rows")
+        print(f"✓ Columns: {df.columns.tolist()}")
+        print(f"✓ Date range: {df['date'].min()} to {df['date'].max()}")
+        
+        if 'capability' in df.columns:
+            print(f"✓ Capabilities found: {df['capability'].nunique()}")
+            print(f"  {sorted(df['capability'].unique())}")
+        
+        return df
+    
+    def prepare_capability_data(self, df: pd.DataFrame, 
+                                min_points: int = 4) -> Dict[str, Dict]:
+        """
+        Convert dataframe to capability time series.
+        
+        Args:
+            df: DataFrame with columns: date, score, capability
+            min_points: Minimum data points required per capability
+            
+        Returns:
+            Dictionary mapping capability names to {dates, scores}
+        """
+        print(f"\n{'='*60}")
+        print("PREPARING CAPABILITY TIME SERIES")
+        print(f"{'='*60}\n")
+        
+        capabilities_data = {}
+        
+        # Group by capability
+        for capability in df['capability'].unique():
+            cap_df = df[df['capability'] == capability].copy()
+            
+            # Sort by date
+            cap_df = cap_df.sort_values('date')
+            
+            # Remove duplicates (keep most recent if multiple scores on same date)
+            cap_df = cap_df.drop_duplicates(subset=['date'], keep='last')
+            
+            # Check minimum points
+            if len(cap_df) < min_points:
+                print(f"⚠️  Skipping {capability}: only {len(cap_df)} points (need {min_points})")
+                continue
+            
+            # Extract dates and scores
+            dates = cap_df['date'].tolist()
+            scores = cap_df['score'].tolist()
+            
+            # Validate scores are in reasonable range (0-100)
+            if any(s < 0 or s > 100 for s in scores):
+                print(f"⚠️  Warning: {capability} has scores outside 0-100 range")
+            
+            capabilities_data[capability] = {
+                'dates': dates,
+                'scores': scores
+            }
+            
+            print(f"✓ {capability}: {len(dates)} points from {dates[0]} to {dates[-1]}")
+        
+        print(f"\n✓ Prepared {len(capabilities_data)} capabilities for forecasting")
+        
+        return capabilities_data
     
     def process_capability(self, 
                           capability_name: str,
@@ -36,15 +113,6 @@ class BatchForecaster:
                           thresholds: List[float] = [85, 90, 95]) -> Dict:
         """
         Process a single capability: fit model and generate predictions.
-        
-        Args:
-            capability_name: Name of the capability
-            dates: List of observation dates
-            scores: List of performance scores
-            thresholds: Target thresholds to predict
-            
-        Returns:
-            Dictionary with all predictions and metadata
         """
         print(f"\n{'='*60}")
         print(f"Processing: {capability_name}")
@@ -72,8 +140,9 @@ class BatchForecaster:
                 if pred.get('already_achieved'):
                     print(f"  {threshold}%: Already achieved on {pred['date_achieved']}")
                 else:
-                    print(f"  {threshold}%: {pred['predicted_date']} "
-                          f"(±{((pd.to_datetime(pred['confidence_interval']['upper']) - pd.to_datetime(pred['confidence_interval']['lower'])).days // 2)} days)")
+                    ci_range = (pd.to_datetime(pred['confidence_interval']['upper']) - 
+                               pd.to_datetime(pred['confidence_interval']['lower'])).days // 2
+                    print(f"  {threshold}%: {pred['predicted_date']} (±{ci_range} days)")
                 
                 predictions.append(pred)
         
@@ -107,21 +176,27 @@ class BatchForecaster:
             'forecast_nodes': forecast_nodes
         }
     
-    def process_batch(self, capabilities_data: Dict[str, Dict]) -> None:
+    def process_all(self, min_points: int = 4, thresholds: List[float] = [85, 90, 95]) -> None:
         """
-        Process multiple capabilities from a data dictionary.
+        Main processing pipeline: load data, prepare, forecast all capabilities.
         
         Args:
-            capabilities_data: Dictionary mapping capability names to their data
-                Format: {
-                    'capability_name': {
-                        'dates': ['2022-01-01', ...],
-                        'scores': [45.2, ...]
-                    }
-                }
+            min_points: Minimum data points required per capability
+            thresholds: Threshold percentages to predict
         """
+        # Load data
+        df = self.load_data()
+        
+        # Prepare capability time series
+        capabilities_data = self.prepare_capability_data(df, min_points)
+        
+        if len(capabilities_data) == 0:
+            print("\n❌ No capabilities with sufficient data points!")
+            return
+        
+        # Process each capability
         print(f"\n{'='*60}")
-        print(f"BATCH FORECASTING - Processing {len(capabilities_data)} capabilities")
+        print(f"FORECASTING {len(capabilities_data)} CAPABILITIES")
         print(f"{'='*60}")
         
         for capability_name, data in capabilities_data.items():
@@ -129,7 +204,7 @@ class BatchForecaster:
                 capability_name,
                 data['dates'],
                 data['scores'],
-                thresholds=[85, 90, 95]
+                thresholds=thresholds
             )
             
             self.results['capabilities'][capability_name] = result
@@ -221,32 +296,33 @@ class BatchForecaster:
                           f"{str(days):>11} {current:>10.1f}%")
 
 
-# Example data structure for your hackathon
-EXAMPLE_CAPABILITIES = {
-    'code_generation': {
-        'dates': ["2022-01-01", "2022-06-01", "2023-01-01", "2023-06-01", "2024-01-01", "2024-06-01"],
-        'scores': [45, 52, 61, 68, 75, 82]
-    },
-    'mathematical_reasoning': {
-        'dates': ["2022-01-01", "2022-06-01", "2023-01-01", "2023-06-01", "2024-01-01", "2024-06-01"],
-        'scores': [35, 41, 48, 56, 64, 71]
-    },
-    'natural_language_understanding': {
-        'dates': ["2022-01-01", "2022-06-01", "2023-01-01", "2023-06-01", "2024-01-01", "2024-06-01"],
-        'scores': [65, 70, 74, 78, 82, 86]
-    },
-    'visual_reasoning': {
-        'dates': ["2022-01-01", "2022-06-01", "2023-01-01", "2023-06-01", "2024-01-01", "2024-06-01"],
-        'scores': [30, 35, 42, 48, 56, 63]
-    }
-}
-
-
 if __name__ == "__main__":
-    # Run batch forecasting
-    batch = BatchForecaster(output_dir="predictions")
-    batch.process_batch(EXAMPLE_CAPABILITIES)
+    # Path to your combined benchmarks file
+    DATA_PATH = "data/intermediate/combined_benchmarks_cleaned.csv"
     
     print("\n" + "="*60)
-    print("Ready for integration! Files in ./predictions/")
+    print("AI CAPABILITY FORECASTING")
+    print("Loading your actual Epoch AI data")
     print("="*60)
+    
+    # Create forecaster
+    batch = BatchForecaster(
+        data_path=DATA_PATH,
+        output_dir="predictions"
+    )
+    
+    # Process all capabilities
+    # min_points=4 means we need at least 4 time points to forecast
+    # thresholds=[85, 90, 95] means predict when each hits these levels
+    batch.process_all(
+        min_points=4,
+        thresholds=[85, 90, 95]
+    )
+    
+    print("\n" + "="*60)
+    print("✅ COMPLETE! Files ready in ./predictions/")
+    print("="*60)
+    print("\nNext steps:")
+    print("1. Check predictions/forecast_summary.csv")
+    print("2. Load predictions/forecast_nodes.json into 3D terrain")
+    print("3. Review predictions/forecast_results.json for details")
