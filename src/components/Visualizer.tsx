@@ -1,5 +1,5 @@
 import { Html, Line } from "@react-three/drei";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, TransformControls } from "@react-three/drei";
 import * as THREE from "three";
@@ -205,7 +205,7 @@ function Scene() {
     return geom;
   };
 
-  // helper: find related capabilities by checking top_models overlap
+  // helper: find related capabilities to draw connections
   const findRelatedCapabilities = (capKey, cap) => {
     const related = [];
     if (!cap.top_models) return related;
@@ -322,26 +322,127 @@ function Scene() {
     return nodes;
   }, [capabilityHeights, capabilitiesState, year, categories]);
 
+  // Raycaster setup for height mapping
+  const raycaster = useMemo(() => new THREE.Raycaster(), []);
+  const rayOrigin = useMemo(() => new THREE.Vector3(), []);
+  const rayDirection = useMemo(() => new THREE.Vector3(0, -1, 0), []); // pointing down
+
+  // Add this helper at the top of the file
+const normalizeHeight = (height: number): number => {
+  // If height is > 1, normalize it to a reasonable range
+  if (height > 1) {
+    return Math.log10(height) / 4; // or another suitable normalization
+  }
+  return height;
+};
+
+// Generate heightmap geometry using raycaster
+const generateHeightMapGeometry = useCallback((resolution = 100) => {
+  const geometry = new THREE.PlaneGeometry(1600, 1600, resolution - 1, resolution - 1);
+  geometry.rotateX(-Math.PI / 2);
+  const positions = geometry.attributes.position.array;
+  const colors = new Float32Array(positions.length);
+
+  for (let i = 0; i < positions.length; i += 3) {
+    const x = positions[i];
+    const z = positions[i + 2];
+    
+    let maxHeight = 0;
+    let influence = 0;
+    let color = new THREE.Color(0x888888);
+
+    Object.entries(capabilityHeights.all).forEach(([key, cap]) => {
+      // Check if capability is enabled in filters
+      const category = cap.category || "unknown";
+      if (capabilitiesState && category && capabilitiesState[category] === false) return;
+      
+      if (!cap.heights?.[year]) return;
+
+      const [wx, wz] = worldFromNorm(cap.x, cap.y, 1200);
+      const distance = Math.sqrt(Math.pow(x - wx, 2) + Math.pow(z - wz, 2));
+      
+      if (distance < 200) {
+        const height = normalizeHeight(cap.heights[year]) * 600;
+        const weight = 1 - (distance / 200);
+        
+        if (height < 0.12 * 600) {
+          maxHeight -= (0.12 * 600 - height) * weight * 2;
+          color.lerp(new THREE.Color(0xff0000), weight * 0.5);
+        } else {
+          maxHeight += height * weight;
+          
+          if (cap.category && categories.capability_categories[cap.category]?.color) {
+            const [r,g,b] = categories.capability_categories[cap.category].color;
+            color.lerp(new THREE.Color(r,g,b), weight * 0.3);
+          }
+        }
+        influence += weight;
+      }
+    });
+
+    positions[i + 1] = influence > 0 ? maxHeight / influence : 0;
+    colors[i] = color.r;
+    colors[i + 1] = color.g;
+    colors[i + 2] = color.b;
+  }
+
+  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+  geometry.computeVertexNormals();
+  return geometry;
+}, [year, capabilityHeights, capabilitiesState, worldFromNorm]); // Add capabilitiesState to dependencies
+
+  // Generate mesh using heightmap
+  const terrainGeometry = useMemo(() => generateHeightMapGeometry(150), 
+    [generateHeightMapGeometry]);
+
   return (
     <group ref={groupRef}>
       <ambientLight intensity={0.9} />
       <directionalLight position={[400, 800, 200]} intensity={1.2} />
+      
+      {/* Terrain mesh */}
+      <mesh 
+        geometry={terrainGeometry} 
+        position={[0, -200, 0]}
+        receiveShadow
+        castShadow
+      >
+        <meshStandardMaterial 
+          vertexColors 
+          side={THREE.DoubleSide}
+          roughness={0.8}
+          metalness={0.2}
+        />
+      </mesh>
+
+      {/* Labels for capabilities */}
+      {Object.entries(capabilityHeights.all).map(([key, cap]) => {
+        if (!cap.heights?.[year]) return null;
+        const [wx, wz] = worldFromNorm(cap.x, cap.y, 1200);
+        const height = cap.heights[year] * 600;
+
+        return (
+          <Html
+            key={key}
+            position={[wx, -200 + height + 20, wz]}
+            center
+            style={{
+              background: 'rgba(0,0,0,0.8)',
+              padding: '4px 8px',
+              borderRadius: '4px',
+              color: 'white',
+              fontSize: '12px',
+              pointerEvents: 'none',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            {key.split('_').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')}
+          </Html>
+        );
+      })}
+
+      {/* Optional: grid helper for reference */}
       <gridHelper args={[2000, 100, 0x444444, 0x222222]} position={[0, -300, 0]} />
-
-      {/* Points */}
-      {points.map((pt, i) => (
-        <mesh key={i} ref={(el) => (meshRefs.current[i] = el)} position={[pt.x, pt.y, pt.z]} onPointerDown={(e) => { e.stopPropagation(); setSelected(i); }} castShadow>
-          <sphereGeometry args={[10, 16, 12]} />
-          <meshStandardMaterial color={selected === i ? 0xffff00 : 0x156289} />
-        </mesh>
-      ))}
-
-      {/* Capability trend lines + sinkhole visualization */}
-      {capabilityNodes}
-
-      {/* TransformControls attached to selected mesh */}
-      <TransformControls ref={transformRef} object={selected != null ? meshRefs.current[selected] : undefined} mode="translate" />
-      <SplineLines points={points} show={show} />
     </group>
   );
 }
