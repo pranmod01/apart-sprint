@@ -6,8 +6,9 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 from matplotlib.backends.backend_pdf import PdfPages
 
+
 # Path to the JSON file (adjust if necessary)
-json_path = "capability_heights.json"
+json_path = "../data/intermediate/capability_heights.json"
 
 # Output directory for plots
 out_dir = "plots"
