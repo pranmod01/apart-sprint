@@ -1,3 +1,4 @@
+import { Html, Line } from "@react-three/drei";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { OrbitControls, TransformControls } from "@react-three/drei";
@@ -204,17 +205,51 @@ function Scene() {
     return geom;
   };
 
-  // build capability nodes (pure, no hooks inside mapping) to keep hooks stable
+  // helper: find related capabilities by checking top_models overlap
+  const findRelatedCapabilities = (capKey, cap) => {
+    const related = [];
+    if (!cap.top_models) return related;
+    
+    Object.entries(capabilityHeights.all).forEach(([otherKey, other]) => {
+      if (otherKey === capKey) return;
+      if (!other.top_models) return;
+      
+      // check for overlapping top models
+      const overlap = Object.keys(cap.top_models).filter(
+        model => other.top_models[model]
+      );
+      if (overlap.length > 0) {
+        related.push({
+          key: otherKey,
+          overlap: overlap.length,
+          pos: other
+        });
+      }
+    });
+    return related;
+  };
+
+  // build capability nodes with labels and connections
   const capabilityNodes = useMemo(() => {
     if (!capabilityHeights?.all) return [];
-    return Object.entries(capabilityHeights.all).map(([capKey, cap]) => {
+    
+    const nodes = Object.entries(capabilityHeights.all).map(([capKey, cap]) => {
       const category = cap.category || "unknown";
       if (capabilitiesState && category && capabilitiesState[category] === false) return null;
 
       const heights = cap.heights || {};
       const selectedHeight = Number(heights[String(year)] ?? 0);
+      
+      // Get world position for this capability
+      const [wx, wz] = worldFromNorm(cap.x, cap.y, 1200);
+      const yearIndex = YEARS.indexOf(year);
+      const offsetX = (yearIndex - (YEARS.length - 1) / 2) * 12;
+      const markerPos = [wx + offsetX, -200 + selectedHeight * 600, wz + 6];
 
-      // color
+      // Find related capabilities to draw connections
+      const related = findRelatedCapabilities(capKey, cap);
+      
+      // Color from category config
       let col = new THREE.Color(0x888888);
       const catCfg = categories?.capability_categories?.[category];
       if (catCfg?.color && Array.isArray(catCfg.color)) {
@@ -222,36 +257,69 @@ function Scene() {
         col = new THREE.Color().setRGB(r, g, b);
       }
 
-      // pure geometry generation (no hooks)
-      const trendGeom = buildTrend(cap);
-      const showSink = selectedHeight > 0 && selectedHeight < 0.12;
-      const sinkGeom = showSink ? buildSinkholeRing(cap, selectedHeight) : null;
-
-      const yearIndex = YEARS.indexOf(year);
-      const [wx, wz] = worldFromNorm(cap.x, cap.y, 1200);
-      const offsetX = (yearIndex - (YEARS.length - 1) / 2) * 12;
-      const markerPos = [wx + offsetX, -200 + selectedHeight * 600, wz + 6];
-
       return (
         <group key={capKey}>
-          <line geometry={trendGeom}>
+          {/* Marker & trend lines as before */}
+          <line geometry={buildTrend(cap)}>
             <lineBasicMaterial attach="material" color={col.getHex()} linewidth={2} transparent opacity={0.9} />
           </line>
 
-          <mesh position={markerPos} key={`${capKey}-marker`}>
+          <mesh position={markerPos}>
             <sphereGeometry args={[5.5, 10, 10]} />
-            <meshStandardMaterial color={selectedHeight < 0.12 ? 0xff3333 : col} emissive={selectedHeight < 0.12 ? new THREE.Color(0x6b0000) : col} emissiveIntensity={0.4} />
+            <meshStandardMaterial 
+              color={selectedHeight < 0.12 ? 0xff3333 : col} 
+              emissive={selectedHeight < 0.12 ? new THREE.Color(0x6b0000) : col} 
+              emissiveIntensity={0.4} 
+            />
           </mesh>
 
-          {sinkGeom && (
-            <line geometry={sinkGeom}>
+          {/* Label */}
+          <Html
+            position={[markerPos[0], markerPos[1] + 20, markerPos[2]]}
+            center
+            style={{
+              background: 'rgba(0,0,0,0.8)',
+              padding: '4px 8px',
+              borderRadius: '4px',
+              color: 'white',
+              fontSize: '12px',
+              pointerEvents: 'none',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            {capKey.split('_').map(w => w[0].toUpperCase() + w.slice(1)).join(' ')}
+          </Html>
+
+          {/* Connection lines to related capabilities */}
+          {related.map(rel => (
+            <Line
+              key={`${capKey}-${rel.key}`}
+              points={[
+                new THREE.Vector3(markerPos[0], markerPos[1], markerPos[2]),
+                new THREE.Vector3(
+                  rel.pos.x * 1200 - 600,
+                  -200 + (rel.pos.heights?.[year] ?? 0) * 600,
+                  rel.pos.y * 1200 - 600
+                )
+              ]}
+              color={col.getHex()}
+              lineWidth={1}
+              transparent
+              opacity={0.3}
+            />
+          ))}
+
+          {/* Sinkhole if needed */}
+          {selectedHeight > 0 && selectedHeight < 0.12 && (
+            <line geometry={buildSinkholeRing(cap, selectedHeight)}>
               <lineBasicMaterial attach="material" color={0xff2222} linewidth={2} transparent opacity={0.85} />
             </line>
           )}
         </group>
       );
     });
-    // depend on relevant data only
+
+    return nodes;
   }, [capabilityHeights, capabilitiesState, year, categories]);
 
   return (
