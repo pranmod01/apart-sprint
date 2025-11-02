@@ -42,7 +42,7 @@ The 3D interface, built with React and Three.js, translates forecast data into a
 
 **Impact**
 
-The AI Capability Terrain Map enables transparent, data-driven insight into AI progress. By highlighting where and how capabilities advance — and where they stagnate — it supports more informed decisions around AI safety, policy, and governance, equipping stakeholders with early warning signals of transformative breakthroughs or emerging risks.
+The AI Capability Terrain Map enables transparent, data-driven insight into AI progress. By highlighting where and how capabilities advance, and where they stagnate. It supports more informed decisions around AI safety, policy, and governance, equipping stakeholders with early warning signals of transformative breakthroughs or emerging risks.
 
 <img width="1900" height="911" alt="Screenshot 2025-11-02 at 2 51 39 PM" src="https://github.com/user-attachments/assets/bcfcc0c3-9e75-4413-9f33-e7136d87f7b3" />
 
@@ -70,6 +70,6 @@ npm install
 # Running the Development Server
 ```bash
 npm run dev
-
+```
 Then open your browser and visit http://localhost:5173
  (or the port shown in your terminal) to view the interactive terrain map.
