@@ -1,0 +1,131 @@
+{
+  "capability_categories": {
+    "coding": {
+      "color": [0.231, 0.510, 0.965],
+      "display_name": "Coding",
+      "description": "Software development and programming tasks"
+    },
+    "reasoning": {
+      "color": [0.545, 0.361, 0.965],
+      "display_name": "Reasoning",
+      "description": "Logical reasoning and problem solving"
+    },
+    "knowledge": {
+      "color": [0.063, 0.725, 0.506],
+      "display_name": "Knowledge",
+      "display_name": "General knowledge and factual recall"
+    },
+    "mathematics": {
+      "color": [0.961, 0.620, 0.043],
+      "display_name": "Mathematics",
+      "description": "Mathematical reasoning and computation"
+    },
+    "language": {
+      "color": [0.925, 0.282, 0.600],
+      "display_name": "Language",
+      "description": "Natural language understanding and generation"
+    },
+    "games": {
+      "color": [0.937, 0.267, 0.267],
+      "display_name": "Games",
+      "description": "Game playing and strategy"
+    },
+    "agents": {
+      "color": [0.024, 0.714, 0.831],
+      "display_name": "Agents",
+      "description": "Agentic tasks and tool use"
+    }
+  },
+  "sinkhole_categories": {
+    "constrained_generation": {
+      "position": [0.2, 0.3],
+      "display_name": "Constrained Generation",
+      "description": "Text generation with specific constraints"
+    },
+    "spatial_reasoning": {
+      "position": [0.55, 0.25],
+      "display_name": "Spatial Reasoning",
+      "description": "Understanding spatial relationships"
+    },
+    "string_manipulation": {
+      "position": [0.2, 0.3],
+      "display_name": "String Manipulation",
+      "description": "Text and string processing tasks"
+    },
+    "retroactive_reasoning": {
+      "position": [0.65, 0.45],
+      "display_name": "Retroactive Reasoning",
+      "description": "Reasoning about past events and contexts"
+    },
+    "self_reference": {
+      "position": [0.7, 0.4],
+      "display_name": "Self Reference",
+      "description": "Self-referential reasoning tasks"
+    },
+    "logic_puzzle": {
+      "position": [0.45, 0.55],
+      "display_name": "Logic Puzzle",
+      "description": "Logic puzzles and deductive reasoning"
+    },
+    "physical_reasoning": {
+      "position": [0.5, 0.5],
+      "display_name": "Physical Reasoning",
+      "description": "Understanding physical world interactions"
+    },
+    "temporal": {
+      "position": [0.4, 0.5],
+      "display_name": "Temporal",
+      "description": "Time-based reasoning tasks"
+    },
+    "arithmetic": {
+      "position": [0.75, 0.45],
+      "display_name": "Arithmetic",
+      "description": "Basic arithmetic operations"
+    },
+    "counting": {
+      "position": [0.4, 0.4],
+      "display_name": "Counting",
+      "description": "Counting and enumeration tasks"
+    }
+  },
+  "severity_levels": {
+    "critical": {
+      "color": [0.8, 0.1, 0.1],
+      "depth": -80.0,
+      "display_name": "Critical",
+      "description": "All or nearly all models failed"
+    },
+    "high": {
+      "color": [0.9, 0.2, 0.1],
+      "depth": -60.0,
+      "display_name": "High",
+      "description": "Most models failed"
+    },
+    "medium": {
+      "color": [1.0, 0.4, 0.0],
+      "depth": -40.0,
+      "display_name": "Medium",
+      "description": "Half of models failed"
+    },
+    "low": {
+      "color": [1.0, 0.6, 0.2],
+      "depth": -20.0,
+      "display_name": "Low",
+      "description": "Few models failed"
+    }
+  },
+  "rendering_config": {
+    "coordinate_system": "cartesian",
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 100.0
+    },
+    "velocity_thresholds": {
+      "high": 10.0,
+      "medium": 5.0,
+      "low": 0.0
+    },
+    "default_color": [0.42, 0.47, 0.50]
+  }
+}
