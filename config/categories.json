@@ -13,7 +13,7 @@
     "knowledge": {
       "color": [0.063, 0.725, 0.506],
       "display_name": "Knowledge",
-      "display_name": "General knowledge and factual recall"
+      "description": "General knowledge and factual recall"
     },
     "mathematics": {
       "color": [0.961, 0.620, 0.043],
