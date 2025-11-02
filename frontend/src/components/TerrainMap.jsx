@@ -1,6 +1,6 @@
 import React, { useRef, useMemo, useState, useEffect } from 'react';
-import { useFrame } from '@react-three/fiber';
-import { Text } from '@react-three/drei';
+import { useFrame, useThree } from '@react-three/fiber';
+import { Text, Billboard } from '@react-three/drei';
 import * as THREE from 'three';
 import ForecastNodes from './ForecastNodes';
 import Sinkholes from './Sinkholes';
@@ -15,6 +15,7 @@ function TerrainMap() {
     showForecastNodes,
     showLabels,
     filterCategory,
+    filterModel,
     currentYear
   } = useTerrainStore();
   const [hoveredCapability, setHoveredCapability] = useState(null);
@@ -66,14 +67,48 @@ function TerrainMap() {
           key
         });
 
-        capPositions.push({
-          x: (cap.x - 0.5) * size,
-          z: (cap.y - 0.5) * size,
-          y: avgHeight * 30 + 2,
-          name: cap.name || key,
-          color: getCategoryColor(cap.category),
-          category: cap.category
-        });
+        // Create per-model data points if top_models exists
+        const topModels = cap.top_models?.[currentYear.toString()] || [];
+
+        if (topModels.length > 0 && showLabels) {
+          // Create a marker for each model
+          topModels.forEach((modelData, idx) => {
+            // Apply model filter
+            if (filterModel && filterModel !== 'All' && modelData.org !== filterModel) {
+              return;
+            }
+
+            // Offset each model slightly to avoid overlap
+            const angleOffset = (idx / topModels.length) * Math.PI * 2;
+            const radius = 1.5;
+            const offsetX = Math.cos(angleOffset) * radius;
+            const offsetZ = Math.sin(angleOffset) * radius;
+
+            capPositions.push({
+              x: (cap.x - 0.5) * size + offsetX,
+              z: (cap.y - 0.5) * size + offsetZ,
+              y: (modelData.normalized_score || avgHeight) * 30 + 2,
+              name: `${cap.name || key}\n${modelData.model}`,
+              modelName: modelData.model,
+              org: modelData.org,
+              score: modelData.score,
+              color: getOrgColor(modelData.org),
+              category: cap.category,
+              isModelMarker: true
+            });
+          });
+        } else if (!showLabels || topModels.length === 0) {
+          // Fallback to aggregate marker if no models or labels hidden
+          capPositions.push({
+            x: (cap.x - 0.5) * size,
+            z: (cap.y - 0.5) * size,
+            y: avgHeight * 30 + 2,
+            name: cap.name || key,
+            color: getCategoryColor(cap.category),
+            category: cap.category,
+            isModelMarker: false
+          });
+        }
       }
     });
 
@@ -118,7 +153,7 @@ function TerrainMap() {
     geo.computeVertexNormals();
 
     return { geometry: geo, capabilityPositions: capPositions };
-  }, [capabilityData, filterCategory, currentYear]);
+  }, [capabilityData, filterCategory, filterModel, currentYear, showLabels]);
 
   // Animate terrain gently
   useFrame((state) => {
@@ -179,17 +214,26 @@ function TerrainMap() {
           </mesh>
 
           {hoveredCapability === cap.name && (
-            <Text
-              position={[0, 3, 0]}
-              fontSize={1.5}
-              color="white"
-              anchorX="center"
-              anchorY="middle"
-              outlineWidth={0.1}
-              outlineColor="#000000"
+            <Billboard
+              follow={true}
+              lockX={false}
+              lockY={false}
+              lockZ={false}
             >
-              {cap.name}
-            </Text>
+              <Text
+                position={[0, 3, 0]}
+                fontSize={1.2}
+                color="white"
+                anchorX="center"
+                anchorY="middle"
+                outlineWidth={0.15}
+                outlineColor="#000000"
+              >
+                {cap.isModelMarker
+                  ? `${cap.name}\n${cap.org} - Score: ${cap.score?.toFixed(1) || 'N/A'}`
+                  : `${cap.name}\n(Aggregate)`}
+              </Text>
+            </Billboard>
           )}
         </group>
       ))}
@@ -218,6 +262,48 @@ function getCategoryColor(category) {
     default: '#ffffff'
   };
   return colors[category] || colors.default;
+}
+
+// Helper function to get color based on organization
+function getOrgColor(org) {
+  const colors = {
+    'OpenAI': '#10a37f',
+    'Anthropic': '#d4a373',
+    'Google': '#4285f4',
+    'Google DeepMind': '#4285f4',
+    'DeepMind': '#4285f4',
+    'Google Research': '#5a9fd4',
+    'Meta': '#0668e1',
+    'Meta AI': '#0668e1',
+    'Mistral AI': '#f2a73b',
+    'xAI': '#ff006e',
+    'DeepSeek': '#ff4d4d',
+    'Alibaba': '#ff6a00',
+    'Baichuan': '#ff8533',
+    'Zhipu AI': '#ffaa00',
+    'Moonshot': '#ffd700',
+    '01.AI': '#00d4ff',
+    'Microsoft': '#00a4ef',
+    'Microsoft Research': '#0078d4',
+    'Cohere': '#39ff14',
+    'Inflection AI': '#7c3aed',
+    'Allen Institute for AI': '#8b5cf6',
+    'Hugging Face': '#fbbf24',
+    'EleutherAI': '#10b981',
+    'Technology Innovation Institute': '#06b6d4',
+    'Databricks': '#ff3621',
+    'MosaicML': '#fb923c',
+    'Salesforce Research': '#0ea5e9',
+    'default': '#ffffff'
+  };
+
+  // Handle multi-org entries (e.g., "Google,Google DeepMind")
+  if (org && org.includes(',')) {
+    const firstOrg = org.split(',')[0].trim();
+    return colors[firstOrg] || colors.default;
+  }
+
+  return colors[org] || colors.default;
 }
 
 export default TerrainMap;

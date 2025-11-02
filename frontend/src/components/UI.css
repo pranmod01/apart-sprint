@@ -59,22 +59,22 @@
   width: 280px;
 }
 
-.ui-timeline {
-  bottom: 260px;
-  left: 20px;
-  width: 280px;
-}
-
 .ui-filters {
-  bottom: 140px;
+  bottom: 20px;
   left: 20px;
   width: 280px;
 }
 
 .ui-controls {
   bottom: 20px;
-  left: 20px;
+  left: 320px;
   width: 240px;
+}
+
+.ui-timeline {
+  bottom: 20px;
+  left: 580px;
+  width: 320px;
 }
 
 .ui-stats {

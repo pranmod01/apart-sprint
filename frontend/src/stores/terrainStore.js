@@ -8,10 +8,34 @@ export const useTerrainStore = create((set) => ({
   showSinkholes: true,
   showForecastNodes: true,
   showLabels: true,
+  cameraMode: 'topdown', // 'topdown' or 'landscape'
   currentYear: 2025,
   availableYears: [2019, 2020, 2021, 2022, 2023, 2024, 2025],
   availableCategories: ['coding', 'reasoning', 'knowledge', 'spatial', 'language', 'physical'],
-  availableModels: ['OpenAI', 'Anthropic', 'Google', 'Meta', 'All'],
+  availableModels: [
+    'All',
+    'OpenAI',
+    'Anthropic',
+    'Google',
+    'Google DeepMind',
+    'DeepMind',
+    'Meta',
+    'Meta AI',
+    'Microsoft',
+    'xAI',
+    'DeepSeek',
+    'Alibaba',
+    'Baichuan',
+    'Zhipu AI',
+    'Moonshot',
+    '01.AI',
+    'Mistral AI',
+    'Cohere',
+    'Inflection AI',
+    'Hugging Face',
+    'Allen Institute for AI',
+    'EleutherAI'
+  ],
 
   loadCapabilityData: async () => {
     try {
@@ -42,4 +66,7 @@ export const useTerrainStore = create((set) => ({
   toggleSinkholes: () => set((state) => ({ showSinkholes: !state.showSinkholes })),
   toggleForecastNodes: () => set((state) => ({ showForecastNodes: !state.showForecastNodes })),
   toggleLabels: () => set((state) => ({ showLabels: !state.showLabels })),
+  toggleCameraMode: () => set((state) => ({
+    cameraMode: state.cameraMode === 'topdown' ? 'landscape' : 'topdown'
+  })),
 }));

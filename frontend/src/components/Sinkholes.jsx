@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Text } from '@react-three/drei';
+import { Text, Billboard } from '@react-three/drei';
 import * as THREE from 'three';
 import sinkholeData from '../../../data/outputs/terrain_sinkholes.json';
 
@@ -74,44 +74,51 @@ function Sinkholes() {
             />
           )}
 
-          {/* Tooltip on hover */}
+          {/* Tooltip on hover - positioned to the side */}
           {hoveredSinkhole?.id === sinkhole.id && (
-            <group position={[0, 5, 0]}>
-              <Text
-                fontSize={1}
-                color="white"
-                anchorX="center"
-                anchorY="middle"
-                outlineWidth={0.15}
-                outlineColor="#000000"
-                maxWidth={20}
-              >
-                {`${sinkhole.metadata.category.replace('_', ' ').toUpperCase()}\n${sinkhole.metadata.severity}`}
-              </Text>
-              <Text
-                position={[0, -2, 0]}
-                fontSize={0.7}
-                color="#cccccc"
-                anchorX="center"
-                anchorY="middle"
-                outlineWidth={0.1}
-                outlineColor="#000000"
-                maxWidth={25}
-              >
-                {sinkhole.metadata.task.substring(0, 100)}...
-              </Text>
-              <Text
-                position={[0, -4, 0]}
-                fontSize={0.6}
-                color={sinkhole.metadata.failure_count === sinkhole.metadata.total_tested ? '#ff4444' : '#44ff44'}
-                anchorX="center"
-                anchorY="middle"
-                outlineWidth={0.1}
-                outlineColor="#000000"
-              >
-                {`Failed: ${sinkhole.metadata.failure_count}/${sinkhole.metadata.total_tested} models`}
-              </Text>
-            </group>
+            <Billboard
+              follow={true}
+              lockX={false}
+              lockY={false}
+              lockZ={false}
+            >
+              <group position={[8, 2, 0]}>
+                <Text
+                  fontSize={1}
+                  color="white"
+                  anchorX="left"
+                  anchorY="middle"
+                  outlineWidth={0.15}
+                  outlineColor="#000000"
+                  maxWidth={20}
+                >
+                  {`${sinkhole.metadata.category.replace('_', ' ').toUpperCase()}\n${sinkhole.metadata.severity}`}
+                </Text>
+                <Text
+                  position={[0, -2, 0]}
+                  fontSize={0.7}
+                  color="#cccccc"
+                  anchorX="left"
+                  anchorY="middle"
+                  outlineWidth={0.1}
+                  outlineColor="#000000"
+                  maxWidth={25}
+                >
+                  {sinkhole.metadata.task.substring(0, 100)}...
+                </Text>
+                <Text
+                  position={[0, -4, 0]}
+                  fontSize={0.6}
+                  color={sinkhole.metadata.failure_count === sinkhole.metadata.total_tested ? '#ff4444' : '#44ff44'}
+                  anchorX="left"
+                  anchorY="middle"
+                  outlineWidth={0.1}
+                  outlineColor="#000000"
+                >
+                  {`Failed: ${sinkhole.metadata.failure_count}/${sinkhole.metadata.total_tested} models`}
+                </Text>
+              </group>
+            </Billboard>
           )}
         </group>
       ))}

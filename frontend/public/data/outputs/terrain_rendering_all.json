@@ -1,0 +1,3170 @@
+{
+  "vertices": [
+    [
+      0.65,
+      0.5,
+      46.5
+    ],
+    [
+      0.65,
+      0.5,
+      46.5
+    ],
+    [
+      0.65,
+      0.5,
+      46.5
+    ],
+    [
+      0.65,
+      0.5,
+      57.5
+    ],
+    [
+      0.65,
+      0.5,
+      57.5
+    ],
+    [
+      0.65,
+      0.5,
+      57.5
+    ],
+    [
+      0.5,
+      0.5,
+      70.5
+    ],
+    [
+      0.5,
+      0.5,
+      81.8
+    ],
+    [
+      0.5,
+      0.5,
+      83.2
+    ],
+    [
+      0.5,
+      0.5,
+      84.9
+    ],
+    [
+      0.5,
+      0.5,
+      88.7
+    ],
+    [
+      0.3,
+      0.55,
+      74.0
+    ],
+    [
+      0.3,
+      0.55,
+      74.2
+    ],
+    [
+      0.3,
+      0.55,
+      91.3
+    ],
+    [
+      0.6,
+      0.2,
+      2932.06
+    ],
+    [
+      0.6,
+      0.2,
+      1157.82
+    ],
+    [
+      0.45,
+      0.55,
+      41.1
+    ],
+    [
+      0.45,
+      0.55,
+      41.1
+    ],
+    [
+      0.45,
+      0.55,
+      41.1
+    ],
+    [
+      0.45,
+      0.55,
+      64.9
+    ],
+    [
+      0.45,
+      0.55,
+      64.9
+    ],
+    [
+      0.45,
+      0.55,
+      64.9
+    ],
+    [
+      0.45,
+      0.55,
+      77.2
+    ],
+    [
+      0.45,
+      0.55,
+      77.2
+    ],
+    [
+      0.45,
+      0.55,
+      77.2
+    ],
+    [
+      0.45,
+      0.55,
+      77.2
+    ],
+    [
+      0.45,
+      0.55,
+      77.2
+    ],
+    [
+      0.45,
+      0.55,
+      81.8
+    ],
+    [
+      0.45,
+      0.55,
+      81.8
+    ],
+    [
+      0.45,
+      0.55,
+      81.8
+    ],
+    [
+      0.45,
+      0.55,
+      81.8
+    ],
+    [
+      0.45,
+      0.55,
+      81.8
+    ],
+    [
+      0.45,
+      0.55,
+      81.8
+    ],
+    [
+      0.45,
+      0.55,
+      91.2
+    ],
+    [
+      0.45,
+      0.55,
+      91.2
+    ],
+    [
+      0.45,
+      0.55,
+      91.2
+    ],
+    [
+      0.45,
+      0.55,
+      91.2
+    ],
+    [
+      0.35,
+      0.65,
+      22.4
+    ],
+    [
+      0.35,
+      0.65,
+      63.0
+    ],
+    [
+      0.35,
+      0.65,
+      68.0
+    ],
+    [
+      0.35,
+      0.65,
+      86.0
+    ],
+    [
+      0.35,
+      0.65,
+      88.0
+    ],
+    [
+      0.35,
+      0.65,
+      88.0
+    ],
+    [
+      0.65,
+      0.25,
+      32.6
+    ],
+    [
+      0.65,
+      0.25,
+      43.6
+    ],
+    [
+      0.2,
+      0.3,
+      53.1
+    ],
+    [
+      0.2,
+      0.3,
+      1.0
+    ],
+    [
+      0.85,
+      0.45,
+      1.5
+    ],
+    [
+      0.85,
+      0.45,
+      7.0
+    ],
+    [
+      0.85,
+      0.45,
+      7.5
+    ],
+    [
+      0.85,
+      0.45,
+      7.5
+    ],
+    [
+      0.85,
+      0.45,
+      7.5
+    ],
+    [
+      0.85,
+      0.45,
+      7.5
+    ],
+    [
+      0.7,
+      0.4,
+      2.5
+    ],
+    [
+      0.7,
+      0.4,
+      3.3
+    ],
+    [
+      0.7,
+      0.4,
+      3.5
+    ],
+    [
+      0.75,
+      0.45,
+      78.2
+    ],
+    [
+      0.75,
+      0.45,
+      46.5
+    ],
+    [
+      0.75,
+      0.45,
+      46.5
+    ],
+    [
+      0.75,
+      0.45,
+      47.9
+    ],
+    [
+      0.75,
+      0.45,
+      47.9
+    ],
+    [
+      0.75,
+      0.45,
+      1.2
+    ],
+    [
+      0.55,
+      0.75,
+      10.1
+    ],
+    [
+      0.55,
+      0.75,
+      40.4
+    ],
+    [
+      0.55,
+      0.75,
+      55.9
+    ],
+    [
+      0.55,
+      0.75,
+      69.6
+    ],
+    [
+      0.25,
+      0.35,
+      8.2
+    ],
+    [
+      0.25,
+      0.35,
+      8.4
+    ],
+    [
+      0.75,
+      0.25,
+      56.0
+    ],
+    [
+      0.75,
+      0.25,
+      74.0
+    ],
+    [
+      0.8,
+      0.4,
+      0.9
+    ],
+    [
+      0.8,
+      0.4,
+      0.9
+    ],
+    [
+      0.8,
+      0.4,
+      0.9
+    ],
+    [
+      0.8,
+      0.4,
+      3.8
+    ],
+    [
+      0.8,
+      0.4,
+      3.8
+    ],
+    [
+      0.75,
+      0.35,
+      30.7
+    ],
+    [
+      0.75,
+      0.35,
+      60.8
+    ],
+    [
+      0.4,
+      0.4,
+      41.7
+    ],
+    [
+      0.4,
+      0.4,
+      62.4
+    ],
+    [
+      0.25,
+      0.6,
+      60.0
+    ],
+    [
+      0.25,
+      0.6,
+      70.0
+    ],
+    [
+      0.25,
+      0.6,
+      86.4
+    ],
+    [
+      0.25,
+      0.6,
+      88.1
+    ],
+    [
+      0.25,
+      0.6,
+      79.9
+    ],
+    [
+      0.6,
+      0.8,
+      28.4
+    ],
+    [
+      0.6,
+      0.8,
+      47.8
+    ],
+    [
+      0.2,
+      0.55,
+      75.8
+    ],
+    [
+      0.2,
+      0.55,
+      81.4
+    ],
+    [
+      0.2,
+      0.55,
+      87.6
+    ],
+    [
+      0.2,
+      0.55,
+      82.9
+    ],
+    [
+      0.5,
+      0.3,
+      59.5
+    ],
+    [
+      0.5,
+      0.3,
+      61.1
+    ],
+    [
+      0.25,
+      0.5,
+      39.34
+    ],
+    [
+      0.25,
+      0.5,
+      40.93
+    ],
+    [
+      0.65,
+      0.45,
+      75.1
+    ],
+    [
+      0.65,
+      0.45,
+      87.5
+    ],
+    [
+      0.55,
+      0.25,
+      4.6
+    ],
+    [
+      0.55,
+      0.25,
+      8.8
+    ],
+    [
+      0.7,
+      0.2,
+      17.5
+    ],
+    [
+      0.7,
+      0.2,
+      22.5
+    ],
+    [
+      0.4,
+      0.65,
+      71.8
+    ],
+    [
+      0.55,
+      0.85,
+      7.7
+    ],
+    [
+      0.55,
+      0.85,
+      22.0
+    ],
+    [
+      0.55,
+      0.85,
+      38.1
+    ],
+    [
+      0.35,
+      0.6,
+      39.7
+    ],
+    [
+      0.35,
+      0.6,
+      58.1
+    ],
+    [
+      0.35,
+      0.6,
+      58.1
+    ],
+    [
+      0.5,
+      0.8,
+      34.4
+    ],
+    [
+      0.5,
+      0.8,
+      19.0
+    ],
+    [
+      0.4,
+      0.5,
+      61.8
+    ],
+    [
+      0.4,
+      0.5,
+      79.4
+    ],
+    [
+      0.4,
+      0.5,
+      88.7
+    ],
+    [
+      0.4,
+      0.5,
+      90.9
+    ],
+    [
+      0.4,
+      0.5,
+      88.7
+    ],
+    [
+      0.3,
+      0.7,
+      74.5
+    ],
+    [
+      0.3,
+      0.7,
+      87.2
+    ],
+    [
+      0.3,
+      0.7,
+      79.8
+    ],
+    [
+      0.45,
+      0.85,
+      60.3
+    ]
+  ],
+  "metadata": [
+    {
+      "capability": "code_generation",
+      "capability_display": "Code Generation",
+      "model": "o1-2024-12-17_high",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "live_bench",
+      "score": 75.67,
+      "normalized_score": 0.7567,
+      "category": "coding",
+      "description": "Generate functional code from natural language descriptions",
+      "velocity": 8.32,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "code_generation",
+      "capability_display": "Code Generation",
+      "model": "o1-2024-12-17_high",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "aider_polyglot",
+      "score": 61.7,
+      "normalized_score": 0.617,
+      "category": "coding",
+      "description": "Generate functional code from natural language descriptions",
+      "velocity": 8.32,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "code_generation",
+      "capability_display": "Code Generation",
+      "model": "claude-3-5-sonnet-20241022",
+      "organization": "Anthropic",
+      "release_date": "2024-10-22",
+      "benchmark": "swe_bench_verified",
+      "score": 0.022,
+      "normalized_score": 0.022,
+      "category": "coding",
+      "description": "Generate functional code from natural language descriptions",
+      "velocity": 8.32,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "code_generation",
+      "capability_display": "Code Generation",
+      "model": "gpt-5-2025-08-07_high",
+      "organization": "OpenAI",
+      "release_date": "2025-08-07",
+      "benchmark": "aider_polyglot",
+      "score": 88.0,
+      "normalized_score": 0.88,
+      "category": "coding",
+      "description": "Generate functional code from natural language descriptions",
+      "velocity": 8.32,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "code_generation",
+      "capability_display": "Code Generation",
+      "model": "gemini-2.5-pro-exp-03-25",
+      "organization": "Google DeepMind",
+      "release_date": "2025-03-25",
+      "benchmark": "live_bench",
+      "score": 82.35,
+      "normalized_score": 0.8235,
+      "category": "coding",
+      "description": "Generate functional code from natural language descriptions",
+      "velocity": 8.32,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "code_generation",
+      "capability_display": "Code Generation",
+      "model": "DeepSeek-V3.1",
+      "organization": "DeepSeek",
+      "release_date": "2025-08-21",
+      "benchmark": "swe_bench_verified",
+      "score": 0.0224,
+      "normalized_score": 0.0224,
+      "category": "coding",
+      "description": "Generate functional code from natural language descriptions",
+      "velocity": 8.32,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "physical_intuition",
+      "capability_display": "Physical Intuition",
+      "model": "gpt2-xl",
+      "organization": "OpenAI",
+      "release_date": "2019-11-05",
+      "benchmark": "piqa",
+      "score": 0.705,
+      "normalized_score": 0.705,
+      "category": "reasoning",
+      "description": "Apply understanding of physical laws and object behavior",
+      "velocity": 4.45,
+      "velocity_trend": "decelerating",
+      "year": 2019
+    },
+    {
+      "capability": "physical_intuition",
+      "capability_display": "Physical Intuition",
+      "model": "Gopher (280B)",
+      "organization": "DeepMind",
+      "release_date": "2021-12-08",
+      "benchmark": "piqa",
+      "score": 0.818,
+      "normalized_score": 0.818,
+      "category": "reasoning",
+      "description": "Apply understanding of physical laws and object behavior",
+      "velocity": 4.45,
+      "velocity_trend": "decelerating",
+      "year": 2021
+    },
+    {
+      "capability": "physical_intuition",
+      "capability_display": "Physical Intuition",
+      "model": "Megatron-Turing NLG 530B",
+      "organization": "Microsoft,NVIDIA",
+      "release_date": "2022-01-28",
+      "benchmark": "piqa",
+      "score": 0.8319,
+      "normalized_score": 0.8319,
+      "category": "reasoning",
+      "description": "Apply understanding of physical laws and object behavior",
+      "velocity": 4.45,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "physical_intuition",
+      "capability_display": "Physical Intuition",
+      "model": "falcon-180B",
+      "organization": "Technology Innovation Institute",
+      "release_date": "2023-09-06",
+      "benchmark": "piqa",
+      "score": 0.849,
+      "normalized_score": 0.849,
+      "category": "reasoning",
+      "description": "Apply understanding of physical laws and object behavior",
+      "velocity": 4.45,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "physical_intuition",
+      "capability_display": "Physical Intuition",
+      "model": "gpt-4o-mini-2024-07-18",
+      "organization": "OpenAI",
+      "release_date": "2024-07-18",
+      "benchmark": "piqa",
+      "score": 0.887,
+      "normalized_score": 0.887,
+      "category": "reasoning",
+      "description": "Apply understanding of physical laws and object behavior",
+      "velocity": 4.45,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "scientific_reasoning",
+      "capability_display": "Scientific Reasoning",
+      "model": "text-davinci-001",
+      "organization": "OpenAI",
+      "release_date": "2022-01-27",
+      "benchmark": "science_qa",
+      "score": 0.7404,
+      "normalized_score": 0.7404,
+      "category": "knowledge",
+      "description": "Apply scientific methods and domain knowledge to problems",
+      "velocity": 7.02,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "scientific_reasoning",
+      "capability_display": "Scientific Reasoning",
+      "model": "blip2-opt-2.7b",
+      "organization": "Salesforce Research",
+      "release_date": "2023-02-06",
+      "benchmark": "science_qa",
+      "score": 0.7417,
+      "normalized_score": 0.7417,
+      "category": "knowledge",
+      "description": "Apply scientific methods and domain knowledge to problems",
+      "velocity": 7.02,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "scientific_reasoning",
+      "capability_display": "Scientific Reasoning",
+      "model": "Phi-3.5-vision-instruct",
+      "organization": null,
+      "release_date": "2024-08-16",
+      "benchmark": "science_qa",
+      "score": 0.913,
+      "normalized_score": 0.913,
+      "category": "knowledge",
+      "description": "Apply scientific methods and domain knowledge to problems",
+      "velocity": 7.02,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "game_strategy",
+      "capability_display": "Game Strategy",
+      "model": "claude-3-5-sonnet-20240620",
+      "organization": "Anthropic",
+      "release_date": "2024-06-20",
+      "benchmark": "factorio_learning_environment",
+      "score": 293206.0,
+      "normalized_score": 2932.06,
+      "category": "games",
+      "description": "Develop winning approaches in strategic games",
+      "velocity": -5.7,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "game_strategy",
+      "capability_display": "Game Strategy",
+      "model": "gemini-2.0-flash-02-05",
+      "organization": "Google DeepMind,Google",
+      "release_date": "2025-02-05",
+      "benchmark": "factorio_learning_environment",
+      "score": 115782.0,
+      "normalized_score": 1157.82,
+      "category": "games",
+      "description": "Develop winning approaches in strategic games",
+      "velocity": -5.7,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt2-xl",
+      "organization": "OpenAI",
+      "release_date": "2019-11-05",
+      "benchmark": "wino_grande",
+      "score": 0.583,
+      "normalized_score": 0.583,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2019
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt2-xl",
+      "organization": "OpenAI",
+      "release_date": "2019-11-05",
+      "benchmark": "hella_swag",
+      "score": 0.4,
+      "normalized_score": 0.4,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2019
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt2-xl",
+      "organization": "OpenAI",
+      "release_date": "2019-11-05",
+      "benchmark": "arc_ai2",
+      "score": 0.25,
+      "normalized_score": 0.25,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2019
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "GLaM (MoE)",
+      "organization": "Google",
+      "release_date": "2021-12-13",
+      "benchmark": "wino_grande",
+      "score": 0.792,
+      "normalized_score": 0.792,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2021
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "Gopher (280B)",
+      "organization": "DeepMind",
+      "release_date": "2021-12-08",
+      "benchmark": "hella_swag",
+      "score": 0.792,
+      "normalized_score": 0.792,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2021
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt-j-6b",
+      "organization": "EleutherAI,LAION",
+      "release_date": "2021-08-05",
+      "benchmark": "arc_ai2",
+      "score": 0.363,
+      "normalized_score": 0.363,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2021
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "text-davinci-003",
+      "organization": "OpenAI",
+      "release_date": "2022-11-28",
+      "benchmark": "hella_swag",
+      "score": 0.855,
+      "normalized_score": 0.855,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "text-davinci-002",
+      "organization": "OpenAI",
+      "release_date": "2022-03-15",
+      "benchmark": "arc_ai2",
+      "score": 0.852,
+      "normalized_score": 0.852,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "PaLM 540B",
+      "organization": "Google Research",
+      "release_date": "2022-04-04",
+      "benchmark": "arc_ai2",
+      "score": 0.852,
+      "normalized_score": 0.852,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "PaLM 540B",
+      "organization": "Google Research",
+      "release_date": "2022-04-04",
+      "benchmark": "wino_grande",
+      "score": 0.851,
+      "normalized_score": 0.851,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "text-davinci-001",
+      "organization": "OpenAI",
+      "release_date": "2022-01-27",
+      "benchmark": "common_sense_qa_2",
+      "score": 0.529,
+      "normalized_score": 0.529,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt-4-0314",
+      "organization": "OpenAI",
+      "release_date": "2023-03-14",
+      "benchmark": "hella_swag",
+      "score": 0.953,
+      "normalized_score": 0.953,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt-4-32k-0314",
+      "organization": "OpenAI",
+      "release_date": "2023-03-14",
+      "benchmark": "hella_swag",
+      "score": 0.953,
+      "normalized_score": 0.953,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt-4-0314",
+      "organization": "OpenAI",
+      "release_date": "2023-03-14",
+      "benchmark": "wino_grande",
+      "score": 0.875,
+      "normalized_score": 0.875,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt-4-32k-0314",
+      "organization": "OpenAI",
+      "release_date": "2023-03-14",
+      "benchmark": "wino_grande",
+      "score": 0.875,
+      "normalized_score": 0.875,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt-3.5-turbo-1106",
+      "organization": "OpenAI",
+      "release_date": "2023-11-06",
+      "benchmark": "arc_ai2",
+      "score": 0.874,
+      "normalized_score": 0.874,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "gpt-3.5-turbo-0613",
+      "organization": "OpenAI",
+      "release_date": "2023-06-13",
+      "benchmark": "common_sense_qa_2",
+      "score": 0.57,
+      "normalized_score": 0.57,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "Llama-3.1-405B",
+      "organization": "Meta AI",
+      "release_date": "2024-07-23",
+      "benchmark": "arc_ai2",
+      "score": 0.953,
+      "normalized_score": 0.953,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "DeepSeek-V3",
+      "organization": "DeepSeek",
+      "release_date": "2024-12-26",
+      "benchmark": "arc_ai2",
+      "score": 0.953,
+      "normalized_score": 0.953,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "Llama-3.1-405B",
+      "organization": "Meta AI",
+      "release_date": "2024-07-23",
+      "benchmark": "wino_grande",
+      "score": 0.892,
+      "normalized_score": 0.892,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "commonsense_reasoning",
+      "capability_display": "Commonsense Reasoning",
+      "model": "Llama-3.1-405B",
+      "organization": "Meta AI",
+      "release_date": "2024-07-23",
+      "benchmark": "hella_swag",
+      "score": 0.892,
+      "normalized_score": 0.892,
+      "category": "reasoning",
+      "description": "Apply everyday knowledge and intuitive logic",
+      "velocity": 15.13,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "reading_comprehension",
+      "capability_display": "Reading Comprehension",
+      "model": "gpt2-xl",
+      "organization": "OpenAI",
+      "release_date": "2019-11-05",
+      "benchmark": "open_book_qa",
+      "score": 0.224,
+      "normalized_score": 0.224,
+      "category": "language",
+      "description": "Extract meaning and answer questions from written passages",
+      "velocity": 29.64,
+      "velocity_trend": "accelerating",
+      "year": 2019
+    },
+    {
+      "capability": "reading_comprehension",
+      "capability_display": "Reading Comprehension",
+      "model": "GLaM (MoE)",
+      "organization": "Google",
+      "release_date": "2021-12-13",
+      "benchmark": "open_book_qa",
+      "score": 0.63,
+      "normalized_score": 0.63,
+      "category": "language",
+      "description": "Extract meaning and answer questions from written passages",
+      "velocity": 29.64,
+      "velocity_trend": "accelerating",
+      "year": 2021
+    },
+    {
+      "capability": "reading_comprehension",
+      "capability_display": "Reading Comprehension",
+      "model": "PaLM 540B",
+      "organization": "Google Research",
+      "release_date": "2022-04-04",
+      "benchmark": "open_book_qa",
+      "score": 0.68,
+      "normalized_score": 0.68,
+      "category": "language",
+      "description": "Extract meaning and answer questions from written passages",
+      "velocity": 29.64,
+      "velocity_trend": "accelerating",
+      "year": 2022
+    },
+    {
+      "capability": "reading_comprehension",
+      "capability_display": "Reading Comprehension",
+      "model": "gpt-3.5-turbo-1106",
+      "organization": "OpenAI",
+      "release_date": "2023-11-06",
+      "benchmark": "open_book_qa",
+      "score": 0.86,
+      "normalized_score": 0.86,
+      "category": "language",
+      "description": "Extract meaning and answer questions from written passages",
+      "velocity": 29.64,
+      "velocity_trend": "accelerating",
+      "year": 2023
+    },
+    {
+      "capability": "reading_comprehension",
+      "capability_display": "Reading Comprehension",
+      "model": "Phi-3-mini-4k-instruct",
+      "organization": "Microsoft",
+      "release_date": "2024-04-23",
+      "benchmark": "open_book_qa",
+      "score": 0.88,
+      "normalized_score": 0.88,
+      "category": "language",
+      "description": "Extract meaning and answer questions from written passages",
+      "velocity": 29.64,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "reading_comprehension",
+      "capability_display": "Reading Comprehension",
+      "model": "Phi-3-small-8k-instruct",
+      "organization": "Microsoft",
+      "release_date": "2024-04-23",
+      "benchmark": "open_book_qa",
+      "score": 0.88,
+      "normalized_score": 0.88,
+      "category": "language",
+      "description": "Extract meaning and answer questions from written passages",
+      "velocity": 29.64,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "game_playing",
+      "capability_display": "Game Playing",
+      "model": "claude-3-5-sonnet-20241022",
+      "organization": "Anthropic",
+      "release_date": "2024-10-22",
+      "benchmark": "balrog",
+      "score": 0.326,
+      "normalized_score": 0.326,
+      "category": "games",
+      "description": "Learn and execute strategies in game environments",
+      "velocity": 10.03,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "game_playing",
+      "capability_display": "Game Playing",
+      "model": "grok-4-0709",
+      "organization": "xAI",
+      "release_date": "2025-07-09",
+      "benchmark": "balrog",
+      "score": 0.436,
+      "normalized_score": 0.436,
+      "category": "games",
+      "description": "Learn and execute strategies in game environments",
+      "velocity": 10.03,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "creative_writing",
+      "capability_display": "Creative Writing",
+      "model": "o1-2024-12-17_medium",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "fictionlivebench",
+      "score": 0.531,
+      "normalized_score": 0.531,
+      "category": "language",
+      "description": "Generate original, engaging narrative and expressive text",
+      "velocity": 19.1,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "creative_writing",
+      "capability_display": "Creative Writing",
+      "model": "o3-2025-04-16_medium",
+      "organization": "OpenAI",
+      "release_date": "2025-04-16",
+      "benchmark": "fictionlivebench",
+      "score": 1.0,
+      "normalized_score": 1.0,
+      "category": "language",
+      "description": "Generate original, engaging narrative and expressive text",
+      "velocity": 19.1,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "competition_math",
+      "capability_display": "Competition Math",
+      "model": "claude-2.0",
+      "organization": "Anthropic",
+      "release_date": "2023-07-11",
+      "benchmark": "otis_mock_aime_2024_2025",
+      "score": 0.0152,
+      "normalized_score": 0.0152,
+      "category": "mathematics",
+      "description": "Solve competition-level mathematics problems (AMC, AIME, IMO)",
+      "velocity": 66.16,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "competition_math",
+      "capability_display": "Competition Math",
+      "model": "o1-preview-2024-09-12",
+      "organization": "OpenAI",
+      "release_date": "2024-09-12",
+      "benchmark": "otis_mock_aime_2024_2025",
+      "score": 0.0698,
+      "normalized_score": 0.0698,
+      "category": "mathematics",
+      "description": "Solve competition-level mathematics problems (AMC, AIME, IMO)",
+      "velocity": 66.16,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "competition_math",
+      "capability_display": "Competition Math",
+      "model": "claude-sonnet-4-20250514_16K",
+      "organization": "Anthropic",
+      "release_date": "2025-05-22",
+      "benchmark": "otis_mock_aime_2024_2025",
+      "score": 0.0752,
+      "normalized_score": 0.0752,
+      "category": "mathematics",
+      "description": "Solve competition-level mathematics problems (AMC, AIME, IMO)",
+      "velocity": 66.16,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "competition_math",
+      "capability_display": "Competition Math",
+      "model": "claude-3-7-sonnet-20250219_32K",
+      "organization": "Anthropic",
+      "release_date": "2025-02-24",
+      "benchmark": "otis_mock_aime_2024_2025",
+      "score": 0.0752,
+      "normalized_score": 0.0752,
+      "category": "mathematics",
+      "description": "Solve competition-level mathematics problems (AMC, AIME, IMO)",
+      "velocity": 66.16,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "competition_math",
+      "capability_display": "Competition Math",
+      "model": "claude-3-7-sonnet-20250219_16K",
+      "organization": "Anthropic",
+      "release_date": "2025-02-24",
+      "benchmark": "otis_mock_aime_2024_2025",
+      "score": 0.0752,
+      "normalized_score": 0.0752,
+      "category": "mathematics",
+      "description": "Solve competition-level mathematics problems (AMC, AIME, IMO)",
+      "velocity": 66.16,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "competition_math",
+      "capability_display": "Competition Math",
+      "model": "DeepSeek-R1",
+      "organization": "DeepSeek",
+      "release_date": "2025-01-20",
+      "benchmark": "otis_mock_aime_2024_2025",
+      "score": 0.0752,
+      "normalized_score": 0.0752,
+      "category": "mathematics",
+      "description": "Solve competition-level mathematics problems (AMC, AIME, IMO)",
+      "velocity": 66.16,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "advanced_reasoning",
+      "capability_display": "Advanced Reasoning",
+      "model": "claude-2.0",
+      "organization": "Anthropic",
+      "release_date": "2023-07-11",
+      "benchmark": "gpqa_diamond",
+      "score": 0.0251,
+      "normalized_score": 0.0251,
+      "category": "reasoning",
+      "description": "Handle complex multi-step reasoning across diverse domains",
+      "velocity": 10.18,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "advanced_reasoning",
+      "capability_display": "Advanced Reasoning",
+      "model": "dbrx-instruct",
+      "organization": "Databricks",
+      "release_date": "2024-03-27",
+      "benchmark": "gpqa_diamond",
+      "score": 0.0326,
+      "normalized_score": 0.0326,
+      "category": "reasoning",
+      "description": "Handle complex multi-step reasoning across diverse domains",
+      "velocity": 10.18,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "advanced_reasoning",
+      "capability_display": "Advanced Reasoning",
+      "model": "gemini-2.0-flash-thinking-exp-01-21",
+      "organization": "Google DeepMind,Google",
+      "release_date": "2025-01-21",
+      "benchmark": "gpqa_diamond",
+      "score": 0.0353,
+      "normalized_score": 0.0353,
+      "category": "reasoning",
+      "description": "Handle complex multi-step reasoning across diverse domains",
+      "velocity": 10.18,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "mathematical_reasoning",
+      "capability_display": "Mathematical Reasoning",
+      "model": "text-davinci-003",
+      "organization": "OpenAI",
+      "release_date": "2022-11-28",
+      "benchmark": "gsm8k",
+      "score": 0.782,
+      "normalized_score": 0.782,
+      "category": "mathematics",
+      "description": "Solve math problems with step-by-step logical reasoning",
+      "velocity": -19.86,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "mathematical_reasoning",
+      "capability_display": "Mathematical Reasoning",
+      "model": "gpt-4-0314",
+      "organization": "OpenAI",
+      "release_date": "2023-03-14",
+      "benchmark": "gsm8k",
+      "score": 0.92,
+      "normalized_score": 0.92,
+      "category": "mathematics",
+      "description": "Solve math problems with step-by-step logical reasoning",
+      "velocity": -19.86,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "mathematical_reasoning",
+      "capability_display": "Mathematical Reasoning",
+      "model": "gpt-4-1106-preview",
+      "organization": "OpenAI",
+      "release_date": "2023-11-06",
+      "benchmark": "math_level_5",
+      "score": 0.0105,
+      "normalized_score": 0.0105,
+      "category": "mathematics",
+      "description": "Solve math problems with step-by-step logical reasoning",
+      "velocity": -19.86,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "mathematical_reasoning",
+      "capability_display": "Mathematical Reasoning",
+      "model": "DeepSeek-Coder-V2-Instruct",
+      "organization": "DeepSeek",
+      "release_date": "2024-06-17",
+      "benchmark": "gsm8k",
+      "score": 0.945,
+      "normalized_score": 0.945,
+      "category": "mathematics",
+      "description": "Solve math problems with step-by-step logical reasoning",
+      "velocity": -19.86,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "mathematical_reasoning",
+      "capability_display": "Mathematical Reasoning",
+      "model": "grok-2-1212",
+      "organization": "xAI",
+      "release_date": "2024-12-12",
+      "benchmark": "math_level_5",
+      "score": 0.0132,
+      "normalized_score": 0.0132,
+      "category": "mathematics",
+      "description": "Solve math problems with step-by-step logical reasoning",
+      "velocity": -19.86,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "mathematical_reasoning",
+      "capability_display": "Mathematical Reasoning",
+      "model": "Llama-4-Scout-17B-16E-Instruct",
+      "organization": "Meta AI",
+      "release_date": "2025-04-05",
+      "benchmark": "math_level_5",
+      "score": 0.012,
+      "normalized_score": 0.012,
+      "category": "mathematics",
+      "description": "Solve math problems with step-by-step logical reasoning",
+      "velocity": -19.86,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "long_horizon_planning",
+      "capability_display": "Long Horizon Planning",
+      "model": "gpt2-xl",
+      "organization": "OpenAI",
+      "release_date": "2019-11-05",
+      "benchmark": "metr_time_horizons",
+      "score": 0.101,
+      "normalized_score": 0.101,
+      "category": "reasoning",
+      "description": "Plan and reason about extended sequences of actions",
+      "velocity": 38.98,
+      "velocity_trend": "decelerating",
+      "year": 2019
+    },
+    {
+      "capability": "long_horizon_planning",
+      "capability_display": "Long Horizon Planning",
+      "model": "gpt-4-1106-preview",
+      "organization": "OpenAI",
+      "release_date": "2023-11-06",
+      "benchmark": "metr_time_horizons",
+      "score": 0.4043,
+      "normalized_score": 0.4043,
+      "category": "reasoning",
+      "description": "Plan and reason about extended sequences of actions",
+      "velocity": 38.98,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "long_horizon_planning",
+      "capability_display": "Long Horizon Planning",
+      "model": "o1-2024-12-17_medium",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "metr_time_horizons",
+      "score": 0.5593,
+      "normalized_score": 0.5593,
+      "category": "reasoning",
+      "description": "Plan and reason about extended sequences of actions",
+      "velocity": 38.98,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "long_horizon_planning",
+      "capability_display": "Long Horizon Planning",
+      "model": "gpt-5-2025-08-07_medium",
+      "organization": "OpenAI",
+      "release_date": "2025-08-07",
+      "benchmark": "metr_time_horizons",
+      "score": 0.6961,
+      "normalized_score": 0.6961,
+      "category": "reasoning",
+      "description": "Plan and reason about extended sequences of actions",
+      "velocity": 38.98,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "writing_quality",
+      "capability_display": "Writing Quality",
+      "model": "gpt-4o-2024-11-20",
+      "organization": "OpenAI",
+      "release_date": "2024-11-20",
+      "benchmark": "lech_mazur_writing",
+      "score": 8.18,
+      "normalized_score": 0.0818,
+      "category": "language",
+      "description": "Produce well-structured, grammatically correct, compelling text",
+      "velocity": 4.92,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "writing_quality",
+      "capability_display": "Writing Quality",
+      "model": "o3-2025-04-16_medium",
+      "organization": "OpenAI",
+      "release_date": "2025-04-16",
+      "benchmark": "lech_mazur_writing",
+      "score": 8.39,
+      "normalized_score": 0.0839,
+      "category": "language",
+      "description": "Produce well-structured, grammatically correct, compelling text",
+      "velocity": 4.92,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "cad_design",
+      "capability_display": "Cad Design",
+      "model": "o1-2024-12-17_medium",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "cad_eval",
+      "score": 0.56,
+      "normalized_score": 0.56,
+      "category": "reasoning",
+      "description": "Create and manipulate computer-aided design models",
+      "velocity": 9.76,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "cad_design",
+      "capability_display": "Cad Design",
+      "model": "o3-2025-04-16_medium",
+      "organization": "OpenAI",
+      "release_date": "2025-04-16",
+      "benchmark": "cad_eval",
+      "score": 0.74,
+      "normalized_score": 0.74,
+      "category": "reasoning",
+      "description": "Create and manipulate computer-aided design models",
+      "velocity": 9.76,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "advanced_mathematics",
+      "capability_display": "Advanced Mathematics",
+      "model": "o1-2024-12-17_high",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "frontiermath",
+      "score": 0.0171,
+      "normalized_score": 0.0171,
+      "category": "mathematics",
+      "description": "Solve graduate-level and research mathematics problems",
+      "velocity": 58.17,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "advanced_mathematics",
+      "capability_display": "Advanced Mathematics",
+      "model": "claude-3-5-sonnet-20240620",
+      "organization": "Anthropic",
+      "release_date": "2024-06-20",
+      "benchmark": "frontiermath_tier_4",
+      "score": 0.0,
+      "normalized_score": 0.0,
+      "category": "mathematics",
+      "description": "Solve graduate-level and research mathematics problems",
+      "velocity": 58.17,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "advanced_mathematics",
+      "capability_display": "Advanced Mathematics",
+      "model": "claude-3-5-sonnet-20241022",
+      "organization": "Anthropic",
+      "release_date": "2024-10-22",
+      "benchmark": "frontiermath_tier_4",
+      "score": 0.0,
+      "normalized_score": 0.0,
+      "category": "mathematics",
+      "description": "Solve graduate-level and research mathematics problems",
+      "velocity": 58.17,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "advanced_mathematics",
+      "capability_display": "Advanced Mathematics",
+      "model": "gpt-5-2025-08-07_high",
+      "organization": "OpenAI",
+      "release_date": "2025-08-07",
+      "benchmark": "frontiermath_tier_4",
+      "score": 0.0482,
+      "normalized_score": 0.0482,
+      "category": "mathematics",
+      "description": "Solve graduate-level and research mathematics problems",
+      "velocity": 58.17,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "advanced_mathematics",
+      "capability_display": "Advanced Mathematics",
+      "model": "gemini-2.5-deep-think-2025-08-01-webapp",
+      "organization": "Google,Google DeepMind",
+      "release_date": "2025-08-01",
+      "benchmark": "frontiermath",
+      "score": 0.027,
+      "normalized_score": 0.027,
+      "category": "mathematics",
+      "description": "Solve graduate-level and research mathematics problems",
+      "velocity": 58.17,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "abstract_reasoning",
+      "capability_display": "Abstract Reasoning",
+      "model": "o1-2024-12-17_medium",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "arc_agi",
+      "score": 0.307,
+      "normalized_score": 0.307,
+      "category": "reasoning",
+      "description": "Recognize patterns and solve problems requiring high-level conceptual thinking",
+      "velocity": 20.69,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "abstract_reasoning",
+      "capability_display": "Abstract Reasoning",
+      "model": "o3-2025-04-16_high",
+      "organization": "OpenAI",
+      "release_date": "2025-04-16",
+      "benchmark": "arc_agi",
+      "score": 0.608,
+      "normalized_score": 0.608,
+      "category": "reasoning",
+      "description": "Recognize patterns and solve problems requiring high-level conceptual thinking",
+      "velocity": 20.69,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "basic_tasks",
+      "capability_display": "Basic Tasks",
+      "model": "o1-preview-2024-09-12",
+      "organization": "OpenAI",
+      "release_date": "2024-09-12",
+      "benchmark": "simplebench",
+      "score": 0.417,
+      "normalized_score": 0.417,
+      "category": "reasoning",
+      "description": "Perform fundamental operations and simple problem-solving",
+      "velocity": 12.64,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "basic_tasks",
+      "capability_display": "Basic Tasks",
+      "model": "gemini-2.5-pro-preview-06-05",
+      "organization": "Google DeepMind",
+      "release_date": "2025-06-05",
+      "benchmark": "simplebench",
+      "score": 0.624,
+      "normalized_score": 0.624,
+      "category": "reasoning",
+      "description": "Perform fundamental operations and simple problem-solving",
+      "velocity": 12.64,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "general_knowledge",
+      "capability_display": "General Knowledge",
+      "model": "Gopher (280B)",
+      "organization": "DeepMind",
+      "release_date": "2021-12-08",
+      "benchmark": "mmlu",
+      "score": 0.6,
+      "normalized_score": 0.6,
+      "category": "knowledge",
+      "description": "Answer questions across diverse academic and cultural domains",
+      "velocity": 7.23,
+      "velocity_trend": "decelerating",
+      "year": 2021
+    },
+    {
+      "capability": "general_knowledge",
+      "capability_display": "General Knowledge",
+      "model": "text-davinci-002",
+      "organization": "OpenAI",
+      "release_date": "2022-03-15",
+      "benchmark": "mmlu",
+      "score": 0.7,
+      "normalized_score": 0.7,
+      "category": "knowledge",
+      "description": "Answer questions across diverse academic and cultural domains",
+      "velocity": 7.23,
+      "velocity_trend": "decelerating",
+      "year": 2022
+    },
+    {
+      "capability": "general_knowledge",
+      "capability_display": "General Knowledge",
+      "model": "gpt-4-0314",
+      "organization": "OpenAI",
+      "release_date": "2023-03-14",
+      "benchmark": "mmlu",
+      "score": 0.864,
+      "normalized_score": 0.864,
+      "category": "knowledge",
+      "description": "Answer questions across diverse academic and cultural domains",
+      "velocity": 7.23,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "general_knowledge",
+      "capability_display": "General Knowledge",
+      "model": "gpt-4o-2024-11-20",
+      "organization": "OpenAI",
+      "release_date": "2024-11-20",
+      "benchmark": "mmlu",
+      "score": 0.881,
+      "normalized_score": 0.881,
+      "category": "knowledge",
+      "description": "Answer questions across diverse academic and cultural domains",
+      "velocity": 7.23,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "general_knowledge",
+      "capability_display": "General Knowledge",
+      "model": "qwen2.5-14b-instruct",
+      "organization": "Alibaba",
+      "release_date": "2025-02-26",
+      "benchmark": "mmlu",
+      "score": 0.799,
+      "normalized_score": 0.799,
+      "category": "knowledge",
+      "description": "Answer questions across diverse academic and cultural domains",
+      "velocity": 7.23,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "os_interaction",
+      "capability_display": "Os Interaction",
+      "model": "claude-3-5-sonnet-20241022",
+      "organization": "Anthropic",
+      "release_date": "2024-10-22",
+      "benchmark": "os_universe",
+      "score": 0.2836,
+      "normalized_score": 0.2836,
+      "category": "agents",
+      "description": "Navigate and manipulate operating system interfaces",
+      "velocity": 15.75,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "os_interaction",
+      "capability_display": "Os Interaction",
+      "model": "computer-use-preview-2025-03-11",
+      "organization": null,
+      "release_date": "2025-03-11",
+      "benchmark": "os_universe",
+      "score": 0.478,
+      "normalized_score": 0.478,
+      "category": "agents",
+      "description": "Navigate and manipulate operating system interfaces",
+      "velocity": 15.75,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "factual_knowledge",
+      "capability_display": "Factual Knowledge",
+      "model": "GLaM (MoE)",
+      "organization": "Google",
+      "release_date": "2021-12-13",
+      "benchmark": "trivia_qa",
+      "score": 0.758,
+      "normalized_score": 0.758,
+      "category": "knowledge",
+      "description": "Retrieve and apply specific facts across domains",
+      "velocity": 3.87,
+      "velocity_trend": "accelerating",
+      "year": 2021
+    },
+    {
+      "capability": "factual_knowledge",
+      "capability_display": "Factual Knowledge",
+      "model": "PaLM 540B",
+      "organization": "Google Research",
+      "release_date": "2022-04-04",
+      "benchmark": "trivia_qa",
+      "score": 0.814,
+      "normalized_score": 0.814,
+      "category": "knowledge",
+      "description": "Retrieve and apply specific facts across domains",
+      "velocity": 3.87,
+      "velocity_trend": "accelerating",
+      "year": 2022
+    },
+    {
+      "capability": "factual_knowledge",
+      "capability_display": "Factual Knowledge",
+      "model": "Llama-2-70b-hf ",
+      "organization": "Meta AI",
+      "release_date": "2023-07-18",
+      "benchmark": "trivia_qa",
+      "score": 0.876,
+      "normalized_score": 0.876,
+      "category": "knowledge",
+      "description": "Retrieve and apply specific facts across domains",
+      "velocity": 3.87,
+      "velocity_trend": "accelerating",
+      "year": 2023
+    },
+    {
+      "capability": "factual_knowledge",
+      "capability_display": "Factual Knowledge",
+      "model": "DeepSeek-V3",
+      "organization": "DeepSeek",
+      "release_date": "2024-12-26",
+      "benchmark": "trivia_qa",
+      "score": 0.829,
+      "normalized_score": 0.829,
+      "category": "knowledge",
+      "description": "Retrieve and apply specific facts across domains",
+      "velocity": 3.87,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "unusual_tasks",
+      "capability_display": "Unusual Tasks",
+      "model": "o1-2024-12-17_high",
+      "organization": "OpenAI",
+      "release_date": "2024-12-17",
+      "benchmark": "weirdml",
+      "score": 0.5947,
+      "normalized_score": 0.5947,
+      "category": "reasoning",
+      "description": "Handle novel or atypical challenges outside standard benchmarks",
+      "velocity": 4.85,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "unusual_tasks",
+      "capability_display": "Unusual Tasks",
+      "model": "gemini-2.5-pro-exp-03-25",
+      "organization": "Google DeepMind",
+      "release_date": "2025-03-25",
+      "benchmark": "weirdml",
+      "score": 0.6105,
+      "normalized_score": 0.6105,
+      "category": "reasoning",
+      "description": "Handle novel or atypical challenges outside standard benchmarks",
+      "velocity": 4.85,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "geographic_knowledge",
+      "capability_display": "Geographic Knowledge",
+      "model": "gemini-1.5-flash-002",
+      "organization": "Google DeepMind",
+      "release_date": "2024-09-24",
+      "benchmark": "geobench",
+      "score": 3934.0,
+      "normalized_score": 39.34,
+      "category": "knowledge",
+      "description": "Understand spatial relationships, locations, and geographic data",
+      "velocity": 5.06,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "geographic_knowledge",
+      "capability_display": "Geographic Knowledge",
+      "model": "gemini-2.5-pro-exp-03-25",
+      "organization": "Google DeepMind",
+      "release_date": "2025-03-25",
+      "benchmark": "geobench",
+      "score": 4093.0,
+      "normalized_score": 40.93,
+      "category": "knowledge",
+      "description": "Understand spatial relationships, locations, and geographic data",
+      "velocity": 5.06,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "complex_reasoning",
+      "capability_display": "Complex Reasoning",
+      "model": "gpt-4-0613",
+      "organization": "OpenAI",
+      "release_date": "2023-06-13",
+      "benchmark": "bbh",
+      "score": 0.7512,
+      "normalized_score": 0.7512,
+      "category": "reasoning",
+      "description": "Navigate multi-layered logical problems requiring synthesis",
+      "velocity": 6.75,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "complex_reasoning",
+      "capability_display": "Complex Reasoning",
+      "model": "DeepSeek-V3",
+      "organization": "DeepSeek",
+      "release_date": "2024-12-26",
+      "benchmark": "bbh",
+      "score": 0.875,
+      "normalized_score": 0.875,
+      "category": "reasoning",
+      "description": "Navigate multi-layered logical problems requiring synthesis",
+      "velocity": 6.75,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "spatial_reasoning",
+      "capability_display": "Spatial Reasoning",
+      "model": "claude-3-5-sonnet-20241022",
+      "organization": "Anthropic",
+      "release_date": "2024-10-22",
+      "benchmark": "gso",
+      "score": 0.046,
+      "normalized_score": 0.046,
+      "category": "games",
+      "description": "Understand and manipulate objects in 2D and 3D space",
+      "velocity": 19.41,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "spatial_reasoning",
+      "capability_display": "Spatial Reasoning",
+      "model": "o3-2025-04-16_high",
+      "organization": "OpenAI",
+      "release_date": "2025-04-16",
+      "benchmark": "gso",
+      "score": 0.088,
+      "normalized_score": 0.088,
+      "category": "games",
+      "description": "Understand and manipulate objects in 2D and 3D space",
+      "velocity": 19.41,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "cybersecurity",
+      "capability_display": "Cybersecurity",
+      "model": "claude-3-5-sonnet-20240620",
+      "organization": "Anthropic",
+      "release_date": "2024-06-20",
+      "benchmark": "cybench",
+      "score": 0.175,
+      "normalized_score": 0.175,
+      "category": "reasoning",
+      "description": "Identify vulnerabilities and solve security-related challenges",
+      "velocity": 9.2,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "cybersecurity",
+      "capability_display": "Cybersecurity",
+      "model": "o3-mini-2025-01-31_medium",
+      "organization": "OpenAI",
+      "release_date": "2025-01-31",
+      "benchmark": "cybench",
+      "score": 0.225,
+      "normalized_score": 0.225,
+      "category": "reasoning",
+      "description": "Identify vulnerabilities and solve security-related challenges",
+      "velocity": 9.2,
+      "velocity_trend": "accelerating",
+      "year": 2025
+    },
+    {
+      "capability": "language_understanding",
+      "capability_display": "Language Understanding",
+      "model": "text-davinci-001",
+      "organization": "OpenAI",
+      "release_date": "2022-01-27",
+      "benchmark": "superglue",
+      "score": 0.718,
+      "normalized_score": 0.718,
+      "category": "language",
+      "description": "Comprehend meaning, context, and nuance in text",
+      "velocity": 4.13,
+      "velocity_trend": "stable",
+      "year": 2022
+    },
+    {
+      "capability": "os_navigation",
+      "capability_display": "Os Navigation",
+      "model": "gpt-4-1106-vision-preview",
+      "organization": "OpenAI",
+      "release_date": "2023-11-06",
+      "benchmark": "os_world",
+      "score": 7.69,
+      "normalized_score": 0.0769,
+      "category": "agents",
+      "description": "Find and access files and programs within operating systems",
+      "velocity": 46.58,
+      "velocity_trend": "decelerating",
+      "year": 2023
+    },
+    {
+      "capability": "os_navigation",
+      "capability_display": "Os Navigation",
+      "model": "claude-3-5-sonnet-20240620",
+      "organization": "Anthropic",
+      "release_date": "2024-06-20",
+      "benchmark": "os_world",
+      "score": 22.0,
+      "normalized_score": 0.22,
+      "category": "agents",
+      "description": "Find and access files and programs within operating systems",
+      "velocity": 46.58,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "os_navigation",
+      "capability_display": "Os Navigation",
+      "model": "CUA",
+      "organization": "OpenAI",
+      "release_date": "2025-01-23",
+      "benchmark": "os_world",
+      "score": 38.1,
+      "normalized_score": 0.381,
+      "category": "agents",
+      "description": "Find and access files and programs within operating systems",
+      "velocity": 46.58,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "natural_language_inference",
+      "capability_display": "Natural Language Inference",
+      "model": "Megatron-Turing NLG 530B",
+      "organization": "Microsoft,NVIDIA",
+      "release_date": "2022-01-28",
+      "benchmark": "adversarial_nli",
+      "score": 0.397,
+      "normalized_score": 0.397,
+      "category": "language",
+      "description": "Determine logical relationships between text passages",
+      "velocity": 10.86,
+      "velocity_trend": "accelerating",
+      "year": 2022
+    },
+    {
+      "capability": "natural_language_inference",
+      "capability_display": "Natural Language Inference",
+      "model": "gpt-3.5-turbo-1106",
+      "organization": "OpenAI",
+      "release_date": "2023-11-06",
+      "benchmark": "adversarial_nli",
+      "score": 0.581,
+      "normalized_score": 0.581,
+      "category": "language",
+      "description": "Determine logical relationships between text passages",
+      "velocity": 10.86,
+      "velocity_trend": "accelerating",
+      "year": 2023
+    },
+    {
+      "capability": "natural_language_inference",
+      "capability_display": "Natural Language Inference",
+      "model": "Phi-3-small-8k-instruct",
+      "organization": "Microsoft",
+      "release_date": "2024-04-23",
+      "benchmark": "adversarial_nli",
+      "score": 0.581,
+      "normalized_score": 0.581,
+      "category": "language",
+      "description": "Determine logical relationships between text passages",
+      "velocity": 10.86,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "agent_reasoning",
+      "capability_display": "Agent Reasoning",
+      "model": "claude-3-5-sonnet-20241022",
+      "organization": "Anthropic",
+      "release_date": "2024-10-22",
+      "benchmark": "the_agent_company",
+      "score": 0.344,
+      "normalized_score": 0.344,
+      "category": "agents",
+      "description": "Plan and execute multi-step tasks autonomously",
+      "velocity": -3.06,
+      "velocity_trend": "decelerating",
+      "year": 2024
+    },
+    {
+      "capability": "agent_reasoning",
+      "capability_display": "Agent Reasoning",
+      "model": "gemini-2.0-flash-001",
+      "organization": "Google DeepMind,Google",
+      "release_date": "2025-02-05",
+      "benchmark": "the_agent_company",
+      "score": 0.19,
+      "normalized_score": 0.19,
+      "category": "agents",
+      "description": "Plan and execute multi-step tasks autonomously",
+      "velocity": -3.06,
+      "velocity_trend": "decelerating",
+      "year": 2025
+    },
+    {
+      "capability": "boolean_reasoning",
+      "capability_display": "Boolean Reasoning",
+      "model": "gpt2-xl",
+      "organization": "OpenAI",
+      "release_date": "2019-11-05",
+      "benchmark": "bool_q",
+      "score": 0.618,
+      "normalized_score": 0.618,
+      "category": "reasoning",
+      "description": "Answer yes/no questions requiring logical deduction",
+      "velocity": 6.92,
+      "velocity_trend": "accelerating",
+      "year": 2019
+    },
+    {
+      "capability": "boolean_reasoning",
+      "capability_display": "Boolean Reasoning",
+      "model": "Gopher (280B)",
+      "organization": "DeepMind",
+      "release_date": "2021-12-08",
+      "benchmark": "bool_q",
+      "score": 0.794,
+      "normalized_score": 0.794,
+      "category": "reasoning",
+      "description": "Answer yes/no questions requiring logical deduction",
+      "velocity": 6.92,
+      "velocity_trend": "accelerating",
+      "year": 2021
+    },
+    {
+      "capability": "boolean_reasoning",
+      "capability_display": "Boolean Reasoning",
+      "model": "PaLM 540B",
+      "organization": "Google Research",
+      "release_date": "2022-04-04",
+      "benchmark": "bool_q",
+      "score": 0.887,
+      "normalized_score": 0.887,
+      "category": "reasoning",
+      "description": "Answer yes/no questions requiring logical deduction",
+      "velocity": 6.92,
+      "velocity_trend": "accelerating",
+      "year": 2022
+    },
+    {
+      "capability": "boolean_reasoning",
+      "capability_display": "Boolean Reasoning",
+      "model": "PaLM 2-L",
+      "organization": null,
+      "release_date": "2023-05-17",
+      "benchmark": "bool_q",
+      "score": 0.909,
+      "normalized_score": 0.909,
+      "category": "reasoning",
+      "description": "Answer yes/no questions requiring logical deduction",
+      "velocity": 6.92,
+      "velocity_trend": "accelerating",
+      "year": 2023
+    },
+    {
+      "capability": "boolean_reasoning",
+      "capability_display": "Boolean Reasoning",
+      "model": "gpt-4o-mini-2024-07-18",
+      "organization": "OpenAI",
+      "release_date": "2024-07-18",
+      "benchmark": "bool_q",
+      "score": 0.887,
+      "normalized_score": 0.887,
+      "category": "reasoning",
+      "description": "Answer yes/no questions requiring logical deduction",
+      "velocity": 6.92,
+      "velocity_trend": "accelerating",
+      "year": 2024
+    },
+    {
+      "capability": "language_modeling",
+      "capability_display": "Language Modeling",
+      "model": "Gopher (280B)",
+      "organization": "DeepMind",
+      "release_date": "2021-12-08",
+      "benchmark": "lambada",
+      "score": 0.745,
+      "normalized_score": 0.745,
+      "category": "language",
+      "description": "Predict and generate coherent natural language sequences",
+      "velocity": 4.2,
+      "velocity_trend": "stable",
+      "year": 2021
+    },
+    {
+      "capability": "language_modeling",
+      "capability_display": "Language Modeling",
+      "model": "Megatron-Turing NLG 530B",
+      "organization": "Microsoft,NVIDIA",
+      "release_date": "2022-01-28",
+      "benchmark": "lambada",
+      "score": 0.8715,
+      "normalized_score": 0.8715,
+      "category": "language",
+      "description": "Predict and generate coherent natural language sequences",
+      "velocity": 4.2,
+      "velocity_trend": "stable",
+      "year": 2022
+    },
+    {
+      "capability": "language_modeling",
+      "capability_display": "Language Modeling",
+      "model": "falcon-180B",
+      "organization": "Technology Innovation Institute",
+      "release_date": "2023-09-06",
+      "benchmark": "lambada",
+      "score": 0.798,
+      "normalized_score": 0.798,
+      "category": "language",
+      "description": "Predict and generate coherent natural language sequences",
+      "velocity": 4.2,
+      "velocity_trend": "stable",
+      "year": 2023
+    },
+    {
+      "capability": "terminal_usage",
+      "capability_display": "Terminal Usage",
+      "model": "claude-sonnet-4-5-20250929",
+      "organization": "Anthropic",
+      "release_date": "2025-09-29",
+      "benchmark": "terminalbench",
+      "score": 0.603,
+      "normalized_score": 0.603,
+      "category": "agents",
+      "description": "Execute commands and navigate command-line interfaces",
+      "velocity": 5.27,
+      "velocity_trend": "stable",
+      "year": 2025
+    }
+  ],
+  "colors": [
+    [
+      0.231,
+      0.51,
+      0.965
+    ],
+    [
+      0.231,
+      0.51,
+      0.965
+    ],
+    [
+      0.231,
+      0.51,
+      0.965
+    ],
+    [
+      0.231,
+      0.51,
+      0.965
+    ],
+    [
+      0.231,
+      0.51,
+      0.965
+    ],
+    [
+      0.231,
+      0.51,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.8301820000000001,
+      0.23656200000000002,
+      0.23656200000000002
+    ],
+    [
+      0.8301820000000001,
+      0.23656200000000002,
+      0.23656200000000002
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.937,
+      0.267,
+      0.267
+    ],
+    [
+      0.937,
+      0.267,
+      0.267
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.5792908,
+      0.373736,
+      0.0259204
+    ],
+    [
+      0.5792908,
+      0.373736,
+      0.0259204
+    ],
+    [
+      0.5792908,
+      0.373736,
+      0.0259204
+    ],
+    [
+      0.5792908,
+      0.373736,
+      0.0259204
+    ],
+    [
+      0.5792908,
+      0.373736,
+      0.0259204
+    ],
+    [
+      0.5792908,
+      0.373736,
+      0.0259204
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.961,
+      0.62,
+      0.043
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.024,
+      0.714,
+      0.831
+    ],
+    [
+      0.024,
+      0.714,
+      0.831
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.063,
+      0.725,
+      0.506
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.937,
+      0.267,
+      0.267
+    ],
+    [
+      0.937,
+      0.267,
+      0.267
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.024,
+      0.714,
+      0.831
+    ],
+    [
+      0.024,
+      0.714,
+      0.831
+    ],
+    [
+      0.024,
+      0.714,
+      0.831
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.0225312,
+      0.6703032,
+      0.7801427999999999
+    ],
+    [
+      0.0225312,
+      0.6703032,
+      0.7801427999999999
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.545,
+      0.361,
+      0.965
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.925,
+      0.282,
+      0.6
+    ],
+    [
+      0.024,
+      0.714,
+      0.831
+    ]
+  ],
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117
+  ],
+  "bounds": {
+    "min_x": 0.2,
+    "max_x": 0.85,
+    "min_y": 0.2,
+    "max_y": 0.85,
+    "min_z": 0.9,
+    "max_z": 2932.06
+  },
+  "stats": {
+    "total_points": 118,
+    "capabilities": 32,
+    "models": 59,
+    "organizations": 19,
+    "date_range": {
+      "earliest": "2019-11-05",
+      "latest": "2025-09-29"
+    }
+  },
+  "config": {
+    "coordinate_system": "cartesian",
+    "z_axis": "performance_score",
+    "scale": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 100.0
+    },
+    "categories": {
+      "language": {
+        "color": [
+          0.925,
+          0.282,
+          0.6
+        ],
+        "count": 17
+      },
+      "knowledge": {
+        "color": [
+          0.063,
+          0.725,
+          0.506
+        ],
+        "count": 14
+      },
+      "games": {
+        "color": [
+          0.937,
+          0.267,
+          0.267
+        ],
+        "count": 6
+      },
+      "coding": {
+        "color": [
+          0.231,
+          0.51,
+          0.965
+        ],
+        "count": 6
+      },
+      "agents": {
+        "color": [
+          0.024,
+          0.714,
+          0.831
+        ],
+        "count": 8
+      },
+      "reasoning": {
+        "color": [
+          0.545,
+          0.361,
+          0.965
+        ],
+        "count": 50
+      },
+      "mathematics": {
+        "color": [
+          0.961,
+          0.62,
+          0.043
+        ],
+        "count": 17
+      }
+    },
+    "velocity_thresholds": {
+      "high": 10.0,
+      "medium": 5.0,
+      "low": 0.0
+    }
+  },
+  "generated_at": "2025-11-01T21:21:32.915937",
+  "organization_filter": "all"
+}

@@ -3,7 +3,35 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei';
 import TerrainMap from './components/TerrainMap';
 import UI from './components/UI';
+import { useTerrainStore } from './stores/terrainStore';
 import './App.css';
+
+function CameraController() {
+  const { cameraMode } = useTerrainStore();
+
+  // Camera positions for different modes
+  const cameraPosition = cameraMode === 'landscape'
+    ? [120, 20, 0]  // Side view - landscape
+    : [0, 50, 100]; // Top-down view
+
+  const orbitTarget = cameraMode === 'landscape'
+    ? [0, 10, 0]  // Look slightly up in landscape
+    : [0, 0, 0];  // Look at center in top-down
+
+  return (
+    <>
+      <PerspectiveCamera makeDefault position={cameraPosition} fov={60} />
+      <OrbitControls
+        enableDamping
+        dampingFactor={0.05}
+        minDistance={20}
+        maxDistance={200}
+        maxPolarAngle={cameraMode === 'landscape' ? Math.PI / 1.5 : Math.PI / 2.2}
+        target={orbitTarget}
+      />
+    </>
+  );
+}
 
 function App() {
   return (
@@ -11,7 +39,7 @@ function App() {
       <Canvas shadows>
         <Suspense fallback={null}>
           {/* Camera Setup */}
-          <PerspectiveCamera makeDefault position={[0, 50, 100]} fov={60} />
+          <CameraController />
 
           {/* Lighting */}
           <ambientLight intensity={0.4} />
@@ -37,15 +65,6 @@ function App() {
 
           {/* Main Terrain Component */}
           <TerrainMap />
-
-          {/* Camera Controls */}
-          <OrbitControls
-            enableDamping
-            dampingFactor={0.05}
-            minDistance={20}
-            maxDistance={200}
-            maxPolarAngle={Math.PI / 2.2}
-          />
         </Suspense>
       </Canvas>
 

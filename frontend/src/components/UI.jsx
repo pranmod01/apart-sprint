@@ -7,6 +7,7 @@ function UI() {
     showSinkholes,
     showForecastNodes,
     showLabels,
+    cameraMode,
     filterCategory,
     filterModel,
     currentYear,
@@ -16,6 +17,7 @@ function UI() {
     toggleSinkholes,
     toggleForecastNodes,
     toggleLabels,
+    toggleCameraMode,
     setFilterCategory,
     setFilterModel,
     setCurrentYear
@@ -123,6 +125,14 @@ function UI() {
             onChange={toggleLabels}
           />
           <span>Show Labels</span>
+        </label>
+        <label className="checkbox-label">
+          <input
+            type="checkbox"
+            checked={cameraMode === 'landscape'}
+            onChange={toggleCameraMode}
+          />
+          <span>Landscape View</span>
         </label>
       </div>
 
