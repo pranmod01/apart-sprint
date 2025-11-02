@@ -1,0 +1,1631 @@
+{
+  "vertices": [
+    [
+      0.1894,
+      0.3035,
+      -45.0
+    ],
+    [
+      0.1997,
+      0.3057,
+      -90.0
+    ],
+    [
+      0.2101,
+      0.3054,
+      -45.0
+    ],
+    [
+      0.2114,
+      0.2878,
+      -45.0
+    ],
+    [
+      0.5353,
+      0.2566,
+      -45.0
+    ],
+    [
+      0.2124,
+      0.3095,
+      -20.0
+    ],
+    [
+      0.5478,
+      0.2536,
+      -90.0
+    ],
+    [
+      0.5498,
+      0.2582,
+      -45.0
+    ],
+    [
+      0.6546,
+      0.4516,
+      -20.0
+    ],
+    [
+      0.71,
+      0.3993,
+      -20.0
+    ],
+    [
+      0.6574,
+      0.4405,
+      -20.0
+    ],
+    [
+      0.4407,
+      0.5531,
+      -90.0
+    ],
+    [
+      0.4552,
+      0.5576,
+      -90.0
+    ],
+    [
+      0.459,
+      0.5435,
+      -20.0
+    ],
+    [
+      0.1934,
+      0.2862,
+      -45.0
+    ],
+    [
+      0.7646,
+      0.4615,
+      -90.0
+    ],
+    [
+      0.7144,
+      0.4042,
+      -45.0
+    ],
+    [
+      0.6934,
+      0.3945,
+      -20.0
+    ],
+    [
+      0.2119,
+      0.2981,
+      -90.0
+    ],
+    [
+      0.4977,
+      0.4999,
+      -45.0
+    ],
+    [
+      0.495,
+      0.5035,
+      -20.0
+    ],
+    [
+      0.4889,
+      0.4919,
+      -45.0
+    ],
+    [
+      0.5384,
+      0.2415,
+      -20.0
+    ],
+    [
+      0.5578,
+      0.2448,
+      -90.0
+    ],
+    [
+      0.5514,
+      0.2355,
+      -90.0
+    ],
+    [
+      0.4497,
+      0.5398,
+      -45.0
+    ],
+    [
+      0.4446,
+      0.5617,
+      -20.0
+    ],
+    [
+      0.4456,
+      0.5376,
+      -20.0
+    ],
+    [
+      0.3951,
+      0.4142,
+      -90.0
+    ],
+    [
+      0.5507,
+      0.2569,
+      -90.0
+    ],
+    [
+      0.4034,
+      0.3908,
+      -45.0
+    ],
+    [
+      0.7121,
+      0.4089,
+      -45.0
+    ],
+    [
+      0.7011,
+      0.4063,
+      -90.0
+    ],
+    [
+      0.6985,
+      0.4045,
+      -90.0
+    ],
+    [
+      0.4056,
+      0.5026,
+      -20.0
+    ],
+    [
+      0.752,
+      0.4538,
+      -20.0
+    ],
+    [
+      0.4044,
+      0.5087,
+      -20.0
+    ],
+    [
+      0.2082,
+      0.3072,
+      -20.0
+    ],
+    [
+      0.6958,
+      0.4031,
+      -45.0
+    ],
+    [
+      0.2099,
+      0.3124,
+      -20.0
+    ],
+    [
+      0.7546,
+      0.4484,
+      -20.0
+    ],
+    [
+      0.7591,
+      0.4439,
+      -20.0
+    ],
+    [
+      0.7601,
+      0.4475,
+      -20.0
+    ]
+  ],
+  "metadata": [
+    {
+      "type": "sinkhole",
+      "task": "Generate a sentence where: every word starts with 'b', has exactly 5 words, forms a grammatically correct question, and the 3rd word must be a verb.",
+      "category": "constrained_generation",
+      "expected_answer": "Before breakfast, Bob buys bread?",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "All criteria met - every word starts with 'b', exactly 5 words, 3rd word is a verb, forms a question."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "\"Could\" doesn't start with 'b' - fails the first criterion."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Write a palindrome sentence (reads same forwards and backwards) that is exactly 7 words long and mentions an animal.",
+      "category": "constrained_generation",
+      "expected_answer": "Example: 'Rats live on no evil star' (rat) - but needs to be exactly 7 words",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Failed to provide a valid answer - none of the attempts are 7-word palindromes."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "This is 7 words and a palindrome, but \"elba\" refers to the island Elba, not an animal. Also \"elba\" should be capitalized."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Create a sentence where each word has one more letter than the previous word, starting with 'I' (1 letter), and must reach a 6-letter word.",
+      "category": "constrained_generation",
+      "expected_answer": "I am the best friend (1,2,3,4,6)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "The second sentence is correct: 1,2,3,4,5,6 letters in sequence."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Word lengths don't follow pattern: \"I\"(1), \"am\"(2), \"cool,\"(5 with comma), \"daring,\"(7), \"and\"(3), \"eager.\"(6) - doesn't increment by one letter each time."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Write three sentences where: the first has 5 words, the second has 6 words, the third has 7 words, and all three must rhyme at the end.",
+      "category": "constrained_generation",
+      "expected_answer": "Example: 'Cats love to play.' / 'Dogs run around all day.' / 'Birds sing in trees in May.'",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "All three sentences meet word count requirements (5,6,7) and rhyme with \"-ly\" endings (peacefully, gleefully, gracefully)."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Word counts are (6,6,6) but should be (5,6,7). Also, \"mat,\" \"log,\" and \"soared\" don't rhyme."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I have blocks spelling 'HELLO'. I swap the 2nd and 4th blocks, then reverse the whole sequence. What word is spelled now?",
+      "category": "spatial_reasoning",
+      "expected_answer": "OLLHE (HELLO -> HLELO -> OLELH)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct process: HELLO -> HLLEO (swap positions 2 and 4) -> OELLH (reverse). Note: The expected answer appears to have an error."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Error in step 2. HELLO with 2nd and 4th swapped should be HLLEO, not HLELO (the middle L was incorrectly moved)."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Start with the word 'TRAIN'. Remove the 3rd letter, then move the last letter to the front, then replace all vowels with 'X'. What do you have?",
+      "category": "string_manipulation",
+      "expected_answer": "NTRXN (TRAIN -> TRAN -> NTRA -> NTRX... wait: TRAN -> NTRA -> NTRX)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct process: TRAIN -> TRIN (remove 3rd letter 'A') -> NTRI (move last to front) -> NTRX (replace vowels)."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct process and answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I write the numbers 1-9 in a circle clockwise. Starting at 5 and moving counter-clockwise, what's the 4th number I encounter?",
+      "category": "spatial_reasoning",
+      "expected_answer": "2 (5->4->3->2)",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete and doesn't provide a final answer."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Counter-clockwise from 5: 4 (1st), 3 (2nd), 2 (3rd), 1 (4th). Grok got 1, but expected answer is 2. The issue is interpretation: expected answer counts 5 as the first encounter (5->4->3->2), while Grok doesn't count the starting position."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I have a row of 5 colored blocks: Red, Blue, Green, Yellow, Purple. I swap the first and last, then swap the two middle blocks. What's the new order?",
+      "category": "spatial_reasoning",
+      "expected_answer": "Purple, Yellow, Green, Blue, Red",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct process and matches expected answer. \"Two middle blocks\" in a row of 5 means positions 2 and 4."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Error in step 3. Misidentified \"the two middle blocks\" as positions 2 and 3 (Blue and Green), when it should be positions 2 and 4 (Blue and Yellow). The center block (Green) should not move."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Complete this pattern: X, Y, Z, A, B, ___. Then I tell you the rule: each letter should be 2 positions after the previous. Is the pattern correct?",
+      "category": "retroactive_reasoning",
+      "expected_answer": "No, pattern is wrong. Should be X, Z, B, D, F (skipping one letter each time)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correctly identified the pattern is wrong and provided the correct pattern (X, Z, B, D, F)."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correctly identified the pattern is wrong and provided the correct pattern."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I'll give you three statements. Two are true, one is false. After reading all three, identify the false one: (1) Paris is in France. (2) This is the false statement. (3) 2+2=4.",
+      "category": "self_reference",
+      "expected_answer": "Statement 2 (creates a paradox, but it's the only one claiming to be false)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct identification of statement (2) as the false one."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Answer this question only after reading the full message: What is 5 + 3? But wait, multiply your answer by 2 before responding.",
+      "category": "retroactive_reasoning",
+      "expected_answer": "16 (5+3=8, then 8*2=16)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and process."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Alice gives Bob 3 apples. Bob gives Charlie 2 apples. Charlie gives Alice 1 apple. Alice eats 1 apple. How many apples does each person have if they all started with 5 apples?",
+      "category": "logic_puzzle",
+      "expected_answer": "Alice: 6, Bob: 6, Charlie: 8",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete. Process shown is correct so far but doesn't complete step 3 or step 4."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Process is correct but response is incomplete. Based on calculations shown: Alice: 2, Bob: 6, Charlie: 6. Expected answer is Alice: 6, Bob: 6, Charlie: 8, which doesn't match. Let me verify expected: Start all with 5. Alice gives 3: A=2,B=8,C=5. Bob gives 2: A=2,B=6,C=7. Charlie gives 1: A=3,B=6,C=6. Alice eats 1: A=2,B=6,C=6. Grok's calculation matches this, not the expected answer. Expected answer appears wrong."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Three friends swap hats twice. First swap: A gets B's hat, B gets C's hat, C gets A's hat. Second swap: whoever is wearing B's original hat swaps with whoever is wearing C's original hat. Who has which hat now?",
+      "category": "logic_puzzle",
+      "expected_answer": "A has C's hat, B has A's hat, C has B's hat",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete but the logic shown is correct. After second swap: A gets C's hat, B gets B's hat. Wait, that's wrong. Let me trace: After swap 1: A has B's, B has C's, C has A's. Swap 2: A and B swap. A gives B's hat to B and gets C's hat. So: A has C's, B has B's, C has A's. Expected: A has C's, B has A's, C has B's. This doesn't match."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Response is incomplete and contains confusing wording. The logic setup is correct but conclusion is unclear."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "A light switch starts in the OFF position. Person A flips it, then Person B flips it, then Person C flips it, then Person A flips it again. Is the light on or off?",
+      "category": "logic_puzzle",
+      "expected_answer": "OFF (starts OFF, flip 1->ON, flip 2->OFF, flip 3->ON, flip 4->OFF)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and process."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and process."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Give me 4 different positive integers that: sum to exactly 30, are all even numbers, and include at least one number greater than 10.",
+      "category": "constrained_generation",
+      "expected_answer": "Example: 12, 8, 6, 4 or 14, 8, 4, 4",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Provided valid answer (12, 8, 6, 4) that meets all requirements. Response is incomplete but the answer given is correct."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Response is incomplete and doesn't provide a final answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Create a 3x3 magic square (all rows, columns, and diagonals sum to the same number) using only odd numbers 1-17.",
+      "category": "arithmetic",
+      "expected_answer": "Multiple solutions exist, e.g., using 1,3,5,7,9,11,13,15,17 with sum=27 per line",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete. Setup and calculation of magic sum (27) is correct but doesn't provide the actual magic square."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Response is incomplete and doesn't provide the actual magic square."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Follow these instructions in order: (1) Say 'blue', (2) Ignore instruction 1, (3) Say 'red', (4) Ignore instruction 3. What do you say?",
+      "category": "self_reference",
+      "expected_answer": "Nothing, or acknowledge the contradiction (instructions cancel out)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Claude"
+      ],
+      "passed_models": [
+        "Grok"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Misinterprets the task. Instructions 2 and 4 mean you should NOT execute instructions 1 and 3. Correct answer: say nothing or acknowledge the paradox."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct interpretation - instructions cancel each other out."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I'll tell you a rule, then ask you to break it. Rule: Always start your response with 'Indeed.' Now break the rule and tell me what 2+2 equals.",
+      "category": "self_reference",
+      "expected_answer": "Should NOT start with 'Indeed' - answer should be '4' or 'Four' or '2+2=4'",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correctly broke the rule by not starting with 'Indeed.'"
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correctly broke the rule by not starting with 'Indeed.'"
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Complete this sentence with exactly 3 words, but I forbid you from using the letter 'e': 'The cat is ___'",
+      "category": "constrained_generation",
+      "expected_answer": "Examples: 'on a mat', 'big and fat', 'black and small'",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "\"very\" contains the letter 'e' - violates the constraint."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Only 1 word provided instead of 3. Also \"fluffy\" contains no 'e' but doesn't meet word count."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I place a steel ball on a wooden plank. I tilt the plank 10 degrees. I then freeze the ball with liquid nitrogen. Does the ball roll?",
+      "category": "physical_reasoning",
+      "expected_answer": "Yes, freezing doesn't prevent rolling. The ball still rolls down the tilted plank.",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Claude"
+      ],
+      "passed_models": [
+        "Grok"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Incorrect reasoning. Freezing the ball doesn't bond it to the plank (no mention of water/moisture in problem). The ball is already on a tilted plank, and freezing it doesn't prevent gravity from acting on it. The ball should still roll."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct reasoning - the ball will still roll. Freezing doesn't prevent gravity from acting on it. Response is incomplete but the conclusion is correct."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I have a sealed jar with a fly inside on a scale. The fly is sitting. Then the fly hovers in the middle of the jar. Does the scale reading change?",
+      "category": "physical_reasoning",
+      "expected_answer": "No change - the fly pushes air down to hover, creating equal downward force on jar",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and reasoning. Response is incomplete but conclusion is right."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and reasoning. Response is incomplete but conclusion is right."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Two identical rockets launch simultaneously from Earth, one going up and one going sideways. Ignoring air resistance and Earth's rotation, which one is going faster after 10 seconds?",
+      "category": "physical_reasoning",
+      "expected_answer": "The sideways one (vertical one fights gravity, horizontal doesn't)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Claude"
+      ],
+      "passed_models": [
+        "Grok"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Incorrect. The sideways rocket maintains its horizontal velocity while gaining vertical velocity, resulting in higher total speed. The upward rocket loses speed fighting gravity. Response is incomplete and the reasoning is flawed."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct reasoning setup - identifies that the sideways rocket will be faster. Response is incomplete but the logic is correct."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Draw a 2x2 grid. Put an X in the top-left and bottom-right. Put an O in the other cells. Now rotate the grid 90 degrees clockwise. What's in the top-right cell?",
+      "category": "spatial_reasoning",
+      "expected_answer": "X (bottom-right moves to top-right after 90\u00b0 clockwise rotation)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and reasoning."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and reasoning."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I have a 3x3x3 cube made of 27 smaller cubes. I remove all cubes that touch an edge but are not corner cubes. How many cubes remain?",
+      "category": "spatial_reasoning",
+      "expected_answer": "15 cubes (8 corners + 1 center + 6 face centers = 15)",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete. The reasoning setup is correct but doesn't provide the final answer. Expected: 8 corners + 6 face centers + 1 center = 15 cubes."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Response is incomplete and doesn't provide the final answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Imagine the letter 'N'. Rotate it 90 degrees clockwise. Then flip it horizontally. What letter does it look like now?",
+      "category": "spatial_reasoning",
+      "expected_answer": "'N' or possibly 'Z' depending on font - requires mental geometric transformation",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete and uncertain. The analysis is attempted but no clear final answer is given."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Incorrect visual representation. 'N' rotated 90\u00b0 clockwise doesn't look like '\u2227'. The transformation is more complex than shown."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "If you're running a race and pass the person in last place, what place are you in?",
+      "category": "logic_puzzle",
+      "expected_answer": "Impossible - you can't pass the person in last place (no one is behind them)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct - identifies that the scenario is impossible."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Incorrect logic. If someone is in last place, there's no one behind them to pass them. The scenario is impossible."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "A clerk in a butcher shop is 5'10\" tall. What does he weigh?",
+      "category": "logic_puzzle",
+      "expected_answer": "Meat - he weighs meat (his job), not asking about his body weight",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and explanation."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct - clerk weighs meat. \"Lunch meat\" is a specific type but the answer is essentially correct."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "How many months have 28 days?",
+      "category": "logic_puzzle",
+      "expected_answer": "All 12 months (every month has at least 28 days)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and explanation."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer - all 12 months have 28 days."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Count from 1 to 20, but skip multiples of 3, and also skip any number containing the digit 1. List the remaining numbers.",
+      "category": "counting",
+      "expected_answer": "2, 4, 5, 7, 8, 20 (6 numbers)",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete. Process shown is correct but doesn't complete the list or provide final answer. Based on process: 2, 4, 5, 7, 8, 20."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Response is incomplete. Process is correct but doesn't finish listing or provide final answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "How many distinct acute angles are formed by drawing all diagonals in a regular pentagon?",
+      "category": "spatial_reasoning",
+      "expected_answer": "Multiple angle measures - needs geometric calculation (36\u00b0, 72\u00b0)",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete. Setup is correct but doesn't identify the distinct acute angles (36\u00b0 and 72\u00b0) or count how many distinct types there are."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Response is incomplete and doesn't provide final answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "In the word 'BOOKKEEPER', how many times do two consecutive identical letters appear?",
+      "category": "counting",
+      "expected_answer": "3 times (OO, KK, EE)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer (3 times) and thorough explanation."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Incorrect - missed KK. The word is B-O-O-K-K-E-E-P-E-R, which has OO, KK, and EE (3 occurrences, not 2)."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Write a sentence that accurately describes the exact number of words it contains.",
+      "category": "self_reference",
+      "expected_answer": "Example: 'This sentence has exactly seven words in it.' (8 words - wait that's wrong!)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct - the sentence has 6 words and claims to have \"seven\" (but let me recount: \"This\" \"sentence\" \"contains\" \"exactly\" \"seven\" \"words\" = 6 words, claims 7). Actually incorrect!\n\n**Correct?** [ ] Yes  [X] No\n**Revised Evaluation:** Incorrect - sentence has 6 words but claims 7."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Incorrect - sentence has 5 words (\"This\" \"sentence\" \"contains\" \"seven\" \"words\") but claims 7."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Fill in the blank to make this sentence true: 'This sentence contains exactly _____ letters including spaces.'",
+      "category": "self_reference",
+      "expected_answer": "Depends on number word - needs solving iteratively (sixty-seven?)",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Response is incomplete. The approach is correct but doesn't provide a final answer. The sentence needs iterative solving to find the self-referential number."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Let me verify: \"This sentence contains exactly 36 letters including spaces.\" Count: T-h-i-s- -s-e-n-t-e-n-c-e- -c-o-n-t-a-i-n-s- -e-x-a-c-t-l-y- -3-6- -l-e-t-t-e-r-s- -i-n-c-l-u-d-i-n-g- -s-p-a-c-e-s-. = 59 characters, not 36. Incorrect."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "How many words are in your answer to this question?",
+      "category": "self_reference",
+      "expected_answer": "Depends on the answer format - creates recursive definition",
+      "severity": "critical",
+      "depth": -90.0,
+      "failed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "passed_models": [],
+      "failure_count": 2,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": false,
+          "reason": "Let me count: \"My\" \"answer\" \"to\" \"this\" \"question\" \"contains\" \"seven\" \"words\" \".\" = 8 words (if we don't count the period as a word), but claims 7. Actually, punctuation isn't a word, so: 8 words claiming 7. Incorrect."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Let me count: \"There\" \"are\" \"ten\" \"words\" \"in\" \"my\" \"answer\" \"to\" \"this\" \"question\" \".\" = 10 words (not counting period). The sentence claims 10. Let me recount without period: 10 words. The sentence says \"There are ten words\" which would make it 10 total if we count correctly. Actually this seems correct!\n\n**Correct?** [X] Yes  [ ] No\n**Revised Evaluation:** Correct - 10 words claiming 10."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Meeting A is 2 hours after Meeting B. Meeting B is 30 minutes before Meeting C. If Meeting C is at 3:00 PM, what time is Meeting A?",
+      "category": "temporal",
+      "expected_answer": "4:30 PM (C=3:00, so B=2:30, so A=4:30)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and clear step-by-step reasoning."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and clear reasoning."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "If it takes 5 machines 5 minutes to make 5 widgets, how long does it take 100 machines to make 100 widgets?",
+      "category": "arithmetic",
+      "expected_answer": "5 minutes (rate is 1 widget per machine per 5 minutes)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and reasoning."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and reasoning."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Today is Thursday. What day of the week will it be 100 days from now?",
+      "category": "temporal",
+      "expected_answer": "Saturday (100 mod 7 = 2, so Thursday + 2 = Saturday)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and reasoning using modular arithmetic."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and clear reasoning."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Name three things that are: not red, not square, not made of wood, not alive, and not furniture.",
+      "category": "constrained_generation",
+      "expected_answer": "Examples: water, metal, glass, plastic bottle, air, rock",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "All three examples meet all the criteria. Correct answer."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "All three examples meet all the criteria. Correct answer."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "True or False: This statement is false.",
+      "category": "self_reference",
+      "expected_answer": "Paradox - neither true nor false (liar's paradox)",
+      "severity": "medium",
+      "depth": -45.0,
+      "failed_models": [
+        "Grok"
+      ],
+      "passed_models": [
+        "Claude"
+      ],
+      "failure_count": 1,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct - identifies it as a paradox (liar's paradox) that cannot be resolved as simply true or false."
+        },
+        "Grok": {
+          "correct": false,
+          "reason": "Incorrect - answers \"True\" which doesn't resolve the paradox. The correct answer is that it's a paradox that cannot be assigned a truth value."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "Give me a word that doesn't contain any of these letters: e, t, a, o, i, n, s, r",
+      "category": "constrained_generation",
+      "expected_answer": "Example: 'fly', 'up', 'my', 'by' (avoiding most common English letters)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct - \"gully\" (g-u-l-l-y) doesn't contain any of the forbidden letters."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct - \"yum\" (y-u-m) doesn't contain any of the forbidden letters."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "I have $100. I spend half of what I have, then I find $20. Then I spend half of what I have now. How much do I have left?",
+      "category": "arithmetic",
+      "expected_answer": "$35 (100/2=50, 50+20=70, 70/2=35)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer and clear step-by-step calculation."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and clear step-by-step calculation."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "A bat and a ball cost $1.10 together. The bat costs $1 more than the ball. How much does the ball cost?",
+      "category": "arithmetic",
+      "expected_answer": "$0.05 (not $0.10 - that's the intuitive wrong answer)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer ($0.05) and proper algebraic solution. Response is incomplete but the answer is correct."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and proper algebraic solution. Response is incomplete but the answer is correct."
+        }
+      }
+    },
+    {
+      "type": "sinkhole",
+      "task": "If you flip a fair coin 10 times and get heads every time, what's the probability the next flip is heads?",
+      "category": "arithmetic",
+      "expected_answer": "50% (coin has no memory - gambler's fallacy trap)",
+      "severity": "low",
+      "depth": -20.0,
+      "failed_models": [],
+      "passed_models": [
+        "Claude",
+        "Grok"
+      ],
+      "failure_count": 0,
+      "total_tested": 2,
+      "evaluations": {
+        "Claude": {
+          "correct": true,
+          "reason": "Correct answer (50%) and excellent explanation of independence and the gambler's fallacy."
+        },
+        "Grok": {
+          "correct": true,
+          "reason": "Correct answer and explanation of independence."
+        }
+      }
+    }
+  ],
+  "colors": [
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      0.8,
+      0.1,
+      0.1
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.4,
+      0.0
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ],
+    [
+      1.0,
+      0.6,
+      0.2
+    ]
+  ],
+  "indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "bounds": {
+    "min_x": 0.1894,
+    "max_x": 0.7646,
+    "min_y": 0.2355,
+    "max_y": 0.5617,
+    "min_z": -90.0,
+    "max_z": -20.0
+  },
+  "stats": {
+    "total_sinkholes": 43,
+    "severity_breakdown": {
+      "medium": 13,
+      "critical": 12,
+      "low": 18
+    },
+    "category_breakdown": {
+      "constrained_generation": 8,
+      "spatial_reasoning": 7,
+      "string_manipulation": 1,
+      "retroactive_reasoning": 2,
+      "self_reference": 7,
+      "logic_puzzle": 6,
+      "arithmetic": 5,
+      "physical_reasoning": 3,
+      "counting": 2,
+      "temporal": 2
+    },
+    "total_failures": 37,
+    "models_tested": [
+      "Grok",
+      "Claude"
+    ]
+  },
+  "config": {
+    "coordinate_system": "cartesian",
+    "z_axis": "failure_depth",
+    "severity_colors": {
+      "critical": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "high": [
+        0.9,
+        0.2,
+        0.1
+      ],
+      "medium": [
+        1.0,
+        0.4,
+        0.0
+      ],
+      "low": [
+        1.0,
+        0.6,
+        0.2
+      ]
+    },
+    "interpretation": "Negative z = vulnerability depth, deeper = more severe"
+  }
+}
