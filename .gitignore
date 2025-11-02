@@ -4,7 +4,6 @@ data/raw/epoch_benchmark_data/*.csv
 !data/raw/epoch_benchmark_data/README.md
 
 # Generated outputs (don't commit)
-data/outputs/
 data/intermediate/combined_benchmarks*.csv
 
 # Python
