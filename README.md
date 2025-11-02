@@ -15,3 +15,5 @@ Building on real-time benchmark data from Epoch AI and Papers With Code, the sys
 - **Spatial Visualization** - 3D terrain reveals capability clusters and gaps invisible in traditional benchmark charts
 
 **Impact:** Enables researchers, policymakers, and developers to monitor AI progress in real-time, receive alerts on capability acceleration, and anticipate transformative breakthroughs - directly addressing Track 3's focus on early warning systems for rapid response to AI advancement.
+
+<img width="1900" height="911" alt="Screenshot 2025-11-02 at 2 51 39 PM" src="https://github.com/user-attachments/assets/bcfcc0c3-9e75-4413-9f33-e7136d87f7b3" />
