@@ -38,6 +38,8 @@
 }
 
 .ui-legend,
+.ui-timeline,
+.ui-filters,
 .ui-controls,
 .ui-stats,
 .ui-instructions {
@@ -53,6 +55,18 @@
 
 .ui-legend {
   top: 120px;
+  left: 20px;
+  width: 280px;
+}
+
+.ui-timeline {
+  bottom: 260px;
+  left: 20px;
+  width: 280px;
+}
+
+.ui-filters {
+  bottom: 140px;
   left: 20px;
   width: 280px;
 }
@@ -76,6 +90,8 @@
 }
 
 .ui-legend h3,
+.ui-timeline h3,
+.ui-filters h3,
 .ui-controls h3,
 .ui-stats h3 {
   margin: 0 0 15px 0;
@@ -84,6 +100,88 @@
   color: #ffffff;
   border-bottom: 2px solid rgba(68, 136, 255, 0.5);
   padding-bottom: 8px;
+}
+
+/* Timeline Slider */
+.timeline-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #4488ff, #aa44ff);
+  outline: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.timeline-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #4488ff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(68, 136, 255, 0.5);
+}
+
+.timeline-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #4488ff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(68, 136, 255, 0.5);
+}
+
+.timeline-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+/* Filters */
+.filter-group {
+  margin: 12px 0;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  font-weight: 500;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+}
+
+.filter-select:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #4488ff;
+}
+
+.filter-select:focus {
+  border-color: #4488ff;
+  box-shadow: 0 0 0 2px rgba(68, 136, 255, 0.2);
+}
+
+.filter-select option {
+  background: #1a1a2e;
+  color: #ffffff;
 }
 
 .legend-item {

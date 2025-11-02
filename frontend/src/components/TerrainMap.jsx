@@ -13,7 +13,9 @@ function TerrainMap() {
     loadCapabilityData,
     showSinkholes,
     showForecastNodes,
-    showLabels
+    showLabels,
+    filterCategory,
+    currentYear
   } = useTerrainStore();
   const [hoveredCapability, setHoveredCapability] = useState(null);
 
@@ -37,13 +39,21 @@ function TerrainMap() {
 
     // Get all capabilities and their heights
     Object.entries(capabilityData).forEach(([key, cap]) => {
+      // Apply category filter
+      if (filterCategory && cap.category !== filterCategory) {
+        return;
+      }
+
       if (cap.x !== undefined && cap.y !== undefined) {
         const heights = cap.heights || {};
-        // Use latest year's height or average
-        const heightValues = Object.values(heights);
-        const avgHeight = heightValues.length > 0
-          ? heightValues.reduce((a, b) => a + b, 0) / heightValues.length
-          : 0.3;
+
+        // Use height for current year if available, otherwise use average
+        const yearHeight = heights[currentYear.toString()];
+        const avgHeight = yearHeight !== undefined
+          ? yearHeight
+          : (Object.values(heights).length > 0
+            ? Object.values(heights).reduce((a, b) => a + b, 0) / Object.values(heights).length
+            : 0.3);
 
         // Convert x,y (0-1) to grid coordinates
         const gridX = Math.floor(cap.x * segments);
@@ -61,7 +71,8 @@ function TerrainMap() {
           z: (cap.y - 0.5) * size,
           y: avgHeight * 30 + 2,
           name: cap.name || key,
-          color: getCategoryColor(cap.category)
+          color: getCategoryColor(cap.category),
+          category: cap.category
         });
       }
     });
@@ -107,7 +118,7 @@ function TerrainMap() {
     geo.computeVertexNormals();
 
     return { geometry: geo, capabilityPositions: capPositions };
-  }, [capabilityData]);
+  }, [capabilityData, filterCategory, currentYear]);
 
   // Animate terrain gently
   useFrame((state) => {

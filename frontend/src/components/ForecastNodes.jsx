@@ -1,14 +1,26 @@
 import React, { useMemo, useState } from 'react';
 import { Text } from '@react-three/drei';
 import * as THREE from 'three';
+import { useTerrainStore } from '../stores/terrainStore';
 import forecastData from '../../../predictions/forecast_nodes.json';
 
 function ForecastNodes() {
   const [hoveredNode, setHoveredNode] = useState(null);
+  const { filterCategory } = useTerrainStore();
 
   // Transform forecast data into 3D nodes
   const nodes = useMemo(() => {
-    return forecastData.nodes.map((node, idx) => {
+    return forecastData.nodes
+      .filter((node) => {
+        // Apply category filter
+        if (filterCategory) {
+          // Match capability name with category
+          const capabilityLower = node.capability.toLowerCase();
+          return capabilityLower.includes(filterCategory);
+        }
+        return true;
+      })
+      .map((node, idx) => {
       // Generate position based on capability and threshold
       // Spread nodes across the terrain
       const angle = (idx / forecastData.nodes.length) * Math.PI * 2;
@@ -33,7 +45,7 @@ function ForecastNodes() {
         color: new THREE.Color(colorMap[node.color] || '#ffffff')
       };
     });
-  }, []);
+  }, [filterCategory]);
 
   return (
     <group>

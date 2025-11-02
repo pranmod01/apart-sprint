@@ -7,9 +7,18 @@ function UI() {
     showSinkholes,
     showForecastNodes,
     showLabels,
+    filterCategory,
+    filterModel,
+    currentYear,
+    availableYears,
+    availableCategories,
+    availableModels,
     toggleSinkholes,
     toggleForecastNodes,
-    toggleLabels
+    toggleLabels,
+    setFilterCategory,
+    setFilterModel,
+    setCurrentYear
   } = useTerrainStore();
 
   return (
@@ -37,7 +46,58 @@ function UI() {
         </div>
       </div>
 
-      {/* Controls */}
+      {/* Timeline Slider */}
+      <div className="ui-timeline">
+        <h3>Timeline: {currentYear}</h3>
+        <input
+          type="range"
+          min={availableYears[0]}
+          max={availableYears[availableYears.length - 1]}
+          value={currentYear}
+          onChange={(e) => setCurrentYear(parseInt(e.target.value))}
+          className="timeline-slider"
+        />
+        <div className="timeline-labels">
+          <span>{availableYears[0]}</span>
+          <span>{availableYears[availableYears.length - 1]}</span>
+        </div>
+      </div>
+
+      {/* Filters */}
+      <div className="ui-filters">
+        <h3>Filters</h3>
+
+        <div className="filter-group">
+          <label>Category:</label>
+          <select
+            value={filterCategory || 'all'}
+            onChange={(e) => setFilterCategory(e.target.value === 'all' ? null : e.target.value)}
+            className="filter-select"
+          >
+            <option value="all">All Categories</option>
+            {availableCategories.map(cat => (
+              <option key={cat} value={cat}>
+                {cat.charAt(0).toUpperCase() + cat.slice(1)}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="filter-group">
+          <label>Model:</label>
+          <select
+            value={filterModel || 'All'}
+            onChange={(e) => setFilterModel(e.target.value === 'All' ? null : e.target.value)}
+            className="filter-select"
+          >
+            {availableModels.map(model => (
+              <option key={model} value={model}>{model}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {/* Display Controls */}
       <div className="ui-controls">
         <h3>Display Options</h3>
         <label className="checkbox-label">

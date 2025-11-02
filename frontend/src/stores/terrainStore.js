@@ -4,9 +4,14 @@ export const useTerrainStore = create((set) => ({
   capabilityData: null,
   selectedCapability: null,
   filterCategory: null,
+  filterModel: null,
   showSinkholes: true,
   showForecastNodes: true,
   showLabels: true,
+  currentYear: 2025,
+  availableYears: [2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  availableCategories: ['coding', 'reasoning', 'knowledge', 'spatial', 'language', 'physical'],
+  availableModels: ['OpenAI', 'Anthropic', 'Google', 'Meta', 'All'],
 
   loadCapabilityData: async () => {
     try {
@@ -32,6 +37,8 @@ export const useTerrainStore = create((set) => ({
 
   setSelectedCapability: (capability) => set({ selectedCapability: capability }),
   setFilterCategory: (category) => set({ filterCategory: category }),
+  setFilterModel: (model) => set({ filterModel: model }),
+  setCurrentYear: (year) => set({ currentYear: year }),
   toggleSinkholes: () => set((state) => ({ showSinkholes: !state.showSinkholes })),
   toggleForecastNodes: () => set((state) => ({ showForecastNodes: !state.showForecastNodes })),
   toggleLabels: () => set((state) => ({ showLabels: !state.showLabels })),
