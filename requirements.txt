@@ -1,13 +1,29 @@
+# Core Data Science
 numpy
 pandas
-scikit-learn
 scipy
+scikit-learn
+
+# Visualization
 matplotlib
 seaborn
+
+# Machine Learning / NLP
 sentence-transformers
-jupyter
-requests
-beautifulsoup4
+
+# LLM APIs
+anthropic
+google-generativeai
+openai
+replicate
+
+# Jupyter / Notebooks
 ipykernel
+jupyter
+
+# Web Scraping / HTTP
+beautifulsoup4
 requests
-json
+
+# Utilities
+python-dotenv

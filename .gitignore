@@ -1,0 +1,32 @@
+# Raw data (don't commit large CSVs)
+data/raw/epoch_benchmark_data/*.csv
+!data/raw/epoch_benchmark_data/epoch_capabilities_index.csv
+!data/raw/epoch_benchmark_data/README.md
+
+# Generated outputs (don't commit)
+data/intermediate/combined_benchmarks*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+apart-venv*/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+
+# Outputs
+*.log
+.env
