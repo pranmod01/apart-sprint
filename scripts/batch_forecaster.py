@@ -1,5 +1,5 @@
 """
-Batch Forecasting Script
+Batch Forecasting Script - Loads YOUR actual data
 Processes capabilities from combined_benchmarks_cleaned.csv
 """
 
@@ -48,6 +48,19 @@ class BatchForecaster:
         print(f"✓ Columns: {df.columns.tolist()}")
         print(f"✓ Date range: {df['date'].min()} to {df['date'].max()}")
         
+        # Score range check
+        if 'score' in df.columns:
+            score_min = df['score'].min()
+            score_max = df['score'].max()
+            print(f"✓ Score range: {score_min:.4f} to {score_max:.4f}")
+            
+            if score_max <= 1.0:
+                print(f"  ℹ️  Scores appear to be on 0-1 scale (will auto-convert to 0-100)")
+            elif score_max <= 100:
+                print(f"  ℹ️  Scores appear to be on 0-100 scale")
+            else:
+                print(f"  ⚠️  Warning: Max score > 100, may need custom handling")
+        
         if 'capability' in df.columns:
             print(f"✓ Capabilities found: {df['capability'].nunique()}")
             print(f"  {sorted(df['capability'].unique())}")
@@ -91,9 +104,14 @@ class BatchForecaster:
             dates = cap_df['date'].tolist()
             scores = cap_df['score'].tolist()
             
-            # Validate scores are in reasonable range (0-100)
-            if any(s < 0 or s > 100 for s in scores):
-                print(f"⚠️  Warning: {capability} has scores outside 0-100 range")
+            # Auto-detect scale and normalize to 0-100
+            max_score = max(scores)
+            if max_score <= 1.0:
+                # Scores are on 0-1 scale, convert to 0-100
+                scores = [s * 100 for s in scores]
+                print(f"  ℹ️  Normalized {capability} from 0-1 scale to 0-100")
+            elif max_score > 100:
+                print(f"⚠️  Warning: {capability} has scores > 100, may need custom normalization")
             
             capabilities_data[capability] = {
                 'dates': dates,
@@ -140,10 +158,14 @@ class BatchForecaster:
                 if pred.get('already_achieved'):
                     print(f"  {threshold}%: Already achieved on {pred['date_achieved']}")
                 else:
-                    ci_range = (pd.to_datetime(pred['confidence_interval']['upper']) - 
-                               pd.to_datetime(pred['confidence_interval']['lower'])).days // 2
-                    print(f"  {threshold}%: {pred['predicted_date']} (±{ci_range} days)")
-                
+                    try:
+                        ci_range = (pd.to_datetime(pred['confidence_interval']['upper']) -
+                                   pd.to_datetime(pred['confidence_interval']['lower'])).days // 2
+                        print(f"  {threshold}%: {pred['predicted_date']} (±{ci_range} days)")
+                    except (OverflowError, pd._libs.tslibs.np_datetime.OutOfBoundsDatetime):
+                        # Handle extremely large confidence intervals
+                        print(f"  {threshold}%: {pred['predicted_date']} (CI too large to compute)")
+
                 predictions.append(pred)
         
         # Generate forecast curve for visualization

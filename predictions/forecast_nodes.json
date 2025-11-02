@@ -1,0 +1,976 @@
+{
+  "metadata": {
+    "generated_at": "2025-11-01T21:55:41.391505",
+    "model": "logistic_growth",
+    "confidence_level": 0.95,
+    "data_source": "data/intermediate/combined_benchmarks_cleaned.csv"
+  },
+  "nodes": [
+    {
+      "capability": "code_generation",
+      "threshold": 85,
+      "predicted_date": "2060-08-17",
+      "confidence_interval": {
+        "lower": "1950-09-01",
+        "upper": "2178-01-22",
+        "level": 0.95
+      },
+      "days_until": 12708,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "code_generation",
+      "threshold": 90,
+      "predicted_date": "2068-03-09",
+      "confidence_interval": {
+        "lower": "1948-07-18",
+        "upper": "2217-11-04",
+        "level": 0.95
+      },
+      "days_until": 15469,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "code_generation",
+      "threshold": 95,
+      "predicted_date": "2080-05-23",
+      "confidence_interval": {
+        "lower": "1950-10-16",
+        "upper": "2247-12-03",
+        "level": 0.95
+      },
+      "days_until": 19927,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "physical_intuition",
+      "threshold": 90,
+      "predicted_date": "2027-06-10",
+      "confidence_interval": {
+        "lower": "2023-08-10",
+        "upper": "2034-03-13",
+        "level": 0.95
+      },
+      "days_until": 586,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "physical_intuition",
+      "threshold": 95,
+      "predicted_date": "2030-12-15",
+      "confidence_interval": {
+        "lower": "2026-05-19",
+        "upper": "2039-10-26",
+        "level": 0.95
+      },
+      "days_until": 1870,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "scientific_reasoning",
+      "threshold": 95,
+      "predicted_date": "2028-06-29",
+      "confidence_interval": {
+        "lower": "2024-09-19",
+        "upper": "2065-01-27",
+        "level": 0.95
+      },
+      "days_until": 971,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "reading_comprehension",
+      "threshold": 90,
+      "predicted_date": "2028-06-12",
+      "confidence_interval": {
+        "lower": "2026-02-20",
+        "upper": "2042-05-23",
+        "level": 0.95
+      },
+      "days_until": 954,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "reading_comprehension",
+      "threshold": 95,
+      "predicted_date": "2030-03-21",
+      "confidence_interval": {
+        "lower": "2027-03-04",
+        "upper": "2048-05-05",
+        "level": 0.95
+      },
+      "days_until": 1601,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "game_playing",
+      "threshold": 85,
+      "predicted_date": "2028-04-25",
+      "confidence_interval": {
+        "lower": "2026-11-26",
+        "upper": "2034-07-09",
+        "level": 0.95
+      },
+      "days_until": 906,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "game_playing",
+      "threshold": 90,
+      "predicted_date": "2028-11-08",
+      "confidence_interval": {
+        "lower": "2027-04-03",
+        "upper": "2037-02-21",
+        "level": 0.95
+      },
+      "days_until": 1103,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "game_playing",
+      "threshold": 95,
+      "predicted_date": "2029-09-22",
+      "confidence_interval": {
+        "lower": "2027-10-31",
+        "upper": "2041-01-05",
+        "level": 0.95
+      },
+      "days_until": 1421,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "competition_math",
+      "threshold": 85,
+      "predicted_date": "2030-04-20",
+      "confidence_interval": {
+        "lower": "2029-06-15",
+        "upper": "2031-03-20",
+        "level": 0.95
+      },
+      "days_until": 1631,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "competition_math",
+      "threshold": 90,
+      "predicted_date": "2030-10-19",
+      "confidence_interval": {
+        "lower": "2029-12-06",
+        "upper": "2031-11-15",
+        "level": 0.95
+      },
+      "days_until": 1813,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "competition_math",
+      "threshold": 95,
+      "predicted_date": "2031-08-08",
+      "confidence_interval": {
+        "lower": "2030-08-17",
+        "upper": "2032-11-06",
+        "level": 0.95
+      },
+      "days_until": 2106,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "advanced_reasoning",
+      "threshold": 85,
+      "predicted_date": "2041-07-09",
+      "confidence_interval": {
+        "lower": "2038-09-02",
+        "upper": "2044-08-16",
+        "level": 0.95
+      },
+      "days_until": 5729,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "advanced_reasoning",
+      "threshold": 90,
+      "predicted_date": "2042-12-14",
+      "confidence_interval": {
+        "lower": "2039-12-31",
+        "upper": "2046-03-26",
+        "level": 0.95
+      },
+      "days_until": 6252,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "advanced_reasoning",
+      "threshold": 95,
+      "predicted_date": "2045-04-07",
+      "confidence_interval": {
+        "lower": "2042-02-05",
+        "upper": "2049-01-31",
+        "level": 0.95
+      },
+      "days_until": 7097,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "long_horizon_planning",
+      "threshold": 85,
+      "predicted_date": "2027-06-18",
+      "confidence_interval": {
+        "lower": "2026-11-20",
+        "upper": "2028-05-20",
+        "level": 0.95
+      },
+      "days_until": 594,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "long_horizon_planning",
+      "threshold": 90,
+      "predicted_date": "2028-02-23",
+      "confidence_interval": {
+        "lower": "2027-06-07",
+        "upper": "2029-04-27",
+        "level": 0.95
+      },
+      "days_until": 844,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "long_horizon_planning",
+      "threshold": 95,
+      "predicted_date": "2029-04-01",
+      "confidence_interval": {
+        "lower": "2028-04-19",
+        "upper": "2030-11-02",
+        "level": 0.95
+      },
+      "days_until": 1247,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "writing_quality",
+      "threshold": 85,
+      "predicted_date": "2030-10-02",
+      "confidence_interval": {
+        "lower": "2029-02-02",
+        "upper": "2033-01-21",
+        "level": 0.95
+      },
+      "days_until": 1796,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "writing_quality",
+      "threshold": 90,
+      "predicted_date": "2031-05-14",
+      "confidence_interval": {
+        "lower": "2029-08-04",
+        "upper": "2033-12-20",
+        "level": 0.95
+      },
+      "days_until": 2020,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "writing_quality",
+      "threshold": 95,
+      "predicted_date": "2032-05-11",
+      "confidence_interval": {
+        "lower": "2030-05-28",
+        "upper": "2035-09-24",
+        "level": 0.95
+      },
+      "days_until": 2383,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "cad_design",
+      "threshold": 85,
+      "predicted_date": "2026-07-26",
+      "confidence_interval": {
+        "lower": "2025-09-18",
+        "upper": "2035-04-04",
+        "level": 0.95
+      },
+      "days_until": 267,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "cad_design",
+      "threshold": 90,
+      "predicted_date": "2026-12-03",
+      "confidence_interval": {
+        "lower": "2025-11-22",
+        "upper": "2037-12-24",
+        "level": 0.95
+      },
+      "days_until": 397,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "cad_design",
+      "threshold": 95,
+      "predicted_date": "2027-07-03",
+      "confidence_interval": {
+        "lower": "2026-03-20",
+        "upper": "2042-03-30",
+        "level": 0.95
+      },
+      "days_until": 609,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "advanced_mathematics",
+      "threshold": 85,
+      "predicted_date": "2027-12-10",
+      "confidence_interval": {
+        "lower": "2027-04-09",
+        "upper": "2028-09-24",
+        "level": 0.95
+      },
+      "days_until": 769,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "advanced_mathematics",
+      "threshold": 90,
+      "predicted_date": "2028-02-19",
+      "confidence_interval": {
+        "lower": "2027-06-13",
+        "upper": "2028-12-25",
+        "level": 0.95
+      },
+      "days_until": 840,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "advanced_mathematics",
+      "threshold": 95,
+      "predicted_date": "2028-06-13",
+      "confidence_interval": {
+        "lower": "2027-09-23",
+        "upper": "2029-06-05",
+        "level": 0.95
+      },
+      "days_until": 955,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "abstract_reasoning",
+      "threshold": 85,
+      "predicted_date": "2026-11-14",
+      "confidence_interval": {
+        "lower": "2025-12-18",
+        "upper": "2032-11-26",
+        "level": 0.95
+      },
+      "days_until": 378,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "abstract_reasoning",
+      "threshold": 90,
+      "predicted_date": "2027-02-11",
+      "confidence_interval": {
+        "lower": "2026-02-15",
+        "upper": "2033-07-19",
+        "level": 0.95
+      },
+      "days_until": 467,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "abstract_reasoning",
+      "threshold": 95,
+      "predicted_date": "2027-07-04",
+      "confidence_interval": {
+        "lower": "2026-05-06",
+        "upper": "2036-08-11",
+        "level": 0.95
+      },
+      "days_until": 610,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "basic_tasks",
+      "threshold": 85,
+      "predicted_date": "2027-01-25",
+      "confidence_interval": {
+        "lower": "2026-08-23",
+        "upper": "2027-11-10",
+        "level": 0.95
+      },
+      "days_until": 450,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "basic_tasks",
+      "threshold": 90,
+      "predicted_date": "2027-06-15",
+      "confidence_interval": {
+        "lower": "2026-12-10",
+        "upper": "2028-06-10",
+        "level": 0.95
+      },
+      "days_until": 591,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "basic_tasks",
+      "threshold": 95,
+      "predicted_date": "2028-01-29",
+      "confidence_interval": {
+        "lower": "2027-06-01",
+        "upper": "2029-05-13",
+        "level": 0.95
+      },
+      "days_until": 819,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "general_knowledge",
+      "threshold": 90,
+      "predicted_date": "2026-07-13",
+      "confidence_interval": {
+        "lower": "2025-08-18",
+        "upper": "2028-04-04",
+        "level": 0.95
+      },
+      "days_until": 254,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "general_knowledge",
+      "threshold": 95,
+      "predicted_date": "2027-09-20",
+      "confidence_interval": {
+        "lower": "2026-07-19",
+        "upper": "2030-01-09",
+        "level": 0.95
+      },
+      "days_until": 688,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "os_interaction",
+      "threshold": 85,
+      "predicted_date": "2027-03-04",
+      "confidence_interval": {
+        "lower": "2024-02-04",
+        "upper": "2040-04-03",
+        "level": 0.95
+      },
+      "days_until": 488,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "os_interaction",
+      "threshold": 90,
+      "predicted_date": "2027-06-24",
+      "confidence_interval": {
+        "lower": "2024-03-17",
+        "upper": "2042-07-12",
+        "level": 0.95
+      },
+      "days_until": 600,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "os_interaction",
+      "threshold": 95,
+      "predicted_date": "2027-12-23",
+      "confidence_interval": {
+        "lower": "2024-07-12",
+        "upper": "2049-11-19",
+        "level": 0.95
+      },
+      "days_until": 782,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "factual_knowledge",
+      "threshold": 90,
+      "predicted_date": "2028-08-06",
+      "confidence_interval": {
+        "lower": "2021-04-26",
+        "upper": "2083-03-17",
+        "level": 0.95
+      },
+      "days_until": 1009,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "factual_knowledge",
+      "threshold": 95,
+      "predicted_date": "2031-10-17",
+      "confidence_interval": {
+        "lower": "2023-03-19",
+        "upper": "2112-01-25",
+        "level": 0.95
+      },
+      "days_until": 2176,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "unusual_tasks",
+      "threshold": 85,
+      "predicted_date": "2026-09-16",
+      "confidence_interval": {
+        "lower": "2026-03-01",
+        "upper": "2028-06-19",
+        "level": 0.95
+      },
+      "days_until": 319,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "unusual_tasks",
+      "threshold": 90,
+      "predicted_date": "2027-01-24",
+      "confidence_interval": {
+        "lower": "2026-05-24",
+        "upper": "2029-03-29",
+        "level": 0.95
+      },
+      "days_until": 449,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "unusual_tasks",
+      "threshold": 95,
+      "predicted_date": "2027-08-23",
+      "confidence_interval": {
+        "lower": "2026-10-12",
+        "upper": "2030-08-25",
+        "level": 0.95
+      },
+      "days_until": 660,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "complex_reasoning",
+      "threshold": 90,
+      "predicted_date": "2025-08-28",
+      "confidence_interval": {
+        "lower": "2025-01-29",
+        "upper": "2026-12-02",
+        "level": 0.95
+      },
+      "days_until": -64,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "complex_reasoning",
+      "threshold": 95,
+      "predicted_date": "2026-04-26",
+      "confidence_interval": {
+        "lower": "2025-07-19",
+        "upper": "2028-01-26",
+        "level": 0.95
+      },
+      "days_until": 176,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "spatial_reasoning",
+      "threshold": 85,
+      "predicted_date": "2028-07-22",
+      "confidence_interval": {
+        "lower": "2026-11-06",
+        "upper": "2032-04-26",
+        "level": 0.95
+      },
+      "days_until": 994,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "spatial_reasoning",
+      "threshold": 90,
+      "predicted_date": "2028-11-10",
+      "confidence_interval": {
+        "lower": "2027-02-18",
+        "upper": "2033-09-17",
+        "level": 0.95
+      },
+      "days_until": 1105,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "spatial_reasoning",
+      "threshold": 95,
+      "predicted_date": "2029-05-08",
+      "confidence_interval": {
+        "lower": "2027-06-24",
+        "upper": "2035-01-03",
+        "level": 0.95
+      },
+      "days_until": 1284,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "cybersecurity",
+      "threshold": 85,
+      "predicted_date": "2027-10-27",
+      "confidence_interval": {
+        "lower": "2026-11-16",
+        "upper": "2029-06-21",
+        "level": 0.95
+      },
+      "days_until": 725,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "cybersecurity",
+      "threshold": 90,
+      "predicted_date": "2028-03-18",
+      "confidence_interval": {
+        "lower": "2027-02-26",
+        "upper": "2030-03-14",
+        "level": 0.95
+      },
+      "days_until": 868,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "cybersecurity",
+      "threshold": 95,
+      "predicted_date": "2028-11-04",
+      "confidence_interval": {
+        "lower": "2027-09-01",
+        "upper": "2031-07-20",
+        "level": 0.95
+      },
+      "days_until": 1099,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "os_navigation",
+      "threshold": 85,
+      "predicted_date": "2027-06-01",
+      "confidence_interval": {
+        "lower": "2026-05-28",
+        "upper": "2029-08-06",
+        "level": 0.95
+      },
+      "days_until": 577,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "os_navigation",
+      "threshold": 90,
+      "predicted_date": "2027-09-29",
+      "confidence_interval": {
+        "lower": "2026-09-01",
+        "upper": "2030-03-15",
+        "level": 0.95
+      },
+      "days_until": 697,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "os_navigation",
+      "threshold": 95,
+      "predicted_date": "2028-04-10",
+      "confidence_interval": {
+        "lower": "2027-01-20",
+        "upper": "2031-09-24",
+        "level": 0.95
+      },
+      "days_until": 891,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "natural_language_inference",
+      "threshold": 85,
+      "predicted_date": "2029-02-15",
+      "confidence_interval": {
+        "lower": "2027-03-07",
+        "upper": "2035-10-15",
+        "level": 0.95
+      },
+      "days_until": 1202,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "natural_language_inference",
+      "threshold": 90,
+      "predicted_date": "2030-07-22",
+      "confidence_interval": {
+        "lower": "2028-02-09",
+        "upper": "2038-07-07",
+        "level": 0.95
+      },
+      "days_until": 1724,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "natural_language_inference",
+      "threshold": 95,
+      "predicted_date": "2032-11-11",
+      "confidence_interval": {
+        "lower": "2029-08-03",
+        "upper": "2043-12-19",
+        "level": 0.95
+      },
+      "days_until": 2567,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "agent_reasoning",
+      "threshold": 85,
+      "predicted_date": "2027-01-02",
+      "confidence_interval": {
+        "lower": "2024-08-17",
+        "upper": "2039-09-26",
+        "level": 0.95
+      },
+      "days_until": 427,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "agent_reasoning",
+      "threshold": 90,
+      "predicted_date": "2027-04-16",
+      "confidence_interval": {
+        "lower": "2024-10-25",
+        "upper": "2043-01-10",
+        "level": 0.95
+      },
+      "days_until": 531,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "agent_reasoning",
+      "threshold": 95,
+      "predicted_date": "2027-10-01",
+      "confidence_interval": {
+        "lower": "2025-01-20",
+        "upper": "2048-09-13",
+        "level": 0.95
+      },
+      "days_until": 699,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "boolean_reasoning",
+      "threshold": 95,
+      "predicted_date": "2032-02-10",
+      "confidence_interval": {
+        "lower": "2023-05-23",
+        "upper": "2083-08-20",
+        "level": 0.95
+      },
+      "days_until": 2292,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "language_modeling",
+      "threshold": 85,
+      "predicted_date": "2026-06-23",
+      "confidence_interval": {
+        "lower": "2019-11-23",
+        "upper": "2081-08-11",
+        "level": 0.95
+      },
+      "days_until": 234,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "language_modeling",
+      "threshold": 90,
+      "predicted_date": "2028-06-01",
+      "confidence_interval": {
+        "lower": "2021-04-28",
+        "upper": "2093-10-09",
+        "level": 0.95
+      },
+      "days_until": 943,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "language_modeling",
+      "threshold": 95,
+      "predicted_date": "2031-07-22",
+      "confidence_interval": {
+        "lower": "2022-11-07",
+        "upper": "2116-09-04",
+        "level": 0.95
+      },
+      "days_until": 2089,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "terminal_usage",
+      "threshold": 85,
+      "predicted_date": "2026-07-15",
+      "confidence_interval": {
+        "lower": "2026-03-12",
+        "upper": "2027-06-25",
+        "level": 0.95
+      },
+      "days_until": 256,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "blue"
+    },
+    {
+      "capability": "terminal_usage",
+      "threshold": 90,
+      "predicted_date": "2026-09-22",
+      "confidence_interval": {
+        "lower": "2026-04-30",
+        "upper": "2027-12-03",
+        "level": 0.95
+      },
+      "days_until": 325,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    },
+    {
+      "capability": "terminal_usage",
+      "threshold": 95,
+      "predicted_date": "2027-01-12",
+      "confidence_interval": {
+        "lower": "2026-07-15",
+        "upper": "2028-08-26",
+        "level": 0.95
+      },
+      "days_until": 437,
+      "type": "forecast_node",
+      "style": "translucent",
+      "color": "purple"
+    }
+  ]
+}
