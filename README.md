@@ -32,13 +32,13 @@ The 3D interface, built with React and Three.js, translates forecast data into a
 
 **Novel Contributions**
 
--**Granular Capability Forecasting:** Predicts performance trajectories and uncertainty bounds for dozens of AI capabilities.
+- **Granular Capability Forecasting:** Predicts performance trajectories and uncertainty bounds for dozens of AI capabilities.
 
--**Sinkhole Detection:** Identifies domains of persistent underperformance, guiding targeted research and safety investigation.
+- **Sinkhole Detection:** Identifies domains of persistent underperformance, guiding targeted research and safety investigation.
 
--**Uncertainty-Aware Modeling:** Provides confidence intervals to reduce overconfidence in capability forecasts.
+- **Uncertainty-Aware Modeling:** Provides confidence intervals to reduce overconfidence in capability forecasts.
 
--**Interactive Terrain Mapping:** Offers an interpretable, multidimensional visualization of AI progress and gaps.
+- **Interactive Terrain Mapping:** Offers an interpretable, multidimensional visualization of AI progress and gaps.
 
 **Impact**
 
@@ -67,7 +67,7 @@ cd <repo-name>/frontend
 ```bash
 npm install
 
-Running the Development Server
+# Running the Development Server
 ```bash
 npm run dev
 
