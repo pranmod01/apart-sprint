@@ -37,15 +37,12 @@ The AI Capability Terrain Map enables transparent, data-driven insight into AI p
 git clone https://github.com/<your-username>/<repo-name>.git
 
 # Navigate to the frontend
-```bash
 cd <repo-name>/frontend
 
 # Install dependencies
-```bash
 npm install
 
 # Running the Development Server
-```bash
 npm run dev
 ```
 Then open your browser and visit http://localhost:5173
