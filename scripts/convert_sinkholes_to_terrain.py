@@ -12,11 +12,13 @@ import json
 import re
 import numpy as np
 from typing import Dict, List, Tuple, Optional
+from terrain_colors import SINKHOLE_COLORS, get_sinkhole_color
 
 
 class SinkholeToTerrainConverter:
     """
     Convert sinkhole evaluation data to terrain format
+    Uses unified color scheme from terrain_colors.py
     """
     
     def __init__(self):
@@ -34,13 +36,8 @@ class SinkholeToTerrainConverter:
             'counting': (0.4, 0.4)                  # basic tasks
         }
         
-        # Severity colors (RGB 0-1 range)
-        self.severity_colors = {
-            'critical': [0.8, 0.1, 0.1],    # dark red
-            'high': [0.9, 0.2, 0.1],         # red-orange
-            'medium': [1.0, 0.4, 0.0],       # orange
-            'low': [1.0, 0.6, 0.2]           # light orange
-        }
+        # Use unified color scheme (imported from terrain_colors.py)
+        # No longer defining colors here - single source of truth!
         
     def parse_markdown(self, md_content: str) -> List[Dict]:
         """
@@ -168,7 +165,7 @@ class SinkholeToTerrainConverter:
         {
             'vertices': [[x, y, z], ...],
             'metadata': [{...}, ...],
-            'colors': [[r, g, b], ...],
+            'colors': [[r, g, b], ...],  # From unified color scheme
             'indices': [0, 1, 2, ...]
         }
         """
@@ -188,8 +185,8 @@ class SinkholeToTerrainConverter:
             vertex = [round(float(x), 4), round(float(y), 4), round(float(z), 4)]
             vertices.append(vertex)
             
-            # Get color based on severity
-            color = self.severity_colors[severity]
+            # Get color from unified scheme
+            color = get_sinkhole_color(severity)
             colors.append(color)
             
             # Create metadata
@@ -263,8 +260,10 @@ class SinkholeToTerrainConverter:
             'config': {
                 'coordinate_system': 'cartesian',
                 'z_axis': 'failure_depth',
-                'severity_colors': self.severity_colors,
-                'interpretation': 'Negative z = vulnerability depth, deeper = more severe'
+                'severity_colors': SINKHOLE_COLORS,  # Reference to unified colors
+                'interpretation': 'Negative z = vulnerability depth, deeper = more severe',
+                'color_scheme': 'unified',
+                'color_source': 'terrain_colors.py'
             }
         }
     
@@ -280,6 +279,7 @@ class SinkholeToTerrainConverter:
         print(f"  - Severity breakdown: {terrain_data['stats']['severity_breakdown']}")
         print(f"  - Categories: {list(terrain_data['stats']['category_breakdown'].keys())}")
         print(f"  - Total failures: {terrain_data['stats']['total_failures']}")
+        print(f"  - Using unified color scheme from terrain_colors.py")
         
         return terrain_data
 
@@ -299,7 +299,7 @@ def main():
     print(f"Found {len(sinkholes)} sinkholes")
 
     # Convert to terrain format
-    print("\nConverting to rendering format...")
+    print("\nConverting to rendering format with unified colors...")
     terrain_data = converter.export_to_json(
         sinkholes,
         'data/outputs/terrain_sinkholes.json'

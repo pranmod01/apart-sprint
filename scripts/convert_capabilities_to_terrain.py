@@ -6,34 +6,28 @@ Output format:
 - vertices: flat array of [x, y, z] coordinates
 - metadata: parallel array with hover data
 - indices: for mesh rendering
-- colors: per-vertex colors based on category/velocity
+- colors: per-vertex colors based on capability (from unified color scheme)
 """
 
 import json
 import numpy as np
 from datetime import datetime
 from typing import Dict, List, Tuple
+from terrain_colors import CAPABILITY_COLORS, get_capability_color, CATEGORY_GROUPS
 
 
 class RenderingTerrainConverter:
     """
     Convert capabilities to rendering-optimized format
+    Uses unified color scheme from terrain_colors.py
     """
     
     def __init__(self, capabilities_data):
         self.capabilities = capabilities_data
         self.org_filter = 'all'
         
-        # Category colors (RGB normalized to 0-1)
-        self.category_colors = {
-            'coding': [0.231, 0.510, 0.965],      # blue
-            'reasoning': [0.545, 0.361, 0.965],   # purple
-            'knowledge': [0.063, 0.725, 0.506],   # green
-            'mathematics': [0.961, 0.620, 0.043], # amber
-            'language': [0.925, 0.282, 0.600],    # pink
-            'games': [0.937, 0.267, 0.267],       # red
-            'agents': [0.024, 0.714, 0.831]       # cyan
-        }
+        # Use unified color scheme (imported from terrain_colors.py)
+        # No longer defining colors here - single source of truth!
         
     def set_org_filter(self, org_name):
         """Set which organization's data to use"""
@@ -82,19 +76,24 @@ class RenderingTerrainConverter:
             'recent_velocity': round(float(velocities[-1]), 2) if velocities else 0
         }
     
-    def _get_category_color(self, category, velocity=0):
+    def _get_capability_color(self, capability_name, velocity=0):
         """
-        Get RGB color for category with velocity intensity
+        Get RGB color for capability with optional velocity adjustment
+        Uses unified color scheme from terrain_colors.py
+        
         Returns [r, g, b] in 0-1 range
         """
-        base_color = self.category_colors.get(category, [0.42, 0.47, 0.50])  # default gray
+        # Get base color from unified scheme
+        base_color = get_capability_color(capability_name)
         
-        # Adjust brightness based on velocity
+        # Optionally adjust brightness based on velocity
         # High velocity = brighter, low velocity = darker
-        velocity_factor = min(1.0, max(0.5, 1.0 + velocity / 50.0))
+        if velocity != 0:
+            velocity_factor = min(1.0, max(0.5, 1.0 + velocity / 50.0))
+            color = [c * velocity_factor for c in base_color]
+            return [min(1.0, max(0.0, c)) for c in color]
         
-        color = [c * velocity_factor for c in base_color]
-        return [min(1.0, max(0.0, c)) for c in color]
+        return base_color
     
     def _create_vertex_data(self, capability_name, capability_data, year, model_info):
         """
@@ -115,12 +114,12 @@ class RenderingTerrainConverter:
         # Calculate velocity
         velocity_data = self._calculate_velocity(capability_data.get('heights', {}))
         
-        # Get color based on category and velocity
-        category = capability_data.get('category', 'unknown')
-        color = self._get_category_color(category, velocity_data['velocity'])
+        # Get color using unified scheme
+        color = self._get_capability_color(capability_name, velocity_data['velocity'])
         
         # Metadata for hover
         metadata = {
+            'type': 'baseline',  # Mark as baseline node
             'capability': capability_name,
             'capability_display': capability_data.get('name', capability_name),
             'model': model_info.get('model', 'Unknown'),
@@ -129,7 +128,7 @@ class RenderingTerrainConverter:
             'benchmark': model_info.get('benchmark', 'Unknown'),
             'score': round(float(model_info.get('score', 0)), 4),
             'normalized_score': round(float(model_info.get('normalized_score', model_info.get('score', 0))), 4),
-            'category': category,
+            'category': capability_data.get('category', 'unknown'),
             'description': capability_data.get('description', ''),
             'velocity': velocity_data['velocity'],
             'velocity_trend': velocity_data['trend'],
@@ -146,7 +145,7 @@ class RenderingTerrainConverter:
         {
             'vertices': [[x, y, z], [x, y, z], ...],  # Flat array of positions
             'metadata': [{...}, {...}, ...],           # Parallel array with hover data
-            'colors': [[r, g, b], [r, g, b], ...],    # Per-vertex colors
+            'colors': [[r, g, b], [r, g, b], ...],    # Per-vertex colors (from unified scheme)
             'indices': [0, 1, 2, 3, 4, 5, ...],       # For indexed rendering
             'bounds': {min_x, max_x, min_y, max_y, min_z, max_z},
             'config': {...}
@@ -195,14 +194,15 @@ class RenderingTerrainConverter:
             'max_z': float(vertices_array[:, 2].max())
         }
         
-        # Get unique categories for legend
-        categories = list(set(m['category'] for m in metadata))
-        category_legend = {
-            cat: {
-                'color': self.category_colors.get(cat, [0.42, 0.47, 0.50]),
-                'count': sum(1 for m in metadata if m['category'] == cat)
+        # Get unique capabilities for legend (using unified color scheme)
+        capabilities_list = list(set(m['capability'] for m in metadata))
+        capability_legend = {
+            cap: {
+                'color': get_capability_color(cap),
+                'count': sum(1 for m in metadata if m['capability'] == cap),
+                'category_group': next((group for group, caps in CATEGORY_GROUPS.items() if cap in caps), 'Other')
             }
-            for cat in categories
+            for cap in capabilities_list
         }
         
         return {
@@ -217,8 +217,8 @@ class RenderingTerrainConverter:
                 'models': len(set(m['model'] for m in metadata)),
                 'organizations': len(set(m['organization'] for m in metadata)),
                 'date_range': {
-                    'earliest': min(m['release_date'] for m in metadata if m['release_date'] != 'Unknown'),
-                    'latest': max(m['release_date'] for m in metadata if m['release_date'] != 'Unknown')
+                    'earliest': min((m['release_date'] for m in metadata if m['release_date'] != 'Unknown'), default='Unknown'),
+                    'latest': max((m['release_date'] for m in metadata if m['release_date'] != 'Unknown'), default='Unknown')
                 }
             },
             'config': {
@@ -229,12 +229,14 @@ class RenderingTerrainConverter:
                     'y': 1.0,
                     'z': 100.0
                 },
-                'categories': category_legend,
+                'capabilities': capability_legend,
                 'velocity_thresholds': {
                     'high': 10.0,
                     'medium': 5.0,
                     'low': 0.0
-                }
+                },
+                'color_scheme': 'unified',
+                'color_source': 'terrain_colors.py'
             },
             'generated_at': datetime.now().isoformat(),
             'organization_filter': self.org_filter
@@ -324,7 +326,8 @@ def main():
 
     # Convert for 'all' organizations view
     print("Converting capabilities to rendering-ready format...")
-    print(f"Organization filter: {converter.org_filter}\n")
+    print(f"Organization filter: {converter.org_filter}")
+    print(f"Using unified color scheme from terrain_colors.py\n")
 
     # Export JSON format
     terrain_data = converter.export_to_json('data/outputs/terrain_rendering_all.json')
@@ -332,6 +335,7 @@ def main():
     # Export binary format for faster loading
     print()
     converter.export_to_binary('data/outputs/terrain_rendering_all.bin')
+    
     return terrain_data
 
 

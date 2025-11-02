@@ -320,7 +320,9 @@ class CapabilityForecaster:
                     'days_until': result['days_until_threshold'],
                     'type': 'forecast_node',
                     'style': 'translucent',
-                    'color': 'blue' if threshold < 90 else 'purple'
+                    'color': [0.3, 0.4, 0.9] if threshold < 90 else [0.6, 0.3, 0.8],  # RGB: blue for <90%, purple for >=90%
+                    'label': f"{capability_name.replace('_', ' ').title()} Frontier: {threshold}% by {result['predicted_date'][:7]}",
+                    'note': 'State-of-the-art prediction across all models'
                 })
         
         return nodes
