@@ -6,9 +6,22 @@ import * as THREE from "three";
 import { GUI } from "dat.gui";
 import categories from "../../config/categories.json";
 import capabilityHeights from "../../data/intermediate/capability_heights.json";
+import { COLORS } from "../config/colors";
 
 const ARC_SEGMENTS = 200;
 const YEARS = [2019, 2020, 2021, 2022, 2023, 2024, 2025];
+
+// Add these color constants at the top with other constants
+
+const TERRAIN_COLORS = {
+  deepSinkhole: new THREE.Color(COLORS.deepSinkhole),
+  sinkhole: new THREE.Color(COLORS.sinkhole),
+  lowland: new THREE.Color(COLORS.lowland),
+  grassland: new THREE.Color(COLORS.grassland),
+  highland: new THREE.Color(COLORS.highland),
+  mountain: new THREE.Color(COLORS.mountain),
+  peak: new THREE.Color(COLORS.peak),
+};
 
 function useCurveLine(points, curveType, color) {
   return useMemo(() => {
@@ -349,10 +362,9 @@ const generateHeightMapGeometry = useCallback((resolution = 100) => {
     
     let maxHeight = 0;
     let influence = 0;
-    let color = new THREE.Color(0x888888);
+    let color = new THREE.Color(TERRAIN_COLORS.lowland);
 
     Object.entries(capabilityHeights.all).forEach(([key, cap]) => {
-      // Check if capability is enabled in filters
       const category = cap.category || "unknown";
       if (capabilitiesState && category && capabilitiesState[category] === false) return;
       
@@ -366,15 +378,33 @@ const generateHeightMapGeometry = useCallback((resolution = 100) => {
         const weight = 1 - (distance / 200);
         
         if (height < 0.12 * 600) {
+          // Sinkhole coloring
           maxHeight -= (0.12 * 600 - height) * weight * 2;
-          color.lerp(new THREE.Color(0xff0000), weight * 0.5);
+          const sinkholeDepth = Math.abs(maxHeight) / (0.12 * 600);
+          color.lerp(
+            sinkholeDepth > 0.5 ? TERRAIN_COLORS.deepSinkhole : TERRAIN_COLORS.sinkhole, 
+            weight * 0.7
+          );
         } else {
           maxHeight += height * weight;
           
-          if (cap.category && categories.capability_categories[cap.category]?.color) {
-            const [r,g,b] = categories.capability_categories[cap.category].color;
-            color.lerp(new THREE.Color(r,g,b), weight * 0.3);
+          // Height-based terrain coloring
+          const normalizedHeight = height / 600;
+          let targetColor;
+          
+          if (normalizedHeight > 0.8) {
+            targetColor = TERRAIN_COLORS.peak;
+          } else if (normalizedHeight > 0.6) {
+            targetColor = TERRAIN_COLORS.mountain;
+          } else if (normalizedHeight > 0.4) {
+            targetColor = TERRAIN_COLORS.highland;
+          } else if (normalizedHeight > 0.2) {
+            targetColor = TERRAIN_COLORS.grassland;
+          } else {
+            targetColor = TERRAIN_COLORS.lowland;
           }
+          
+          color.lerp(targetColor, weight * 0.6);
         }
         influence += weight;
       }
@@ -410,8 +440,9 @@ const generateHeightMapGeometry = useCallback((resolution = 100) => {
         <meshStandardMaterial 
           vertexColors 
           side={THREE.DoubleSide}
-          roughness={0.8}
-          metalness={0.2}
+          roughness={0.85}
+          metalness={0.02}
+          envMapIntensity={0.2}
         />
       </mesh>
 
