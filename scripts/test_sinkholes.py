@@ -80,7 +80,7 @@ def test_all_models():
     """Test all sinkholes against all models"""
     
     # Load sinkholes
-    with open('data/negatives.json') as f:
+    with open('data/sinkhole_data/negatives.json') as f:
         sinkholes = json.load(f)
     
     # Initialize clients
@@ -190,7 +190,7 @@ def test_all_models():
     print(f"✓ Done in {elapsed:.1f} seconds!")
     
     # Save results
-    output_path = 'data/negatives_with_responses.json'
+    output_path = 'data/sinkhole_data/negatives_with_responses.json'
     with open(output_path, 'w') as f:
         json.dump(sinkholes, f, indent=2)
     
