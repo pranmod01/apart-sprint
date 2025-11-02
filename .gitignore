@@ -1,3 +1,33 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.vite/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Raw data (don't commit)
+data/epoch_benchmark_data/
+
 # Raw data (don't commit large CSVs)
 data/raw/epoch_benchmark_data/*.csv
 !data/raw/epoch_benchmark_data/epoch_capabilities_index.csv
@@ -23,7 +53,7 @@ env/
 *.swp
 *.swo
 
-# OS
+# OS / macOS
 .DS_Store
 .DS_Store?
 ._*
