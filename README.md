@@ -34,10 +34,10 @@ The AI Capability Terrain Map enables transparent, data-driven insight into AI p
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/pranmod01/apart-sprint.git
 
 # Navigate to the frontend
-cd <repo-name>/frontend
+cd apart-sprint/frontend
 
 # Install dependencies
 npm install
